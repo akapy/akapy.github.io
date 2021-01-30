@@ -1,0 +1,87 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Disqus再設定</title>
+</head>
+<body>
+
+<a href="2009-02-26-1.html">Prev</a>
+
+
+ / <a href="2009-02-26-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>Disqus再設定[rchalow]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2009-02-26.html">2009-02-26</a>
+<div class="body">
+<!-- start:2009-02-26-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2009-02-26-2" href="2009-02-26-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Disqus再設定</span> [<a href="cat_rchalow.html">rchalow</a>]</h3>
+<p>Disqusのアカウントを消してしまったようなので再度チャレンジしてみた。<br>
+&nbsp;&nbsp;&nbsp;<br>
+まず以下の必要部分を読む。<br>
+- Disqus をつけてみた - ~fumi/ChangeLog：<a href="http://www.ftnk.jp/~fumi/cl/2008-07-06-3.html">http://www.ftnk.jp/~fumi/cl/2008-07-06-3.html</a><br>
+<hr>Disqusにサインインする。<br>
+「Welcome to Disqus!」とメールがくるので、Verify your email address for access to more sites:の後ろのリンクをクリックして登録確認する。<br>
+<hr><pre>http://disqus.com/integrate/アカウント/generic/</pre> にアクセスして埋め込むコードを確認する。<br>
+<hr>[Code Snippet #1]部分を template/item_page.htmlのコメントを表示させたい所に埋め込む。<br>
+<hr>template/item_page.htmlの固定リンクのうしろに<br>
+<blockquote>&lt;a href="<%= data[:url] %>#disqus_thread">Comments (View)&lt;/a><br>
+</blockquote>を追加。kuttukibbs.cgiの部分とか削除。<br>
+<hr>template/item_page.html<br>
+template/day_page.html<br>
+template/index.html<br>
+template/category_page.html<br>
+template/month_page.html<br>
+の<br>
+<strong>&lt;/body></strong>の前に<br>
+[Code Snippet #2]を追加。<br>
+<hr>そんな感じ。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2009-02-26-2.html">固定リンク</a> ｜
+<a href="2009-02-26-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200902262-->
+</div>
+<!-- end:2009-02-26-2 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

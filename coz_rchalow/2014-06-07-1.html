@@ -1,0 +1,87 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>PlamoBuild.stunnel-5.01 を書く</title>
+</head>
+<body>
+
+<a href="2014-06-06-7.html">Prev</a>
+
+
+ / <a href="2014-06-08-1.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>PlamoBuild.stunnel-5.01 を書く[Plamo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2014-06-07.html">2014-06-07</a>
+<div class="body">
+<!-- start:2014-06-07-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-06-07-1" href="2014-06-07-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">PlamoBuild.stunnel-5.01 を書く</span> [<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>P-Plamoなマシンにstunnelをインストールしたかったので<br>
+PlamoBuild.stunnel-5.01 を書いて stunnel-5.01-i586-P1.txz を固めてみた。<br>
+&nbsp;&nbsp;<a href="http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038?page=2">http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038?page=2</a><br>
+を読んで<br>
+ソースコードの入手先を調べて<br>
+名前なども適宜、変更してもらって<br>
+<blockquote>url=<br>
+arch=`uname -m | sed -e 's/i.86/i586/'`<br>
+OPT_CONFIG="--prefix=/usr"<br>
+</blockquote>chmod 755 PlamoBuild.stunnel-5.01<br>
+./PlamoBuild.stunnel-5.01 download<br>
+./PlamoBuild.stunnel-5.01 config<br>
+./PlamoBuild.stunnel-5.01 build<br>
+sudo ./PlamoBuild.stunnel-5.01 package<br>
+すればパッケージできるはず。<br>
+&nbsp;&nbsp;<br>
+以下も読んでおきましょう。<br>
+&nbsp;&nbsp;<a href="http://plamo.linet.gr.jp/wiki/index.php?%CF%C3%C2%EA%2FPlamoBuild%20%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8">http://plamo.linet.gr.jp/wiki/index.php?%CF%C3%C2%EA%2FPlamoBuild%20%A5%B9%A5%AF%A5%EA%A5%D7%A5%C8</a><br>
+<hr>１１８４日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-06-07-1.html">固定リンク</a> ｜
+<a href="2014-06-07-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201406071-->
+</div>
+<!-- end:2014-06-07-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2014-06-19 08:48</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

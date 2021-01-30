@@ -1,0 +1,381 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Gentoo / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+ / <a href="cat_gentoo.html">カテゴリ最新ページ</a> / 
+
+<a href="cat_gentoo-2.html">前ページ</a>
+
+<a href="cat_gentoo.html">1</a> <a href="cat_gentoo-2.html">2</a> 3
+
+/ page 3 (3)
+
+<h1>Gentoo - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2004-10-20-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-20-2" href="2004-10-20-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>暇だったので旅館でxorgcfgしてみました。<br>
+問題なくＸ立ち上がりました。<br>
+出稼ぎ先にノート２台、キューブ型１台持ってくるなんてアホだな〜(笑)<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-20-2.html">固定リンク</a> ｜
+<a href="2004-10-20-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410202-->
+</div>
+<!-- end:2004-10-20-2 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2004-10-12-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-12-4" href="2004-10-12-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用HDD</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>genkernel --menuconfig all 終わってました。無事pcmcia認識。<br>
+HDD移植。<br>
+emerge xorg-x11<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-12-4.html">固定リンク</a> ｜
+<a href="2004-10-12-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410124-->
+</div>
+<!-- end:2004-10-12-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-11-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-11-3" href="2004-10-11-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">パスワード失念したら。。</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>LiveCDで起動してchrootして passwdコマンド実行した方が早い。<br>
+シングルユーザーモードで起動するにはgrubのkernel行に 1 を追記してbootすればいいのか？<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-11-3.html">固定リンク</a> ｜
+<a href="2004-10-11-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410113-->
+</div>
+<!-- end:2004-10-11-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-11-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-11-4" href="2004-10-11-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用HDD</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>朝来てみたらgenkernel all 終了してました。残りの作業やって再起動。表示が変、フレームバッファのせいでしょう。<br>
+このカーネルはpcmcia有効になっていないようです。悲。v2.4.26-r9<br>
+というわけで再度LiveCDでchrootして<br>
+genkernel --menuconfig all<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-11-4.html">固定リンク</a> ｜
+<a href="2004-10-11-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410114-->
+</div>
+<!-- end:2004-10-11-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-10-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-10-4" href="2004-10-10-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用HDD</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>朝 emerge system 終わってた。思ったより早いね。<br>
+/etc 内の３つのファイルについてupdateが必要らしい。<br>
+emerge --help config<br>
+find /etc -iname '._cfg????_*'<br>
+&nbsp;&nbsp;&nbsp;/etc/conf.d/rsyncd、 /etc/init.d/rsyncd、 /etc/DIR_COLORS<br>
+怪しいそうだが genkernel all してみた。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-10-4.html">固定リンク</a> ｜
+<a href="2004-10-10-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410104-->
+</div>
+<!-- end:2004-10-10-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-09-6 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-09-6" href="2004-10-09-6.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用HDD</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>16:45ごろ emerge system 開始。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-09-6.html">固定リンク</a> ｜
+<a href="2004-10-09-6.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410096-->
+</div>
+<!-- end:2004-10-09-6 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-08-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-08-4" href="2004-10-08-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用HDD</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>朝一番で script/bootsprap.sh。帰る時も終わっていない。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-08-4.html">固定リンク</a> ｜
+<a href="2004-10-08-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410084-->
+</div>
+<!-- end:2004-10-08-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-07-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-07-3" href="2004-10-07-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号用</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>懲りずにGentooのインストールを開始。Gentoo2004.2ステージ１から。<br>
+emerge sync<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-07-3.html">固定リンク</a> ｜
+<a href="2004-10-07-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410073-->
+</div>
+<!-- end:2004-10-07-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-07-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-07-4" href="2004-10-07-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ステージ１から始めるべき？</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>最新を追っかけるつもりはないんだけど、emergeの挙動を考えると2004.2のステージ１からやったほうがましか？<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-07-4.html">固定リンク</a> ｜
+<a href="2004-10-07-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410074-->
+</div>
+<!-- end:2004-10-07-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-04-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-04-3" href="2004-10-04-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>fdiskでパーティション修正。<br>
+2004-02 Live-CDで起動して fsck /dev/hda3 を２回。<br>
+mount /dev/hda3 /mnt/gentoo<br>
+cd /mnt/gentoo<br>
+tar -xvjpf /mnt/cdrom/stages/stage3-x86-2004....tar.bz2<br>
+tar -xvjf /mnt/cdrom/snapshots/portage-2004...tar.bz2 -C /mnt/gentoo/usr<br>
+emerge sync<br>
+emerge -k gcc<br>
+ダメ<br>
+ということでHDDから起動。Gentoo本のCD入れて<br>
+mount /dev/cdrom<br>
+cd /<br>
+tar -xvjpf /mnt/cdrom/stages/stage3-x86-20030910.tar.bz2<br>
+tar -xvjf /mnt/cdrom/snapshots/portage-20030911.tar.bz2 -C /usr<br>
+cp -R /mnt/cdrom/distfiles /usr/portage/distfiles<br>
+cp -a /mnt/cdrom/packages /usr/portage/packages<br>
+だめemerge関係<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-04-3.html">固定リンク</a> ｜
+<a href="2004-10-04-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410043-->
+</div>
+<!-- end:2004-10-04-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-01-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-01-4" href="2004-10-01-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p># emerge -u portage 失敗のため gccは使えなくなるは、python2.2エラー:libstdc++.so.5が無いとは言われるは。。。<br>
+PartitionMagic8.0も失敗するは、散々なことに。<br>
+再度はじめからやりましょう！と元気なふり。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-01-4.html">固定リンク</a> ｜
+<a href="2004-10-01-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410014-->
+</div>
+<!-- end:2004-10-01-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-09-20-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-09-20-2" href="2004-09-20-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Gentoo</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>&nbsp;fixpackagesコマンド実行し終わって、念のため emerge sync してみたら色々削除されていって、<br>
+また「fixpackagesどうのこうの」のエラーが表示された。 <br>
+<a href="http://www.hiroron.com/blog/archives/000015.html">http://www.hiroron.com/blog/archives/000015.html</a> によると<br>
+<blockquote>GRP後のemerge syncでエラー<br>
+バイナリーとebuildがぶつかっているのか、カテゴリが変更になってるからなのか、エラーがでる。重にfs系のツールで、でている。<br>
+ircの#Gentoo-jaで教えてもらった、fixpackages コマンドにより解決したが、このコマンドかなり重たい。<br>
+emerge sync ごとに、このコマンドを実行させることができるらしいが、今の重さでは妥当ではない。今後軽くなればぜひ実行したいコマンドである。<br>
+ちなみに毎回実行させるには<br>
+make.conf に FEATURES="fixpackages" と指定しておくといいそうだ。 <br>
+</blockquote> fixpackagesを実行したらemerge syncしてはいけないのか？<br>
+FEATURES="fixpackages"を書き込んで、emerge syncしないと元に戻るのかな？ <br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-09-20-2.html">固定リンク</a> ｜
+<a href="2004-09-20-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200409202-->
+</div>
+<!-- end:2004-09-20-2 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-09-19-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-09-19-3" href="2004-09-19-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Gentoo</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>&nbsp;昨日のemerge syncの結果、エラーらしき表示が出てた。fixpackagesしろということらしい。<br>
+google検索したら同じような状況が数件あった。しかしman的なドキュメントはないようだ。<br>
+鬼瓦実験室：<a href="http://onigawara.dip.jp/oniwiki/pukiwiki.php?gentoo%20Linux%20Install">http://onigawara.dip.jp/oniwiki/pukiwiki.php?gentoo%20Linux%20Install</a> を参考に。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-09-19-3.html">固定リンク</a> ｜
+<a href="2004-09-19-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200409193-->
+</div>
+<!-- end:2004-09-19-3 -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2014-08-20 05:40
+
+</div></div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

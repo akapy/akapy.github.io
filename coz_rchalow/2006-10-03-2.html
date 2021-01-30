@@ -1,0 +1,80 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>2006.1</title>
+</head>
+<body>
+
+<a href="2006-10-03-1.html">Prev</a>
+
+
+ / <a href="2006-10-03-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>2006.1[Gentoo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-10-03.html">2006-10-03</a>
+<div class="body">
+<!-- start:2006-10-03-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-10-03-2" href="2006-10-03-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">2006.1</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>installcdなのに K6マシンでchrootできない。2006.0でもダメ。<br>
+なぜか 1.4だとＯＫ<br>
+<blockquote># chroot /mnt/navynos /bin/bash<br>
+Illegal instruction	<br>
+</blockquote>stage3-586系じゃないとダメなのか？<br>
+livecdを試すか？<br>
+マシンの問題なのか？ 既知の何かなのか？<br>
+</p><p>
+おまけに686に最適化したカーネルって  K6じゃ止まるの？<br>
+&nbsp;&nbsp;<a href="http://starboze.txt-nifty.com/into_the_linux_world/cat4600699/index.html">http://starboze.txt-nifty.com/into_the_linux_world/cat4600699/index.html</a><br>
+やっぱ586にしないとダメのようだな。<br>
+stageは586かx86<br>
+make.confのCHOST、CFLAGSも見直しが必要ね。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-10-03-2.html">固定リンク</a> ｜
+<a href="2006-10-03-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200610032-->
+</div>
+<!-- end:2006-10-03-2 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,89 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>pam-login が　blockされる</title>
+</head>
+<body>
+
+<a href="2006-08-28-7.html">Prev</a>
+
+
+ / <a href="2006-08-29-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>pam-login が　blockされる[Gentoo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-08-29.html">2006-08-29</a>
+<div class="body">
+<!-- start:2006-08-29-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-08-29-1" href="2006-08-29-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">pam-login が　blockされる</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>[blocks B ] sys-apps/pam-login (is blocking sys-apps/shadow-4.0.15-r2)<br>
+対処に悩んだのだが、あっしだけじゃなかったのね。<br>
+&nbsp;&nbsp;<a href="http://72.14.235.104/search?q=cache:vELeNmUIgtsJ:cvzn.com/xoops2/modules/news/index.php%3Fstorytopic%3D4+portage+pam-login&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=3&amp;lr=lang_ja">http://72.14.235.104/search?q=cache:vELeNmUIgtsJ:cvzn.com/xoops2/modules/news/index.php%3Fstorytopic%3D4+portage+pam-login&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=3&amp;lr=lang_ja</a><br>
+<blockquote>emerge -C pam-login<br>
+</blockquote>していいんだ。なんだー！<br>
+</p><p>
+<em>Gentoo Weekly Newsletter: 12 June 2006</em><br>
+<blockquote>shadowとpam-loginの競合<br>
+</p><p>
+多くのユーザは、新しいバージョンのpam-loginとshadowがお互いにブロックする事象に遭遇しています。 /bin/loginファイルが、主に歴史的な理由からpam-loginによって提供されていることが原因です。 現在、shadow 4.0もこのファイルを提供するようになり、 混乱を避けるために言っておくと、現在このファイルはshadowによって提供されます。 また、pam-loginの残りのファイルは、shadowに同梱されています。 したがって、これら2つのパッケージがお互いにブロックする事象に出くわしたら、 pam-loginをunmergeして、最新のshadowパッケージをemergeしてください。<br>
+</p><p>
+より詳しい情報は、 Diego Pettenのブログを見てください。<br>
+</blockquote>で<br>
+<blockquote>emerge xorg-x11<br>
+Ｘorg -configure<br>
+cp -p /root/xorg.conf.new /etc/Ｘ11<br>
+して編集<br>
+</blockquote>USEフラグは(/etc/make.conf で設定のこと)<br>
+&nbsp;&nbsp;<a href="http://www.gentoo.org/dyn/use-index.xml">http://www.gentoo.org/dyn/use-index.xml</a><br>
+</p><p>
+nVidiaのせいか、うまくＸが動かん。vesaでしか。<br>
+カーネルをコンパイルし直してnVidiaモジュール作ったらいいのか？<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-08-29-1.html">固定リンク</a> ｜
+<a href="2006-08-29-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200608291-->
+</div>
+<!-- end:2006-08-29-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

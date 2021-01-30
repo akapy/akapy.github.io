@@ -1,0 +1,80 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>mecab-0.90</title>
+</head>
+<body>
+
+<a href="2006-04-04-4.html">Prev</a>
+
+
+ / <a href="2006-04-04-7.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>mecab-0.90[Plamo][NetSt号]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-04-04.html">2006-04-04</a>
+<div class="body">
+<!-- start:2006-04-04-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-04-04-5" href="2006-04-04-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">mecab-0.90</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</h3>
+<p>Plamo4.2のインストール・設定はいつものようにやって、<br>
+mecab-ipadic-2.7.0-20051110 をmakeするときエラー発生。<br>
+<a href="http://lists.sourceforge.jp/mailman/archives/mecab-users/2006-February/000046.html">http://lists.sourceforge.jp/mailman/archives/mecab-users/2006-February/000046.html</a><br>
+と同じ症状らしい。<br>
+&nbsp;# ldconfig<br>
+で うまくいった。<br>
+</p><p>
+bsfilter-1.0.12がうまく動いてくれない。<br>
+1024行目の<br>
+&nbsp;&nbsp;@m = MeCab::Tagger.new([$0, "-Ochasen"])<br>
+で引っかかってる模様。<br>
+mecab-0.90、mecab-ruby-0.90、bsfilter-1.0.12のどれかの仕様が変わったのかもしれない。<br>
+.bsfilter/bsfilter.conf を編集して bigramを使うように変更。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-04-04-5.html">固定リンク</a> ｜
+<a href="2006-04-04-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200604045-->
+</div>
+<!-- end:2006-04-04-5 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

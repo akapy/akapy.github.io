@@ -1,0 +1,87 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>grub / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>grub - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2018-12-21-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2018-12-21-1" href="2018-12-21-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SSDをUEFIで使う時はdiskpartしてから</span> [<a href="cat_uefi.html">UEFI</a>][<a href="cat_grub.html">grub</a>][<a href="cat_gpt.html">gpt</a>][<a href="cat_ssd.html">SSD</a>]</h3>
+<p>SSDにwin10やLinuxをUEFIでインストールしようとして失敗する現象<br>
+とにかくWin10のインストールUSBあたりを立ち上げてコマンドプロンプトから<br>
+<blockquote>diskpart<br>
+list disk<br>
+select disk 数字<br>
+clean<br>
+convert gpt<br>
+exit<br>
+</blockquote>しなければならないと思うべき。ハマった。。。<br>
+　<br>
+やらないとLinuxもダメです。<br>
+SSDなんて貧乏人は使ったことないもんで(泣)<br>
+　<br>
+相性問題？<br>
+不良品？<br>
+dogfishを選んで失敗？<br>
+BIOS設定に間違い？<br>
+　<br>
+いろいろ頭をよぎりましたが、解決できて良かった。<br>
+<hr>２８４２日後<br>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2018-12-21-1.html">固定リンク</a> ｜
+<a href="2018-12-21-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201812211-->
+</div>
+<!-- end:2018-12-21-1 -->
+<!-- 広告とか -->
+
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2018-12-22 09:01
+
+</div></div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

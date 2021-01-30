@@ -1,0 +1,105 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>ThinkPad(2609-73J)＋Extreme III(16G)＋Plamo</title>
+</head>
+<body>
+
+<a href="2009-03-22-1.html">Prev</a>
+
+
+ / <a href="2009-03-22-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>ThinkPad(2609-73J)＋Extreme III(16G)＋Plamo[Plamo][2609-73J]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2009-03-22.html">2009-03-22</a>
+<div class="body">
+<!-- start:2009-03-22-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2009-03-22-2" href="2009-03-22-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ThinkPad(2609-73J)＋Extreme III(16G)＋Plamo</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]</h3>
+<p>このマシンは、猫足さん<a href="2009-03-08-1.html">[2009-03-08-1]</a>、KIKUMASAさん、田添さん、の御協力の賜物です。<br>
+PUPPYの入ったHDDはそのまま保管。<br>
+&nbsp;&nbsp;<br>
+＜インストの詳細みたいなもの＞<br>
+とりあえず買った中古メモリ128Mを取り付けてBIOSを確認。ちゃんと認識されてます。<br>
+Extreme III(16G)をSSD(SolidStateDrive)として取り付ける。<br>
+そのまま起動してみるとCentOSが立ち上がった。# KIKUMASAさんがインストしたやつ<br>
+そのままCentを使ってみたいという気持ちもあったのだが、Plamoインスト開始。<br>
+まずNHK-BS2から録画したパフュームのDVDを再生(笑)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# このDVDはKIKUMASAさんからのスペシャルおまけ<br>
+パーティションは<br>
+<blockquote>/dev/hda1  512M  /boot<br>
+/dev/hda2  12G   /<br>
+/dev/hda2  2.5G  /home<br>
+/dev/hda4  550M  swap<br>
+</blockquote>あっさりインスト終了か、と思ったら、<br>
+GRUBをMBRに入れるところでエラー。<br>
+再起動してみるとGRUB自体は起動するが、メニュー出ない。Plamo起動せず。<br>
+たぶん、Centをインストした時のGRUBが残っていると思われ。<br>
+MBRの初期化が必要かと。<br>
+<a href="http://tipspc.blogspot.com/2008/02/linuxmbr.html">http://tipspc.blogspot.com/2008/02/linuxmbr.html</a><br>
+<blockquote>dd if=/dev/zero of=ディスク・デバイス bs=512 count=1<br>
+</blockquote>パーティションテーブルもきれいに消えてくれました。ちょっと(悲<br>
+再度パーティションの切り直しから。<br>
+今度はPlamoのインストールも正常終了。<br>
+無事起動しましたとさ。<br>
+&nbsp;&nbsp;<br>
+/etc/fstab に noatimeを追記。<br>
+xfplamoconfigしてstartxしたがＸ立ち上がらず。<br>
+ドライバが見当たらないみたい。<br>
+しょうがないのでvesaで起動しておく。<br>
+&nbsp;&nbsp;<br>
+サブノートという部類なんだろうか。<br>
+軽くて持ち運びに便利。<br>
+お出かけ用にはピッタリだろう。キーボードも押せる大きさだし。<br>
+</p><p>
+
+</p>
+
+<div class="referer"><span>Referrer (Inside):
+<a href="2009-04-22-1.html">[2009-04-22-1]</a></span></div>
+
+<div class="comment">
+<div class="caption">［
+<a href="2009-03-22-2.html">固定リンク</a> ｜
+<a href="2009-03-22-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200903222-->
+</div>
+<!-- end:2009-03-22-2 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

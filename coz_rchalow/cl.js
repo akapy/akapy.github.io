@@ -1,0 +1,12 @@
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-10.html">2019-11-10</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-09.html">2019-11-09</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-08.html">2019-11-08</a><br>');
+document.writeln('- <a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-08-1.html">ターミネーター</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-07.html">2019-11-07</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-06.html">2019-11-06</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-05.html">2019-11-05</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-04.html">2019-11-04</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-03.html">2019-11-03</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-02.html">2019-11-02</a><br>');
+document.writeln('<a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-01.html">2019-11-01</a><br>');
+document.writeln('- <a href="http://pub.cozmixng.org/~akapy/rchalow/2019-11-01-1.html">記憶にございません</a><br>');

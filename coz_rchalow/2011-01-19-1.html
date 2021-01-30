@@ -1,0 +1,92 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>パスポート切替書類／2609-73JにPlamo-4.73</title>
+</head>
+<body>
+
+<a href="2011-01-18-6.html">Prev</a>
+
+
+ / <a href="2011-01-19-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>パスポート切替書類／2609-73JにPlamo-4.73[Plamo][2609-73J][ひとりごと]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2011-01-19.html">2011-01-19</a>
+<div class="body">
+<!-- start:2011-01-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2011-01-19-1" href="2011-01-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">パスポート切替書類／2609-73JにPlamo-4.73</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>]</h3>
+<p>役場と石巻合同庁舎に行った。申請書類確保。<br>
+合庁の建物古いね。<br>
+実際の手続きは来月にしよう。金も少ないので。<br>
+<hr>万を持して？、2609-73JにPlamo-4.73をインスト<br>
+相変わらずnfsに手間取る。。。<br>
+まずmanmaru号からnfsマウントできるようにしてから。<br>
+<blockquote>SC420の/etc/exports<br>
+<hr>----------<br>
+/plamo-ftp  192.168.1.0/255.255.255.0(ro)<br>
+</p><p>
+</p><p>
+/etc/hosts.allow<br>
+<hr>------------------<br>
+ALL : 192.168.1.0/255.255.255.0<br>
+# End of hosts.allow.<br>
+</p><p>
+</p><p>
+/etc/hosts.deny<br>
+<hr>---------------<br>
+ALL : ALL<br>
+# End of hosts.deny.<br>
+</blockquote>nfsインストにて /plamo-ftp/plamo  でＯＫ！<br>
+Ｘはあっさり起動。デフォの xf86-video-siliconmotion-1.7.3 にて<br>
+mewの丸数字は文字化け直らず。なんでmanmaru号は大丈夫なんだろう？<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2011-01-19-1.html">固定リンク</a> ｜
+<a href="2011-01-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201101191-->
+</div>
+<!-- end:2011-01-19-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

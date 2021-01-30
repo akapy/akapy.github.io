@@ -1,0 +1,81 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>kernel-2.6.23.16に</title>
+</head>
+<body>
+
+<a href="2008-02-12-12.html">Prev</a>
+
+
+ / <a href="2008-02-13-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>kernel-2.6.23.16に[Plamo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2008-02-13.html">2008-02-13</a>
+<div class="body">
+<!-- start:2008-02-13-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2008-02-13-1" href="2008-02-13-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">kernel-2.6.23.16に</span> [<a href="cat_plamo.html">Plamo</a>]</h3>
+<p><a href="http://www.linet.gr.jp/ML/plamo/200802/msg00034.html">http://www.linet.gr.jp/ML/plamo/200802/msg00034.html</a><br>
+<blockquote>2.6.17 から 2.6.24.1 にかけてのカーネルで，vmsplice を悪用した local<br>
+exploit(そのマシンにアカウントを持っている人が違法に root 権限を取れる<br>
+バグ)が見つかったようです．<br>
+</blockquote>ということなのでカーネルをupdateしてみました。<br>
+<blockquote>removepkg kernel<br>
+removepkg kernel-headers<br>
+</blockquote>あっしは/boot をマウントしないで起動しているので<br>
+<blockquote>mount /dev/hda1 /boot<br>
+installpkg download/kernel-2.6.23.16_plamoSMP-i586-P1.tgz<br>
+installpkg download/kernel_headers-2.6.23.16_plamoSMP-i386-P1.tgz<br>
+</blockquote>で再起動。<br>
+Webでもアナウンスされてますね。<br>
+<a href="http://plamo-linux.jp/security.html#kernel_20080212">http://plamo-linux.jp/security.html#kernel_20080212</a><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2008-02-13-1.html">固定リンク</a> ｜
+<a href="2008-02-13-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200802131-->
+</div>
+<!-- end:2008-02-13-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

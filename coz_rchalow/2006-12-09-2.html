@@ -1,0 +1,93 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>bsfilter高速化？</title>
+</head>
+<body>
+
+<a href="2006-12-09-1.html">Prev</a>
+
+
+ / <a href="2006-12-09-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>bsfilter高速化？[修行][Plamo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-12-09.html">2006-12-09</a>
+<div class="body">
+<!-- start:2006-12-09-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-12-09-2" href="2006-12-09-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">bsfilter高速化？</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>mewでのbsfilterの使い勝手を調べていたら（X-spam-Flagの付いたメールに＊マークだけを）<br>
+&nbsp;&nbsp;<a href="http://www2b.biglobe.ne.jp/~caco/cf-t1.html">http://www2b.biglobe.ne.jp/~caco/cf-t1.html</a><br>
+なページがあったので真似した。<br>
+<blockquote> 2006/01/15(Sun)<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;bsfilter自体は快調に動いているが，最近Spamデータベースが充実するにつれ，非常に遅くなってきた．メールが100通以上溜まっていると，処理するのに5分以上かかる．どうもsdbm/gdbmが遅いようだ．データベースは全部で32MBほどしかないのに困ったものだ．根本的にはPostgreSQLなどの本格的なDBを使うようにすれば解決するのだと思うのだが，そこまでする時間がないので，安直にSpamデータベースをRAMに置くことにした．まず，.bsfilterをシンボリックリンクに置き換える．<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;cd<br>
+&nbsp;&nbsp;&nbsp;&nbsp;mv .bsfilter .bsfilter.back<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ln -s /mnt/tmpfs/.bsfilter .<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;rc.localに以下を設定．<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;mount -t tmpfs -o size=64m /dev/shm /mnt/tmpfs<br>
+&nbsp;&nbsp;&nbsp;&nbsp;cp -p /home/t-ishii/.bsfilter.back/* /mnt/tmpfs/.bsfilter &amp;<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;次にcrontabを設定して5分毎にRAM上の内容がHDDにバックアップされるようにする．<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;0-55/5 * * * * /usr/bin/rsync -a /mnt/tmpfs/.bsfilter/* /home/t-ishii/.bsfilter.back<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;これでだいぶ快適になった．<br>
+</blockquote>/etc/rc.d/rc.localは ちょっと変更を多くしたような気が。。<br>
+なんだかcronもどうにかしないと。<br>
+ついでにcrondのloglevelも変更<br>
+</p><p>
+すごくbsfilterの動作が軽くなりました！<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-12-09-2.html">固定リンク</a> ｜
+<a href="2006-12-09-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200612092-->
+</div>
+<!-- end:2006-12-09-2 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

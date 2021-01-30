@@ -1,0 +1,104 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>td2toclog.rb</title>
+</head>
+<body>
+
+<a href="2009-02-16-2.html">Prev</a>
+
+
+ / <a href="2009-02-16-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>td2toclog.rb[rubyの勉強]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2009-02-16.html">2009-02-16</a>
+<div class="body">
+<!-- start:2009-02-16-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2009-02-16-3" href="2009-02-16-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">td2toclog.rb</span> [<a href="cat_rubye381aee58b89e5bcb7.html">rubyの勉強</a>]</h3>
+<p>tdiaryのdataの中のtd2ファイルをChangeLogに近い形に変換する。<br>
+あとは日付でソートしたい、<br>
+ディレクトリ内のtd2ファイルを順番に読み込んで処理したい。<br>
+<blockquote>#!/usr/bin/env ruby<br>
+$KCODE="EUC"<br>
+#$/ = "\n"<br>
+#$, = ","<br>
+</p><p>
+require "date"<br>
+</p><p>
+if ARGV[0] == nil<br>
+&nbsp;&nbsp;STDERR.puts "引数が足りません"<br>
+&nbsp;&nbsp;STDERR.puts "例：$ ./trunk/cl2sigoto-goukei.rb ~/trunk/ChangeLog"<br>
+&nbsp;&nbsp;exit 0<br>
+end<br>
+</p><p>
+entry = {}<br>
+#p lioe<br>
+goukei = 0<br>
+</p><p>
+while line = ARGF.gets<br>
+</p><p>
+###  print line<br>
+&nbsp;&nbsp;if /^Title|^Last|^Visi|^Format|^\./ =~ line then<br>
+#     p line<br>
+&nbsp;&nbsp;elsif /^(Date: (\d{8}))/ =~ line then  # 日付をキープ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;d = $2		# = year-month-day<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;date = Date.parse(d)<br>
+#            puts date<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print date," akapy  &lt;akapy@coz>"<br>
+#            p d2<br>
+</p><p>
+&nbsp;&nbsp;else<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print line<br>
+&nbsp;&nbsp;end<br>
+end<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2009-02-16-3.html">固定リンク</a> ｜
+<a href="2009-02-16-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200902163-->
+</div>
+<!-- end:2009-02-16-3 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

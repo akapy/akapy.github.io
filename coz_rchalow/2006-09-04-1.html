@@ -1,0 +1,83 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>GentooでRabbit</title>
+</head>
+<body>
+
+<a href="2006-09-03-9.html">Prev</a>
+
+
+ / <a href="2006-09-04-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>GentooでRabbit[Gentoo][Rabbit]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-09-04.html">2006-09-04</a>
+<div class="body">
+<!-- start:2006-09-04-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-09-04-1" href="2006-09-04-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">GentooでRabbit</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_rabbit.html">Rabbit</a>]</h3>
+<p><blockquote>X Error of failed request: GLXBadContext…<br>
+</blockquote>libglx.soあたりが関係しているようなんだが、nvidiaも関係しているようなので<br>
+USE="-nvidia"、カーネル再構築して<br>
+<blockquote>emerge -C x11-libs/hoge系<br>
+emerge -C ruby-gnome系<br>
+emerge -C gnome系<br>
+emerge xorg-x11<br>
+</blockquote>してＸを入れ直し。<br>
+う〜ん、簡単にはＸ起動しないね。<br>
+<blockquote>emerge libXhoge…<br>
+emerge libXhogehogehoge…<br>
+</blockquote>さて、どうなるか？<br>
+<blockquote>ACCEPT_KEYWORDS=~x86 FEATURES="digest" USE="-opengl tiff enscript example gnome-print svg tgif" emerge rabbit<br>
+cd /usr/share/doc/rabbit-0.2.9/sample<br>
+rabbit rabbit-implementation.rd<br>
+</blockquote><em>お〜 きた！！ はぁ〜良かった</em><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-09-04-1.html">固定リンク</a> ｜
+<a href="2006-09-04-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200609041-->
+</div>
+<!-- end:2006-09-04-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

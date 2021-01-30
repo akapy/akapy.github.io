@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>あかぴのChangeLog by rchalow / 2014-08-19</title>
+</head>
+<body>
+<div style="width:750px">
+<p class="adminmenu">
+
+<a href="2014-08-18.html">前の日</a> /
+
+
+<a href="2014-08-20.html">次の日</a> / 
+
+<a href="index.html">最新</a> / <a href="2014-8.html">2014-8</a></p>
+<h1><a href="index.html">あかぴのChangeLog by rchalow</a> / 2014-08-19</h1>
+<p class="calendar">01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31</p>
+<div class="day">
+<h2><span class="date"><a name="2014-08-19" href="2014-08-19.html">2014-08-19 Tue</a></span></h2>
+
+<div class="body">
+
+
+
+
+
+
+<!-- start:2014-08-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-08-19-1" href="2014-08-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">gentoo-suorces-3.14.16あたりでの無線LAN設定</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>最近GentooをインストールしたノートPCには<br>
+Intel(R) Centrino(R) Wireless-N + WiMAX 6150 が載ってるようなのだが、<br>
+なかなか使えるようにならなかったのでメモ<br>
+<blockquote>  <br>
+wpa_supplicant_wlp4s0="-Dnl80211" がキモだったんだろうな。。<br>
+&nbsp;&nbsp;<br>
+</blockquote>まずdmesgにwlan0が登場しないと話にならない<br>
+<blockquote>すぐにwlp4s0に改名されるけど(苦笑)<br>
+</blockquote>gentoo-suorces-3.14.16も出たようなのでカーネル再構築する<br>
+genkernel --bootloader=grub --xconfig all <br>
+&nbsp;&nbsp;&nbsp;CONFIG_IWLWIFI_DEBUGFS<br>
+&nbsp;&nbsp;&nbsp;CONFIG_IWLWIFI_DEVICE_TRACING<br>
+を有効にする<br>
+/boot に新しいカーネルができてることを確認して<br>
+grub2-mkconfig -o /boot/grub/grub.cfg<br>
+これでカーネル関係おわり<br>
+一度再起動してiwconfigとifconfig。wlp4s0的なものがあることを確認<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+emerge wpa_supplicant<br>
+&nbsp;&nbsp;<br>
+/etc/conf.d/net 編集<br>
+<blockquote>modules_wlp4s0=("wpa_supplicant")<br>
+wpa_supplicant_wlp4s0="-Dnl80211"<br>
+config_wlp4s0="dhcp"<br>
+</blockquote>  <br>
+cd /etc/init.d<br>
+ln -s net.lo net.wlp4s0<br>
+rc-update add net.wlp4s0 default<br>
+</p><p>
+これで再起動するか、<br>
+etc-update<br>
+/etc/init.d/net.wlp4s0 restart<br>
+で無線LANの電波を拾うようになるはず。<br>
+</p><p>
+</p><p>
+<hr>ibusとmozcは以下のblog通りに設定したらうまくいったみたい。<br>
+なかゆきの気まぐれ日記<br>
+&nbsp;&nbsp;Gentooで日本語入力ハマったのでメモ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://blog.nakayuki.net/linux/gentoo-japanese/">http://blog.nakayuki.net/linux/gentoo-japanese/</a><br>
+</p><p>
+<hr>１２５７日後<br>
+</p><p>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-08-19-1.html">固定リンク</a> ｜
+<a href="2014-08-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201408191-->
+</div>
+<!-- end:2014-08-19-1 -->
+<!-- 広告とか -->
+
+
+
+
+
+
+
+<!--
+<div class="comment">
+<div class="caption">[
+<a href='./kuttukibbs.cgi?id=2014-08-19'>������</a> | 
+<a href="tb/tb.cgi?__mode=list&tb_id=">�ȥ�å��Хå�
+(<script language="JavaScript" src="tb/tb_data/.js">
+</script>)</a> ]</div>
+<script language="JavaScript" type="text/javascript" 
+ src="kblog/2014-08-19.js"></script>
+</div>
+--->
+</div>
+</div>
+
+<p class="calendar"></p>
+<p>最終更新時間: 2014-08-21 06:03</p>
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

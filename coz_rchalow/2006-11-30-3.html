@@ -1,0 +1,203 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>cl2moneycsv.rb</title>
+</head>
+<body>
+
+<a href="2006-11-30-2.html">Prev</a>
+
+
+ / <a href="2006-11-30-5.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>cl2moneycsv.rb[chalow][修行]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-11-30.html">2006-11-30</a>
+<div class="body">
+<!-- start:2006-11-30-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-11-30-3" href="2006-11-30-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">cl2moneycsv.rb</span> [<a href="cat_chalow.html">chalow</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]</h3>
+<p>ありがとさんです＞kou<br>
+<blockquote><pre>#!/usr/bin/env ruby
+$KCODE="EUC"
+
+def usage
+  STDERR.print &lt;&lt;EOF
+usage: #{$0} [-m] [files...]
+  m: monthly
+EOF
+  exit 1
+end
+
+Opt = {
+  'monthly' =&gt; false    # 月毎に計算
+}      # Optはハッシュ
+
+while ARGV[0] =~ /^-/
+  $_ = ARGV.shift
+  Opt['monthly'] = true if ~/m/
+  usage if ~/[^-m]/
+end
+
+usage if ARGV.size &lt; 1
+
+
+# 費目 an item of expendidure
+#lioe = ['外', '食', '交', '遊', '本', '音', '雑', '衣', '他']  # 配列
+lioe = []
+
+date =""
+inside_flag = 0
+entry = Hash.new
+while line = gets
+  if /^((\d{4}-\d\d)-\d\d)/ =~ line then  # 日付をキープ
+    if Opt['monthly'] == true then
+    date = $2      # = year-month
+    else
+    date = $1
+    date = date.tr("-",".")
+    end
+  elsif /買物ログ.*:/ =~ line then  # 家計簿データ記述ブロックの始まり
+    inside_flag = 1
+  elsif inside_flag == 1
+    if /^\s*$/ =~ line and inside_flag == 1 then
+      inside_flag = 0
+    elsif (/^\t(.+?)(\s|\xa1\xa1).*(\s|\xa1\xa1)(\d+)$/) =~ line then
+yo = line.split(nil)
+  kamoku = yo[0]
+  naiyou = yo[1]
+  kingaku = yo[2]
+  sonota = yo[3]
+
+          lioe.push(yo[0])
+          lioe.uniq!
+
+      entry[date] ||= Hash.new(0)
+      entry[date][$1] += $4.to_i
+    end
+  end
+end
+
+print " " * 10, ",  ", lioe.join(',  '), "\n"
+
+entry.keys.sort.each do |date|
+  print "#{date},"
+  puts lioe.collect {|item| "%4d" % entry[date][item]}.join(",")
+end</pre>
+</blockquote><br>
+あっしは lioe を任意にしたいので<br>
+<blockquote><pre>#!/usr/bin/env ruby
+$KCODE="EUC"
+
+def usage
+  STDERR.print &lt;&lt;EOF
+usage: #{$0} [-m] [files...]
+  m: monthly
+EOF
+  exit 1
+end
+
+Opt = {
+  'monthly' =&gt; false    # 月毎に計算
+}      # Optはハッシュ
+
+while ARGV[0] =~ /^-/
+  $_ = ARGV.shift
+  Opt['monthly'] = true if ~/m/
+  usage if ~/[^-m]/
+end
+
+usage if ARGV.size &lt; 1
+
+
+# 費目 an item of expendidure
+#lioe = ['外', '食', '交', '遊', '本', '音', '雑', '衣', '他']  # 配列
+lioe = []
+
+date =""
+inside_flag = 0
+entry = Hash.new
+while line = gets
+  if /^((\d{4}-\d\d)-\d\d)/ =~ line then  # 日付をキープ
+    if Opt['monthly'] == true then
+    date = $2      # = year-month
+    else
+    date = $1
+    date = date.tr("-",".")
+    end
+  elsif /買物ログ.*:/ =~ line then  # 家計簿データ記述ブロックの始まり
+    inside_flag = 1
+  elsif inside_flag == 1
+    if /^\s*$/ =~ line and inside_flag == 1 then
+      inside_flag = 0
+    elsif (/^\t(.+?)(\s|\xa1\xa1).*(\s|\xa1\xa1)(\d+)$/) =~ line then
+yo = line.split(nil)
+  kamoku = yo[0]
+  naiyou = yo[1]
+  kingaku = yo[2]
+  sonota = yo[3]
+
+          lioe.push(yo[0])
+          lioe.uniq!
+
+      entry[date] ||= Hash.new(0)
+      entry[date][$1] += $4.to_i
+    end
+  end
+end
+
+print " " * 10, ",  ", lioe.join(',  '), "\n"
+
+entry.keys.sort.each do |date|
+  print "#{date},"
+  puts lioe.collect {|item| "%4d" % entry[date][item]}.join(",")
+end</pre>
+</blockquote><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-11-30-3.html">固定リンク</a> ｜
+<a href="2006-11-30-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200611303-->
+</div>
+<!-- end:2006-11-30-3 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,100 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Plamo4.2でRabbit動きました</title>
+</head>
+<body>
+
+<a href="2006-09-29-9.html">Prev</a>
+
+
+ / <a href="2006-09-30-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>Plamo4.2でRabbit動きました[Plamo][Rabbit]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-09-30.html">2006-09-30</a>
+<div class="body">
+<!-- start:2006-09-30-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-09-30-1" href="2006-09-30-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Plamo4.2でRabbit動きました</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_rabbit.html">Rabbit</a>]</h3>
+<p>頭を整理して全部やりなおしてみました。<br>
+</p><p>
+・まずPlamo4.2をインストール<br>
+&nbsp;&nbsp;&nbsp;&nbsp;おまかせパッケージのＭ(普通に使うには困らない環境)を選択<br>
+</p><p>
+・ruby-1.8.5.tar.gz のインストール<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ ./configure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ make clean<br>
+</p><p>
+・rdtool-0.6.20.tar.gz のインストール<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# ruby setup.rb<br>
+</p><p>
+・ruby-gtk2-0.15.0.tar.gz のインストール<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ ruby extconf.rb<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+&nbsp;&nbsp;&nbsp;で、以下を試す<br>
+<blockquote>    $ ruby -e "require 'gtk2'"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$ ruby -e "require 'gtk2';Gtk::Window.new.set_title('Hello Ruby-GNOME2 World!').show;Gtk.main"<br>
+</blockquote><br>
+・rabbit-0.4.1 のインストール<br>
+何でだか分からないけど最新の rabbit-0.4.2 は動かない。<br>
+&nbsp;&nbsp;&nbsp;# ruby setup.rb<br>
+<blockquote>cd rabbit-0.4.1/sample/<br>
+rabbit rabbit-implementation.rd<br>
+</blockquote>これでサンプルが動きます。<br>
+ただし、以下のエラーがコンソールに出ますけど無視。<br>
+<blockquote>/usr/local/lib/ruby/site_ruby/1.8/rabbit/ext/enscript.rb:6: command not found: enscript --help-highlight<br>
+</blockquote><a href="2006-10-01.html">[2006-10-01]</a> に続編あり<br>
+</p><p>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-09-30-1.html">固定リンク</a> ｜
+<a href="2006-09-30-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200609301-->
+</div>
+<!-- end:2006-09-30-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

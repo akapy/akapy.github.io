@@ -1,0 +1,95 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>設定</title>
+</head>
+<body>
+
+<a href="2005-10-22-2.html">Prev</a>
+
+
+ / <a href="2005-10-22-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>設定[修行][NetSt号]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2005-10-22.html">2005-10-22</a>
+<div class="body">
+<!-- start:2005-10-22-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-10-22-3" href="2005-10-22-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">設定</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</h3>
+<p>・IMAPS成功<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stunnel-4.12<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>./configure</s><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./configure --prefix=/usr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s># ln -s /usr/local/sbin/stunnel /usr/bin/</s><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mewを再起動<br>
+</p><p>
+・ssh<br>
+svn co svn+sshするには、まずsshできないとダメみたい。<br>
+&nbsp;&nbsp;&nbsp;ssh-keygen -t dsa<br>
+&nbsp;&nbsp;&nbsp;できた .ssh/id_dsa.pub をサーバーの.ssh/authorized_keys に追加。<br>
+これでssh成功。<br>
+</p><p>
+・Subversion<br>
+&nbsp;&nbsp;&nbsp;subversion-1.2.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./configure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+</p><p>
+・ChangeLogメモ<br>
+&nbsp;&nbsp;&nbsp;svn co svn+ssh://サーバー/home/akapy/svnrepos/trunk/<br>
+パス入力３回目で成功。<br>
+&nbsp;&nbsp;&nbsp;svn update<br>
+成功！<br>
+</p><p>
+関係ないけど今週も「踊る大捜査線」<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-10-22-3.html">固定リンク</a> ｜
+<a href="2005-10-22-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200510223-->
+</div>
+<!-- end:2005-10-22-3 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,123 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Plamo-4.73でDVDを焼く</title>
+</head>
+<body>
+
+<a href="2010-10-15-5.html">Prev</a>
+
+
+ / <a href="2010-10-16-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>Plamo-4.73でDVDを焼く[Plamo][Gentoo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2010-10-16.html">2010-10-16</a>
+<div class="body">
+<!-- start:2010-10-16-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2010-10-16-1" href="2010-10-16-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Plamo-4.73でDVDを焼く</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>はじめてLinux上でDVDを焼いてみた(笑)<br>
+Windowsのソフトより速いし安定感あるな。<br>
+CDのisoイメージをDVDに焼いても起動できるのね。<br>
+<blockquote>~$ sudo cdrecord -scanbus<br>
+Cdrecord-ProDVD-ProBD-Clone 2.01.01a75 (i686-pc-linux-gnu) Copyright (C) 1995-2010 J g Schilling<br>
+Linux sg driver version: 3.5.34<br>
+Using libscg version 'schily-0.9'.<br>
+scsibus0:<br>
+0,0,0	  0) 'ATA     ' 'ST380013AS      ' '8.12' Disk<br>
+0,1,0	  1) *<br>
+0,2,0	  2) *<br>
+0,3,0	  3) *<br>
+0,4,0	  4) *<br>
+0,5,0	  5) *<br>
+0,6,0	  6) *<br>
+0,7,0	  7) *<br>
+scsibus4:<br>
+4,0,0	400) 'ATA     ' 'ST380011A       ' '3.16' Disk<br>
+4,1,0	401) '_NEC    ' 'DVD_RW ND-3540A ' '1.22' Removable CD-ROM<br>
+4,2,0	402) *<br>
+4,3,0	403) *<br>
+4,4,0	404) *<br>
+4,5,0	405) *<br>
+4,6,0	406) *<br>
+4,7,0	407) *<br>
+</p><p>
+~$ sudo cdrecord dev=4,1,0 -data download/livedvd-x86-amd64-32ul-10.1.iso<br>
+cdrecord: No write mode specified.<br>
+cdrecord: Assuming -sao mode.<br>
+cdrecord: If your drive does not accept -sao, try -tao.<br>
+cdrecord: Future versions of cdrecord may have different drive dependent defaults.<br>
+Cdrecord-ProDVD-ProBD-Clone 2.01.01a75 (i686-pc-linux-gnu) Copyright (C) 1995-2010 J g Schilling<br>
+scsidev: '4,1,0'<br>
+scsibus: 4 target: 0 lun: 0<br>
+Linux sg driver version: 3.5.34<br>
+Using libscg version 'schily-0.9'.<br>
+Device type    : Removable CD-ROM<br>
+Version        : 5<br>
+Response Format: 2<br>
+Capabilities   : <br>
+Vendor_info    : '_NEC    '<br>
+Identifikation : 'DVD_RW ND-3540A '<br>
+Revision       : '1.22'<br>
+Device seems to be: Generic mmc2 DVD-R/DVD-RW/DVD-RAM.<br>
+Using generic SCSI-3/mmc   CD-R/CD-RW driver (mmc_cdr).<br>
+Driver flags   : MMC-3 SWABAUDIO BURNFREE <br>
+Supported modes: TAO PACKET SAO SAO/R96R RAW/R96R<br>
+cdrecord: Warning: Cannot read drive buffer.<br>
+cdrecord: Warning: The DMA speed test has been skipped.<br>
+Starting to write CD/DVD/BD at speed 4 in real SAO mode for single session.<br>
+Last chance to quit, starting real write    0 seconds. Operation starts.<br>
+Turning BURN-Free off<br>
+cdrecord: WARNING: Drive returns wrong startsec (0) using -150<br>
+Track 01: Total bytes read/written: 116617216/116617216 (56942 sectors).<br>
+~$ <br>
+</blockquote><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2010-10-16-1.html">固定リンク</a> ｜
+<a href="2010-10-16-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201010161-->
+</div>
+<!-- end:2010-10-16-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,251 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>あかぴのChangeLog by rchalow / 2006-06-06</title>
+</head>
+<body>
+<div style="width:750px">
+<p class="adminmenu">
+
+<a href="2006-06-05.html">前の日</a> /
+
+
+<a href="2006-06-07.html">次の日</a> / 
+
+<a href="index.html">最新</a> / <a href="2006-6.html">2006-6</a></p>
+<h1><a href="index.html">あかぴのChangeLog by rchalow</a> / 2006-06-06</h1>
+<p class="calendar">01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</p>
+<div class="day">
+<h2><span class="date"><a name="2006-06-06" href="2006-06-06.html">2006-06-06 Tue</a></span></h2>
+
+<div class="body">
+
+
+
+
+
+
+<!-- start:2006-06-06-9 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-9" href="2006-06-06-9.html"><span class="sanchor">＊</span></a> <span class="clitemheader">０６０６の暇人</span> [<a href="cat_e8a18ce58b95.html">行動</a>]</h3>
+<p>6:20起床。<br>
+終日 旭小屋<br>
+&nbsp;Gentooしながら…。<br>
+寝たの２６時ちかく。kuttukibbsいじってた。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-9.html">固定リンク</a> ｜
+<a href="2006-06-06-9.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606069-->
+</div>
+<!-- end:2006-06-06-9 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2006-06-06-7 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-7" href="2006-06-06-7.html"><span class="sanchor">＊</span></a> <span class="clitemheader">今日の天気</span> [<a href="cat_e5a4a9e6b097.html">天気</a>]</h3>
+<p>くもり。<br>
+21時過ぎから雨。夜中に雷。<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-7.html">固定リンク</a> ｜
+<a href="2006-06-06-7.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606067-->
+</div>
+<!-- end:2006-06-06-7 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-06-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-4" href="2006-06-06-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">買物ログ</span> [<a href="cat_e8b2b7e789a9e383ade382b0.html">買物ログ</a>]</h3>
+<p>労働 なし 0<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-4.html">固定リンク</a> ｜
+<a href="2006-06-06-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606064-->
+</div>
+<!-- end:2006-06-06-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-06-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-3" href="2006-06-06-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">emerge world２（手動glsa-check？）</span> [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>emerge system なのかも知れないけど。<br>
+"MASKED PACKAGE"がどうのこうのエラー回避のため<br>
+&nbsp;&nbsp;&nbsp;<a href="http://mux03.panda64.net/diary/20060308.html">http://mux03.panda64.net/diary/20060308.html</a><br>
+を読んで /etc/portage/package.unmask を書く。<br>
+</p><p>
+emerge system すると長くなりそうなので<br>
+&nbsp;&nbsp;glsa-check -p $(glsa-check -t all)<br>
+の結果から選んでやろ。<br>
+<blockquote>emerge media-libs/tiff<br>
+</blockquote>なんだか１回目失敗。２回目成功。/etc/portage/package.unmask を有効にするために<br>
+何か唱えなければならなかったのか？ 成功すればどうでもいいです。<br>
+<blockquote>emerge net-misc/rsync<br>
+emerge app-arch/tar<br>
+emerge sys-devel/flex<br>
+emerge net-misc/openssh<br>
+emerge dev-libs/openssl<br>
+emerge net-print/cups<br>
+emerge dev-lang/python<br>
+emerge sys-apps/file<br>
+emerge sys-apps/texinfo<br>
+emerge sys-apps/util-linux<br>
+emerge net-ftp/proftpd<br>
+&nbsp;&nbsp;エラー<br>
+emerge -C net-ftp/proftpd<br>
+emerge net-misc/dhcpcd<br>
+emerge app-admin/sudo<br>
+emerge -C media-libs/libungif<br>
+emerge media-libs/giflib<br>
+emerge media-libs/gdk-pixbuf<br>
+equery files libXext<br>
+&nbsp;&nbsp;なし<br>
+emerge -d app-editors/emacs<br>
+emerge -u dev-lang/ruby<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-3.html">固定リンク</a> ｜
+<a href="2006-06-06-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606063-->
+</div>
+<!-- end:2006-06-06-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-06-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-2" href="2006-06-06-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">タマゴパックのリサイクル</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>]</h3>
+<p>ふと気がつくと近所のスーパー(というかヨークなど)では<br>
+タマゴパックの回収やってないよね。いつからだ？<br>
+発泡製トレイ、牛乳紙パック、ぐらいか。<br>
+</p><p>
+このサイトをTopから読めば金持ちになれるかも。<br>
+&nbsp;&nbsp;<a href="http://setuyakumanyuaru.com/risaikuru/su-pa-.html">http://setuyakumanyuaru.com/risaikuru/su-pa-.html</a><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-2.html">固定リンク</a> ｜
+<a href="2006-06-06-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606062-->
+</div>
+<!-- end:2006-06-06-2 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-06-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-1" href="2006-06-06-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">kuttukibbsの表示変更</span> [<a href="cat_chalow.html">chalow</a>]</h3>
+<p>夜中にいろいろやってみた。<br>
+cl.conf の kuttukibbsという単語の付近を編集すると変わるみたい。<br>
+いじった形跡があるから設置した時も編集したんだな。全然覚えていない(泣<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-1.html">固定リンク</a> ｜
+<a href="2006-06-06-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606061-->
+</div>
+<!-- end:2006-06-06-1 -->
+<!-- ReplaceOnce -->
+
+
+
+
+
+
+<!--
+<div class="comment">
+<div class="caption">[
+<a href='./kuttukibbs.cgi?id=2006-06-06'>������</a> | 
+<a href="tb/tb.cgi?__mode=list&tb_id=">�ȥ�å��Хå�
+(<script language="JavaScript" src="tb/tb_data/.js">
+</script>)</a> ]</div>
+<script language="JavaScript" type="text/javascript" 
+ src="kblog/2006-06-06.js"></script>
+</div>
+--->
+</div>
+</div>
+
+<p class="calendar"></p>
+<p>最終更新時間: 2012-07-04 06:43</p>
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

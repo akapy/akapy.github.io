@@ -1,0 +1,185 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>あかぴのChangeLog by rchalow / 2004-10-04</title>
+</head>
+<body>
+<div style="width:750px">
+<p class="adminmenu">
+
+<a href="2004-10-03.html">前の日</a> /
+
+
+<a href="2004-10-05.html">次の日</a> / 
+
+<a href="index.html">最新</a> / <a href="2004-10.html">2004-10</a></p>
+<h1><a href="index.html">あかぴのChangeLog by rchalow</a> / 2004-10-04</h1>
+<p class="calendar"><a href="2004-10-01.html">01</a> <a href="2004-10-02.html">02</a> <a href="2004-10-03.html">03</a> <a href="2004-10-04.html">04</a> <a href="2004-10-05.html">05</a> <a href="2004-10-06.html">06</a> <a href="2004-10-07.html">07</a> <a href="2004-10-08.html">08</a> <a href="2004-10-09.html">09</a> <a href="2004-10-10.html">10</a> <a href="2004-10-11.html">11</a> <a href="2004-10-12.html">12</a> <a href="2004-10-13.html">13</a> <a href="2004-10-14.html">14</a> <a href="2004-10-15.html">15</a> <a href="2004-10-16.html">16</a> <a href="2004-10-17.html">17</a> <a href="2004-10-18.html">18</a> <a href="2004-10-19.html">19</a> <a href="2004-10-20.html">20</a> <a href="2004-10-21.html">21</a> <a href="2004-10-22.html">22</a> <a href="2004-10-23.html">23</a> <a href="2004-10-24.html">24</a> <a href="2004-10-25.html">25</a> <a href="2004-10-26.html">26</a> <a href="2004-10-27.html">27</a> <a href="2004-10-28.html">28</a> <a href="2004-10-29.html">29</a> <a href="2004-10-30.html">30</a> <a href="2004-10-31.html">31</a></p>
+<div class="day">
+<h2><span class="date"><a name="2004-10-04" href="2004-10-04.html">2004-10-04 Mon</a></span></h2>
+
+<div class="body">
+
+
+
+
+
+
+<!-- start:2004-10-04-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-04-5" href="2004-10-04-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">１００４の暇人</span> [<a href="cat_e8a18ce58b95.html">行動</a>]</h3>
+<p>[ゆ]8:45ごろ着。GentooのHDD簡易復旧作業。昨日の食堂調査。<br>
+便局、ガソリン、別荘でローソン弁当。<br>
+[ゆ]13:15-<br>
+15:00-16:30 歯医者、Sブランド電話<br>
+[ゆ]-19:45<br>
+金ちゃん亭 -22時ごろ<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-04-5.html">固定リンク</a> ｜
+<a href="2004-10-04-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410045-->
+</div>
+<!-- end:2004-10-04-5 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2004-10-04-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-04-4" href="2004-10-04-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ssh</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]</h3>
+<p>ssh -2 -f -N -L 2401:localhost:2401 cvs@ よりも<br>
+ssh -2 -f -L 2401:localhost:2401 cvs@ sleep 60  がいいのかな？<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-04-4.html">固定リンク</a> ｜
+<a href="2004-10-04-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410044-->
+</div>
+<!-- end:2004-10-04-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-04-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-04-3" href="2004-10-04-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>fdiskでパーティション修正。<br>
+2004-02 Live-CDで起動して fsck /dev/hda3 を２回。<br>
+mount /dev/hda3 /mnt/gentoo<br>
+cd /mnt/gentoo<br>
+tar -xvjpf /mnt/cdrom/stages/stage3-x86-2004....tar.bz2<br>
+tar -xvjf /mnt/cdrom/snapshots/portage-2004...tar.bz2 -C /mnt/gentoo/usr<br>
+emerge sync<br>
+emerge -k gcc<br>
+ダメ<br>
+ということでHDDから起動。Gentoo本のCD入れて<br>
+mount /dev/cdrom<br>
+cd /<br>
+tar -xvjpf /mnt/cdrom/stages/stage3-x86-20030910.tar.bz2<br>
+tar -xvjf /mnt/cdrom/snapshots/portage-20030911.tar.bz2 -C /usr<br>
+cp -R /mnt/cdrom/distfiles /usr/portage/distfiles<br>
+cp -a /mnt/cdrom/packages /usr/portage/packages<br>
+だめemerge関係<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-04-3.html">固定リンク</a> ｜
+<a href="2004-10-04-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410043-->
+</div>
+<!-- end:2004-10-04-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-04-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-04-2" href="2004-10-04-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">２人寂しく</span> [<a href="cat_e5aeb4e4bc9a.html">宴会</a>]</h3>
+<p>金ちゃん亭。ヒロの引っ越しも完了したようで独身生活のような。。。<br>
+ちゅらさん３観賞しました。月曜ドラマなのね。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-04-2.html">固定リンク</a> ｜
+<a href="2004-10-04-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410042-->
+</div>
+<!-- end:2004-10-04-2 -->
+<!-- ReplaceOnce -->
+
+
+
+
+
+
+<!--
+<div class="comment">
+<div class="caption">[
+<a href='./kuttukibbs.cgi?id=2004-10-04'>������</a> | 
+<a href="tb/tb.cgi?__mode=list&tb_id=">�ȥ�å��Хå�
+(<script language="JavaScript" src="tb/tb_data/.js">
+</script>)</a> ]</div>
+<script language="JavaScript" type="text/javascript" 
+ src="kblog/2004-10-04.js"></script>
+</div>
+--->
+</div>
+</div>
+
+<p class="calendar"></p>
+<p>最終更新時間: 2012-07-04 06:43</p>
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

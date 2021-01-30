@@ -1,0 +1,196 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>あかぴのChangeLog by rchalow / 2013-04-27</title>
+</head>
+<body>
+<div style="width:750px">
+<p class="adminmenu">
+
+<a href="2013-04-26.html">前の日</a> /
+
+
+<a href="2013-04-28.html">次の日</a> / 
+
+<a href="index.html">最新</a> / <a href="2013-4.html">2013-4</a></p>
+<h1><a href="index.html">あかぴのChangeLog by rchalow</a> / 2013-04-27</h1>
+<p class="calendar">01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30</p>
+<div class="day">
+<h2><span class="date"><a name="2013-04-27" href="2013-04-27.html">2013-04-27 Sat</a></span></h2>
+
+<div class="body">
+
+
+
+
+
+
+<!-- start:2013-04-27-6 -->
+<div class="section">
+<h3 class="subtitle"><a name="2013-04-27-6" href="2013-04-27-6.html"><span class="sanchor">＊</span></a> <span class="clitemheader">０４２７の暇人</span> [<a href="cat_e8a18ce58b95.html">行動</a>]</h3>
+<p>5:10ごろ？TV_ON便所<br>
+<blockquote>映りの悪いはやく起きた朝は<br>
+</blockquote>7:45ごろ起床、nexus7<br>
+朝飯8時半ごろ<br>
+カフェオレ飲みながらボーっとしたり<br>
+メールなど<br>
+Clog＋帰れま１０<br>
+昼飯13時ごろ<br>
+Clog--14:00<br>
+メール整理など<br>
+github tenforward/PlamoBuild/  の勉強<br>
+コナン<br>
+Plamo Linuxのビルドスクリプトの使い方：<a href="http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038">http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038</a><br>
+21:25ごろconfigの途中から煮込みラーメン調理、buildながら晩酌夕飯＋嵐にしあがれ<br>
+風呂--23:14<br>
+スマステながらFBなど<br>
+24:15消灯、就寝<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2013-04-27-6.html">固定リンク</a> ｜
+<a href="2013-04-27-6.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201304276-->
+</div>
+<!-- end:2013-04-27-6 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2013-04-27-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2013-04-27-1" href="2013-04-27-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">TenForwardさんのPlamoBiludスクリプトでchromiumパッケージ(Plamo-5.0_x86用)を作る</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_sc420.html">SC420</a>]</h3>
+<p>＜まず以下を読む＞<br>
+<blockquote>玩式草子─ソフトウェアとたわむれる日々<br>
+第38回　Plamo Linuxのビルドスクリプトとパッケージ管理ツール［その1］<br>
+<a href="http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038">http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038</a><br>
+</blockquote>  <br>
+<hr>＜dotconfのパッケージを作ってインストする＞<br>
+・ <a href="https://github.com/tenforward/PlamoBuild/tree/master/dotconf">https://github.com/tenforward/PlamoBuild/tree/master/dotconf</a>  からファイルをコピーする。<br>
+<blockquote>今回は ~/download/dotconf に<br>
+</blockquote>  <br>
+・ $ cd ~/download/dotconf<br>
+&nbsp;&nbsp;<br>
+・ PlamoBuild.dotconf-1.3 の内容を修正する<br>
+<blockquote>arch=i586<br>
+wget --no-check-certificate<br>
+</blockquote>  <br>
+・ $ ./PlamoBuild.dotconf-1.3 download<br>
+・ $ ./PlamoBuild.dotconf-1.3 config<br>
+・ $ ./PlamoBuild.dotconf-1.3 build<br>
+・ $ sudo ./PlamoBuild.dotconf-1.3 package<br>
+・ $ sudo updatepkg dotconf-1.3-i586-P1.txz<br>
+&nbsp;&nbsp;<br>
+<hr>＜speech-dispatcherのパッケージを作ってインストする＞<br>
+・ <a href="https://github.com/tenforward/PlamoBuild/tree/master/speech-dispatcher">https://github.com/tenforward/PlamoBuild/tree/master/speech-dispatcher</a>  からファイルをコピーする。<br>
+<blockquote>今回は ~/download/speech-dispatcher に<br>
+</blockquote>  <br>
+・ $ cd ~/download/speech-dispatcher<br>
+&nbsp;&nbsp;<br>
+・ PlamoBuild.speech-dispatcher-0.8-beta1 の内容を修正する<br>
+<blockquote>arch=i586<br>
+</blockquote>  <br>
+・ $ ./PlamoBuild.speech-dispatcher-0.8-beta1 download<br>
+・ $ ./PlamoBuild.speech-dispatcher-0.8-beta1 config<br>
+・ $ ./PlamoBuild.speech-dispatcher-0.8-beta1 build<br>
+・ $ sudo ./PlamoBuild.speech-dispatcher-0.8-beta1 package<br>
+・ $ sudo updatepkg speech-dispatcher-0.8-beta1-i586-P1.txz<br>
+&nbsp;&nbsp;<br>
+<hr>＜chromiumのパッケージを作ってインストする＞<br>
+・ <a href="https://github.com/tenforward/PlamoBuild/tree/master/chromium">https://github.com/tenforward/PlamoBuild/tree/master/chromium</a>  から全てのファイルをコピーする。<br>
+<blockquote>今回は ~/download/chromium に<br>
+</blockquote>  <br>
+・ $ cd ~/download/chromium<br>
+&nbsp;&nbsp;<br>
+・ PlamoBuild.chromium-26.0.1410.43 の内容を修正する<br>
+<blockquote>arch=i586<br>
+</blockquote>  <br>
+・ $ ./PlamoBuild.chromium-26.0.1410.43 download<br>
+・ $ ./PlamoBuild.chromium-26.0.1410.43 config<br>
+・ $ ./PlamoBuild.chromium-26.0.1410.43 build<br>
+・ $ sudo ./PlamoBuild.chromium-26.0.1410.43 package<br>
+・ $ sudo updatepkg chromium-26.0.1410.43-i586-P1.txz<br>
+&nbsp;&nbsp;<br>
+・ /usr/bin/chromium  の内容を修正する<br>
+<blockquote>lib64 を lib<br>
+</blockquote>  <br>
+<hr>以上だったと思う。<br>
+うちのSC420ではchromiumのdownload・config・build・packageで約９時間ぐらい<br>
+&nbsp;<br>
+<blockquote>Plamo-4.73環境でも新しめのchromeやchromiumのパッケージ作ってみたいと思ったが、<br>
+古いversionのソース、古いversionのrpmバイナリを探すのが大変<br>
+libの依存関係が分からん<br>
+</blockquote><hr>７７８日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2013-04-27-1.html">固定リンク</a> ｜
+<a href="2013-04-27-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201304271-->
+</div>
+<!-- end:2013-04-27-1 -->
+<!-- ReplaceOnce -->
+
+
+
+
+
+
+<!--
+<div class="comment">
+<div class="caption">[
+<a href='./kuttukibbs.cgi?id=2013-04-27'>������</a> | 
+<a href="tb/tb.cgi?__mode=list&tb_id=">�ȥ�å��Хå�
+(<script language="JavaScript" src="tb/tb_data/.js">
+</script>)</a> ]</div>
+<script language="JavaScript" type="text/javascript" 
+ src="kblog/2013-04-27.js"></script>
+</div>
+--->
+</div>
+</div>
+
+<p class="calendar"></p>
+<p>最終更新時間: 2013-06-04 07:00</p>
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

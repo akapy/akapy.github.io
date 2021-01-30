@@ -1,0 +1,80 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>１６１日後／xrandrを使う</title>
+</head>
+<body>
+
+<a href="2011-08-18-7.html">Prev</a>
+
+
+ / <a href="2011-08-19-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>１６１日後／xrandrを使う[2609-73J][Plamo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2011-08-19.html">2011-08-19</a>
+<div class="body">
+<!-- start:2011-08-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2011-08-19-1" href="2011-08-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">１６１日後／xrandrを使う</span> [<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>８月１１日ごろ2609-73Jの液晶が死んだ。<br>
+LCDが真っ白になる症状<br>
+以前からひと月に１回ぐらい発生してはいたのだが…。<br>
+&nbsp;&nbsp;<br>
+xorg.conf に<br>
+<blockquote>Option "Dualhead" "on"<br>
+</blockquote>を追加して外部モニターに出力できるようになった。<br>
+しばらく延命できるな(苦笑<br>
+&nbsp;&nbsp;<br>
+<blockquote>sudo /usr/X11R7/bin/xrandr --output LVDS --off<br>
+</blockquote>すると本体の液晶は消えて幸せ。<br>
+このマシンじゃないとメールを読む気がしないのであった。<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2011-08-19-1.html">固定リンク</a> ｜
+<a href="2011-08-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201108191-->
+</div>
+<!-- end:2011-08-19-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

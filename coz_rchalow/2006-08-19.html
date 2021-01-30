@@ -1,0 +1,213 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>あかぴのChangeLog by rchalow / 2006-08-19</title>
+</head>
+<body>
+<div style="width:750px">
+<p class="adminmenu">
+
+<a href="2006-08-18.html">前の日</a> /
+
+
+<a href="2006-08-20.html">次の日</a> / 
+
+<a href="index.html">最新</a> / <a href="2006-8.html">2006-8</a></p>
+<h1><a href="index.html">あかぴのChangeLog by rchalow</a> / 2006-08-19</h1>
+<p class="calendar">01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31</p>
+<div class="day">
+<h2><span class="date"><a name="2006-08-19" href="2006-08-19.html">2006-08-19 Sat</a></span></h2>
+
+<div class="body">
+
+
+
+
+
+
+<!-- start:2006-08-19-7 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-08-19-7" href="2006-08-19-7.html"><span class="sanchor">＊</span></a> <span class="clitemheader">０８１９の暇人</span> [<a href="cat_e8a18ce58b95.html">行動</a>]</h3>
+<p>7時過ぎまでゴロゴロ<br>
+(仕事)小牛田<br>
+旭小屋 14:20ごろ<br>
+行かなかったコインランドリー<br>
+ゆうらいふ夏祭り<br>
+さとこう亭<br>
+ようこ<br>
+旭小屋 22:35ごろ<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-08-19-7.html">固定リンク</a> ｜
+<a href="2006-08-19-7.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200608197-->
+</div>
+<!-- end:2006-08-19-7 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2006-08-19-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-08-19-5" href="2006-08-19-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">今日の天気</span> [<a href="cat_e5a4a9e6b097.html">天気</a>]</h3>
+<p>くもり。今朝は寝やすかったかも。<br>
+薄日。蒸し暑くて不快。<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-08-19-5.html">固定リンク</a> ｜
+<a href="2006-08-19-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200608195-->
+</div>
+<!-- end:2006-08-19-5 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-08-19-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-08-19-2" href="2006-08-19-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">買物ログ</span> [<a href="cat_e8b2b7e789a9e383ade382b0.html">買物ログ</a>]</h3>
+<p>労働 小牛田 9350<br>
+食費 ジュース100+500 100<br>
+雑費 げんこつ屋２人分 1575<br>
+旅交 やまと代行 2400<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-08-19-2.html">固定リンク</a> ｜
+<a href="2006-08-19-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200608192-->
+</div>
+<!-- end:2006-08-19-2 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-08-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-08-19-1" href="2006-08-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">くっつきＢＢＳスパム対策</span> [<a href="cat_chalow.html">chalow</a>]</h3>
+<p></p><p>
+<blockquote>### 書き込み<br>
+if ($mode eq "write") {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$name = $noname if ($name =~ /^\s*$/sm);<br>
+</p><p>
++ ##### スパム対策 2006/08/19<br>
++ ##### <a href="http://www.pochi.cc/~sasaki/chalow/2006-01-25-2.html">http://www.pochi.cc/~sasaki/chalow/2006-01-25-2.html</a><br>
++ # anti spam<br>
++     if (($body ne "") &amp;&amp; ($body !~ m/[\x80-\xff]/)) {die('error')};<br>
++ #####<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if ($body !~ /\A\s*\Z/m) {<br>
+escape_string(\$name);	<br>
+escape_string(\$mail_or_url);	<br>
+escape_string(\$body);<br>
+</p><p>
+$body =~ s/\r?\n/&lt;br>/gsm;<br>
+</p><p>
+my $name_tmp = $name;<br>
+if ($mail_or_url =~ /^http:\/\/$URLCHARS+$/) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;$name_tmp = qq(&lt;a href="$mail_or_url">$name&lt;/a>);<br>
+}<br>
+</p><p>
+$latest_id++;<br>
+$com_hash{$latest_id}{n} = $name_tmp;<br>
+$com_hash{$latest_id}{m} = $body;<br>
+$com_hash{$latest_id}{d} = $what_time_is_it_now;<br>
+</p><p>
++ ##### スパム対策 2006/08/19<br>
++ exit if (length($body) > 1000); # spam<br>
++ #####	<br>
+</p><p>
+write_to_logfile();	# ログファイルへの書き込み<br>
+write_to_jsfile($fn_pref.".js"); # JavaScript Feed ファイルへの書き込み<br>
+write_to_rssfile(); # RSS ファイルへの書き込み<br>
+write_to_adminlogfile(); # 管理者用ログファイルへの書き込み<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}<br>
+</blockquote><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-08-19-1.html">固定リンク</a> ｜
+<a href="2006-08-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200608191-->
+</div>
+<!-- end:2006-08-19-1 -->
+<!-- ReplaceOnce -->
+
+
+
+
+
+
+<!--
+<div class="comment">
+<div class="caption">[
+<a href='./kuttukibbs.cgi?id=2006-08-19'>������</a> | 
+<a href="tb/tb.cgi?__mode=list&tb_id=">�ȥ�å��Хå�
+(<script language="JavaScript" src="tb/tb_data/.js">
+</script>)</a> ]</div>
+<script language="JavaScript" type="text/javascript" 
+ src="kblog/2006-08-19.js"></script>
+</div>
+--->
+</div>
+</div>
+
+<p class="calendar"></p>
+<p>最終更新時間: 2012-07-04 06:43</p>
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

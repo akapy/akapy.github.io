@@ -1,0 +1,110 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>gentoo-suorces-3.14.16あたりでの無線LAN設定</title>
+</head>
+<body>
+
+<a href="2014-08-18-6.html">Prev</a>
+
+
+ / <a href="2014-08-20-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>gentoo-suorces-3.14.16あたりでの無線LAN設定[Gentoo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2014-08-19.html">2014-08-19</a>
+<div class="body">
+<!-- start:2014-08-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-08-19-1" href="2014-08-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">gentoo-suorces-3.14.16あたりでの無線LAN設定</span> [<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>最近GentooをインストールしたノートPCには<br>
+Intel(R) Centrino(R) Wireless-N + WiMAX 6150 が載ってるようなのだが、<br>
+なかなか使えるようにならなかったのでメモ<br>
+<blockquote>  <br>
+wpa_supplicant_wlp4s0="-Dnl80211" がキモだったんだろうな。。<br>
+&nbsp;&nbsp;<br>
+</blockquote>まずdmesgにwlan0が登場しないと話にならない<br>
+<blockquote>すぐにwlp4s0に改名されるけど(苦笑)<br>
+</blockquote>gentoo-suorces-3.14.16も出たようなのでカーネル再構築する<br>
+genkernel --bootloader=grub --xconfig all <br>
+&nbsp;&nbsp;&nbsp;CONFIG_IWLWIFI_DEBUGFS<br>
+&nbsp;&nbsp;&nbsp;CONFIG_IWLWIFI_DEVICE_TRACING<br>
+を有効にする<br>
+/boot に新しいカーネルができてることを確認して<br>
+grub2-mkconfig -o /boot/grub/grub.cfg<br>
+これでカーネル関係おわり<br>
+一度再起動してiwconfigとifconfig。wlp4s0的なものがあることを確認<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<br>
+emerge wpa_supplicant<br>
+&nbsp;&nbsp;<br>
+/etc/conf.d/net 編集<br>
+<blockquote>modules_wlp4s0=("wpa_supplicant")<br>
+wpa_supplicant_wlp4s0="-Dnl80211"<br>
+config_wlp4s0="dhcp"<br>
+</blockquote>  <br>
+cd /etc/init.d<br>
+ln -s net.lo net.wlp4s0<br>
+rc-update add net.wlp4s0 default<br>
+</p><p>
+これで再起動するか、<br>
+etc-update<br>
+/etc/init.d/net.wlp4s0 restart<br>
+で無線LANの電波を拾うようになるはず。<br>
+</p><p>
+</p><p>
+<hr>ibusとmozcは以下のblog通りに設定したらうまくいったみたい。<br>
+なかゆきの気まぐれ日記<br>
+&nbsp;&nbsp;Gentooで日本語入力ハマったのでメモ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://blog.nakayuki.net/linux/gentoo-japanese/">http://blog.nakayuki.net/linux/gentoo-japanese/</a><br>
+</p><p>
+<hr>１２５７日後<br>
+</p><p>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-08-19-1.html">固定リンク</a> ｜
+<a href="2014-08-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201408191-->
+</div>
+<!-- end:2014-08-19-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2014-08-29 08:22</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

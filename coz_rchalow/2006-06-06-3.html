@@ -1,0 +1,100 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>emerge world２（手動glsa-check？）</title>
+</head>
+<body>
+
+<a href="2006-06-06-2.html">Prev</a>
+
+
+ / <a href="2006-06-06-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>emerge world２（手動glsa-check？）[SOLO2300号][Gentoo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-06-06.html">2006-06-06</a>
+<div class="body">
+<!-- start:2006-06-06-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-06-3" href="2006-06-06-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">emerge world２（手動glsa-check？）</span> [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]</h3>
+<p>emerge system なのかも知れないけど。<br>
+"MASKED PACKAGE"がどうのこうのエラー回避のため<br>
+&nbsp;&nbsp;&nbsp;<a href="http://mux03.panda64.net/diary/20060308.html">http://mux03.panda64.net/diary/20060308.html</a><br>
+を読んで /etc/portage/package.unmask を書く。<br>
+</p><p>
+emerge system すると長くなりそうなので<br>
+&nbsp;&nbsp;glsa-check -p $(glsa-check -t all)<br>
+の結果から選んでやろ。<br>
+<blockquote>emerge media-libs/tiff<br>
+</blockquote>なんだか１回目失敗。２回目成功。/etc/portage/package.unmask を有効にするために<br>
+何か唱えなければならなかったのか？ 成功すればどうでもいいです。<br>
+<blockquote>emerge net-misc/rsync<br>
+emerge app-arch/tar<br>
+emerge sys-devel/flex<br>
+emerge net-misc/openssh<br>
+emerge dev-libs/openssl<br>
+emerge net-print/cups<br>
+emerge dev-lang/python<br>
+emerge sys-apps/file<br>
+emerge sys-apps/texinfo<br>
+emerge sys-apps/util-linux<br>
+emerge net-ftp/proftpd<br>
+&nbsp;&nbsp;エラー<br>
+emerge -C net-ftp/proftpd<br>
+emerge net-misc/dhcpcd<br>
+emerge app-admin/sudo<br>
+emerge -C media-libs/libungif<br>
+emerge media-libs/giflib<br>
+emerge media-libs/gdk-pixbuf<br>
+equery files libXext<br>
+&nbsp;&nbsp;なし<br>
+emerge -d app-editors/emacs<br>
+emerge -u dev-lang/ruby<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-06-3.html">固定リンク</a> ｜
+<a href="2006-06-06-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606063-->
+</div>
+<!-- end:2006-06-06-3 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,651 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>VP16C号 / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+ / <a href="cat_vp16ce58fb7.html">カテゴリ最新ページ</a> / 
+
+1 <a href="cat_vp16ce58fb7-2.html">2</a>
+
+<a href="cat_vp16ce58fb7-2.html">次ページ</a>
+
+/ page 1 (2)
+
+<h1>VP16C号 - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2009-01-21-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2009-01-21-4" href="2009-01-21-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Mail-dirのコピーなど、いろいろ</span> [<a href="cat_manmarue58fb7.html">manmaru号</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p><blockquote>vp16c6$ cd /home/old<br>
+vp16c6$ cp -pr ~/Mail ./vp16c-Mail-20090120<br>
+&nbsp;&nbsp;imap関連のdirは消したりして<br>
+vp16c6$ tar -p -s --atime-preserve --numeric-owner -cvjf vp16c-Mail.tar.bz2 ./vp16c-Mail-20090120<br>
+&nbsp;&nbsp;USBメモリにコピーして移動<br>
+vp16c6$ sudo mount /dev/sda1 /mnt/usbfm<br>
+vp16c6$ cp -p vp16c-Mail.tar.bz2 /mnt/usbfm/<br>
+</p><p>
+manmaru$ cp -p /media/sda1/vp16c-Mail.tar.bz2 ~<br>
+manmaru$ tar xjvf vp16c-Mail.tar.bz2<br>
+&nbsp;&nbsp;vp16c-Mail-20090120 から必要なdirを Mailにコピー<br>
+&nbsp;&nbsp;&nbsp;.mew-***ファイルには注意<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2009-01-21-4.html">固定リンク</a> ｜
+<a href="2009-01-21-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200901214-->
+</div>
+<!-- end:2009-01-21-4 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2007-05-06-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2007-05-06-2" href="2007-05-06-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">画面が暗い</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>ノートの画面が暗い。<br>
+バックライトがいかれたか？ どうしよう…。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2007-05-06-2.html">固定リンク</a> ｜
+<a href="2007-05-06-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200705062-->
+</div>
+<!-- end:2007-05-06-2 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-11-20-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-11-20-1" href="2006-11-20-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">hdparm</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p><blockquote>akapy@vp16c6:~$ sudo hdparm -d /dev/hda<br>
+</p><p>
+/dev/hda:<br>
+&nbsp;using_dma    =  1 (on)<br>
+akapy@vp16c6:~$ sudo hdparm -c /dev/hda<br>
+</p><p>
+/dev/hda:<br>
+&nbsp;I/O support  =  0 (default 16-bit)<br>
+akapy@vp16c6:~$ sudo hdparm -c1 /dev/hda<br>
+</p><p>
+/dev/hda:<br>
+&nbsp;setting 32-bit I/O support flag to 1<br>
+&nbsp;I/O support  =  1 (32-bit)<br>
+akapy@vp16c6:~$ sudo hdparm -c /dev/hda<br>
+</p><p>
+/dev/hda:<br>
+&nbsp;I/O support  =  1 (32-bit)<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-11-20-1.html">固定リンク</a> ｜
+<a href="2006-11-20-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200611201-->
+</div>
+<!-- end:2006-11-20-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-19-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-06-19-3" href="2006-06-19-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ＵＳＢメモリを使ってみる</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/554useusbmem.html">http://www.atmarkit.co.jp/flinux/rensai/linuxtips/554useusbmem.html</a><br>
+<blockquote>akapy@vp16c6:~$ sudo mkdir /mnt/usbfm<br>
+</p><p>
+akapy@vp16c6:~$ sudo mount -t vfat /dev/sda1 /mnt/usbfm<br>
+</p><p>
+akapy@vp16c6:~$ ls -la /mnt/usbfm/<br>
+</p><p>
+</blockquote>でも自動でマウントするのは面倒そう。fstab-syncがどうのこうの、haldが…、/etc/auto.master？？<br>
+はぁ〜。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-06-19-3.html">固定リンク</a> ｜
+<a href="2006-06-19-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200606193-->
+</div>
+<!-- end:2006-06-19-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-03-17-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-03-17-5" href="2006-03-17-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ノートのパーティション切り直しとPlamo4.2β</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>vp16cの ~ と /etc をバックアップ<br>
+<blockquote>mkdir /tmp/backup<br>
+cd /tmp/backup<br>
+sudo cp -a /etc .<br>
+sudo chown -R akapy:users etc<br>
+cd /old<br>
+tar -p -s --atime-preserve --numeric-owner -cvjf vp16c-20060317.tar.bz2 /tmp/backup<br>
+scp で適当なPCにコピー<br>
+</blockquote>とりあえずLW333にPlamo4.2βをインストしてみる。ずいぶん変わっているかもしれないので。<br>
+CDにキズが付かないことを祈りながら<br>
+<a href="http://121ware.com/support/product/catalogue/nx/lavie/19990517/index.html">http://121ware.com/support/product/catalogue/nx/lavie/19990517/index.html</a><br>
+neo2160<br>
+2M<br>
+hsync 28.00-49.31<br>
+vsync 55.00-65.00<br>
+Xorg -configure<br>
+</p><p>
+vp16cは /etc/X11R6/Xorg.confを作りなおす必要が。というか4.03をインストしたほうがいいかも。でXF86Configをコピーすべき。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-03-17-5.html">固定リンク</a> ｜
+<a href="2006-03-17-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200603175-->
+</div>
+<!-- end:2006-03-17-5 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-02-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-02-02-3" href="2006-02-02-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ext2パーティションサイズ変更</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>・PartitionMagicではうまくいかない。パラメータの認識が変。<br>
+</p><p>
+・partedを試す <a href="http://www.gnu.org/software/parted/">http://www.gnu.org/software/parted/</a><br>
+結果的にはダメだった。<br>
+check 1  でも何かメッセージが出てました。<br>
+<blockquote>This ext2 filesystem has a rather strange layout!<br>
+</blockquote>ここに対策らしきものが書いてある：<a href="http://www.9203.net/pukiwiki/index.php?cmd=read&amp;page=Tools%2Fparted">http://www.9203.net/pukiwiki/index.php?cmd=read&amp;page=Tools%2Fparted</a><br>
+確定申告終わったらパーティション切り直して再インストールするか。<br>
+</p><p>
+とりあえず、<br>
+ルート・パーティションをいじりたいのでフロッピーから起動する。<br>
+フロッピーの作り方は <a href="http://uno.ac/d/20050523.html">http://uno.ac/d/20050523.html</a><br>
+<s>２枚目の作り方がピンとこなかった。</s> 2009/5/18修正<br>
+<blockquote>[Debian][parted]partbootの作り方<br>
+</p><p>
+パーティションのサイズを変更するの続き。<br>
+</p><p>
+ルートパーティションのサイズを変更するため、parted用のブートディスク(FD)を用意する。FDは計2枚必要。<br>
+</p><p>
+$ wget <a href="http://ftp.gnu.org/gnu/parted/bootdisk/partboot.img">http://ftp.gnu.org/gnu/parted/bootdisk/partboot.img</a><br>
+$ wget <a href="http://ftp.gnu.org/gnu/parted/bootdisk/partroot-1.6.6.gz">http://ftp.gnu.org/gnu/parted/bootdisk/partroot-1.6.6.gz</a><br>
+(FD1枚目を入れる)<br>
+$ dd if=partboot.img of=/dev/fd0 bs=1440k<br>
+(FD2枚目を入れる)<br>
+$ fdformat /dev/fd0<br>
+$ cat partroot-1.6.6.gz > /dev/fd0<br>
+</p><p>
+(2006-3-21更新: FDを入れるタイミングを追記)<br>
+</blockquote>usb接続フロッピーから起動できるのもあるようだ。<br>
+&nbsp;&nbsp;<a href="http://www003.upp.so-net.ne.jp/tshiono/partboot-usb/index-jp.html">http://www003.upp.so-net.ne.jp/tshiono/partboot-usb/index-jp.html</a><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-02-02-3.html">固定リンク</a> ｜
+<a href="2006-02-02-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200602023-->
+</div>
+<!-- end:2006-02-02-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-12-31-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-12-31-5" href="2005-12-31-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">IMAP、subversion、ChangeLog</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>IMAP、ChangeLogMemo成功<br>
+&nbsp;&nbsp;stunnel-4.14<br>
+&nbsp;&nbsp;subversion-1.2.3<br>
+cannaのユーザー辞書<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-12-31-5.html">固定リンク</a> ｜
+<a href="2005-12-31-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200512315-->
+</div>
+<!-- end:2005-12-31-5 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-12-30-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-12-30-3" href="2005-12-30-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">今回やったこと覚え書き</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>Plamo4.03<br>
+・/etc/fstab編集 noatime<br>
+・/etc/sudoers編集<br>
+・/etc/inittabを編集してagetty減らす<br>
+・/etc/rc.d/init.d/wnn.r を移動してリネーム<br>
+・/etc/rc.d/init.d/alsasound を移動してリネーム<br>
+・/etc/rc.d/init.d/dracd を移動してリネーム<br>
+・sshd、nfsd停止。/etc/rc.d/rc.inet2を編集<br>
+・lpd、sj3serv、atd停止 /etc/rc.d/rc.M編集<br>
+これで不要なデーモンの処理おわり<br>
+</p><p>
+・ssh成功：ssh-keygen -t dsa；id_dsa.pubをサーバーの.ssh/authorized_keysへ追加<br>
+・scpでvp16c-20060317.tar.bz2をもってくる。<br>
+・/etc/X11/XF86Configをコピー<br>
+・~/.xinitrc_twmをコピー<br>
+・.mew.el、Mailディレクトリごとコピー<br>
+・.emacsの編集<br>
+&nbsp;&nbsp;&nbsp;&nbsp;(setq mew-icon-directory "/usr/share/emacs/site-lisp/mew/etc")<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-12-30-3.html">固定リンク</a> ｜
+<a href="2005-12-30-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200512303-->
+</div>
+<!-- end:2005-12-30-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-05-27-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-05-27-3" href="2005-05-27-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">VP16Cダイアルアップできず</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>パルス信号が出ない。トーン信号は出るのだが。<br>
+ATDPがうまくいっていないんだろうな。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-05-27-3.html">固定リンク</a> ｜
+<a href="2005-05-27-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200505273-->
+</div>
+<!-- end:2005-05-27-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-17-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-17-1" href="2005-01-17-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">チューニング</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_ooo.html">Ooo</a>]</h3>
+<p>topの動作を見ている限り、やらなくていいのかも。<br>
+考え過ぎなのかもしれない。でもマシンが非力だからなんとかしたい。<br>
+</p><p>
+＜Openoffice.org＞<br>
+チューニング方法が見つからない。<br>
+<s>関係ないかもしれないが次のファイルをいじると何かできるかも。</s>これ1.0あたりの話みたい。common.xmlなんて無い。似ているファイルも無い。<br>
+&nbsp;&nbsp;&nbsp;<s><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/339noapplybtn.html">http://www.atmarkit.co.jp/flinux/rensai/linuxtips/339noapplybtn.html</a>より</s><br>
+<blockquote>OpenOffice.orgを終了した状態で、設定ファイルを変更する。設定ファイルは、~/OpenOffice.org/user/config/registry/instance/org/openoffice/<br>
+Office/Common.xmlだ。<br>
+</blockquote><br>
+＜firefox＞<br>
+firefox-binの数を減らしたいんだけど。。。よく分からん。<br>
+ネスケの時はdot.mozillaかなんかを編集すると減ったんだけどね。<br>
+今はメモリの状態で自動的に調整される？ そんな感じ。<br>
+高速化？<a href="http://firefox.geckodev.org/?cmd=read&amp;page=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0&amp;word=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0">http://firefox.geckodev.org/?cmd=read&amp;page=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0&amp;word=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0</a><br>
+./mozilla/firefox/???.default/user.js 作成・編集<br>
+<blockquote>user_pref("browser.cache.memory.capacity", 65536);<br>
+user_pref("browser.cache.disk_cache_ssl", true);<br>
+user_pref("browser.xul.error_pages.enabled", true);<br>
+user_pref("content.interrupt.parsing", true);<br>
+user_pref("content.max.tokenizing.time", 3000000);<br>
+user_pref("content.maxtextrun", 8191);<br>
+user_pref("content.notify.backoffcount", 5);<br>
+user_pref("content.notify.interval", 750000);<br>
+user_pref("content.notify.ontimer", true);<br>
+user_pref("content.switch.threshold", 750000);<br>
+// user_pref("network.http.max-connections", 32);<br>
+user_pref("network.http.max-connections", 4);<br>
+user_pref("network.http.max-connections-per-server", 8);<br>
+user_pref("network.http.max-persistent-connections-per-proxy", 8);<br>
+user_pref("network.http.max-persistent-connections-per-server", 4);<br>
+user_pref("network.http.pipelining", true);<br>
+user_pref("network.http.pipelining.maxrequests", 8);<br>
+user_pref("network.http.proxy.pipelining", true);<br>
+user_pref("nglayout.initialpaint.delay", 750);<br>
+user_pref("plugin.expose_full_path", true);<br>
+user_pref("signed.applets.codebase_principal_support", true);<br>
+</blockquote>それから<strong>シングルウインドウモード</strong><br>
+<a href="http://level.s69.xrea.com/mozilla/tips.html#aboutconfig">http://level.s69.xrea.com/mozilla/tips.html#aboutconfig</a><br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-17-1.html">固定リンク</a> ｜
+<a href="2005-01-17-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501171-->
+</div>
+<!-- end:2005-01-17-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-15-17 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-15-17" href="2005-01-15-17.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Jcode、HTML-Template</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>とりあえず <a href="http://openlab.jp/Jcode/index-j.html">http://openlab.jp/Jcode/index-j.html</a>を読んでCPANしてみた<br>
+<blockquote>$ perl -MCPAN -e shell<br>
+# install Jcode<br>
+</blockquote>でも CPANのWebから検索ダウンロードだけしてして<br>
+自分でインストールしたほうが分かりやすいようだ。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-15-17.html">固定リンク</a> ｜
+<a href="2005-01-15-17.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--2005011517-->
+</div>
+<!-- end:2005-01-15-17 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-14-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-14-2" href="2005-01-14-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">その他 時計を合わせたい</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>Plamo  contrib  ntp??.tgzをインストール。<br>
+<blockquote>ntpdate -s clock.nc.fukuoka-u.ac.jp<br>
+hwclock -w<br>
+または<br>
+ntpdを起動<br>
+ntpq -pで確認。<br>
+hwclock -w<br>
+</p><p>
+その辺を ajtime.sh<br>
+</blockquote><a href="http://homepage1.nifty.com/Que/plamo/ntp/">http://homepage1.nifty.com/Que/plamo/ntp/</a><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-14-2.html">固定リンク</a> ｜
+<a href="2005-01-14-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501142-->
+</div>
+<!-- end:2005-01-14-2 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-14-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-14-3" href="2005-01-14-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ローカルＬＡＮでssh</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</h3>
+<p>SOLO2300からVP16Cへssh<br>
+sshdは手動で起動するということで。<br>
+<blockquote># /usr/sbin/sshd<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-14-3.html">固定リンク</a> ｜
+<a href="2005-01-14-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501143-->
+</div>
+<!-- end:2005-01-14-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-12-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-12-3" href="2005-01-12-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">proftpd</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>ftpサーバーとして使うには /etc/hosts.allow を編集。<br>
+<a href="http://sky-mue.jp/linux/plamo/p-install7.html#telnet-ftp">http://sky-mue.jp/linux/plamo/p-install7.html#telnet-ftp</a><br>
+<blockquote>#ALL : LOCAL<br>
+ALL : 192.168.103.0/255.255.255.0:ALLOW<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-12-3.html">固定リンク</a> ｜
+<a href="2005-01-12-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501123-->
+</div>
+<!-- end:2005-01-12-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-07-4 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-07-4" href="2005-01-07-4.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ダイアルアップ接続</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>6:00--21:00 接続可能時間。<br>
+一般ユーザーで接続すること。？？<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-07-4.html">固定リンク</a> ｜
+<a href="2005-01-07-4.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501074-->
+</div>
+<!-- end:2005-01-07-4 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-21-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-12-21-1" href="2004-12-21-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">firefox</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>firefox-1.0.installer.tar.gzインスト<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-12-21-1.html">固定リンク</a> ｜
+<a href="2004-12-21-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200412211-->
+</div>
+<!-- end:2004-12-21-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-01-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-12-01-3" href="2004-12-01-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">acrobat</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>ar40jpn.exeインストール<br>
+すでにadobe.co.jp上にはないのね。<br>
+今日はコレガのルーター設定、問題なさそう。resolv.confにnameserver行が出てるから。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-12-01-3.html">固定リンク</a> ｜
+<a href="2004-12-01-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200412013-->
+</div>
+<!-- end:2004-12-01-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-01-6 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-12-01-6" href="2004-12-01-6.html"><span class="sanchor">＊</span></a> <span class="clitemheader">muleの設定</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_plamo.html">Plamo</a>]</h3>
+<p>google "emacs フォント misc" で<br>
+&nbsp;&nbsp;<a href="http://web.kyoto-inet.or.jp/people/jeanne/linux/plamo30/plamo30inst-memo-3.html">http://web.kyoto-inet.or.jp/people/jeanne/linux/plamo30/plamo30inst-memo-3.html</a><br>
+を読み、# 中谷千絵さんちか。<br>
+&nbsp;&nbsp;&nbsp;ls -la /usr/X11R6/lib/X11/fonts/misc/<br>
+&nbsp;&nbsp;&nbsp;less /usr/X11R6/lib/X11/fonts/misc/fonts.alias<br>
+する。<br>
+&nbsp;<br>
+dot.emacs<br>
+<blockquote>  やめ      追記(setq default-frame-alist<br>
+&nbsp;&nbsp;やめ      追記   (append '((font . "fontset-12")) default-frame-alist))<br>
+&nbsp;&nbsp;やめ   ＆<br>
+&nbsp;&nbsp;やめ      有効化        ;;; フォントのスケーラブルをしない<br>
+&nbsp;&nbsp;やめ      有効化(setq scalable-fonts-allowed nil)<br>
+</blockquote><br>
+dot.Xdefaults<br>
+<blockquote>   変更 Emacs*geometry:  145x54+60+5<br>
+&nbsp;&nbsp;&nbsp;変更 Emacs.font:		-misc-fixed-medium-r-normal--13-120-75-75-c-80-iso8859-1<br>
+</blockquote><br>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-12-01-6.html">固定リンク</a> ｜
+<a href="2004-12-01-6.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200412016-->
+</div>
+<!-- end:2004-12-01-6 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-10-26-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2004-10-26-2" href="2004-10-26-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">IMAP over SSL ShurikenPro3</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>調子に乗ってWinでもIMAPSできないものかとstunnelとShurikenPro3の組合せを試しましたがダメでした。<br>
+Winは捨てです。(笑)<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2004-10-26-2.html">固定リンク</a> ｜
+<a href="2004-10-26-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200410262-->
+</div>
+<!-- end:2004-10-26-2 -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2012-07-04 06:43
+
+</div></div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

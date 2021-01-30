@@ -1,0 +1,99 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>printersetup</title>
+</head>
+<body>
+
+<a href="2005-11-22-3.html">Prev</a>
+
+
+ / <a href="2005-11-23-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>printersetup[Plamo][NetSt号]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2005-11-23.html">2005-11-23</a>
+<div class="body">
+<!-- start:2005-11-23-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-11-23-1" href="2005-11-23-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">printersetup</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</h3>
+<p>ひさしぶりにLinuxで印刷などしてみようかと。<br>
+&nbsp;# printersetup<br>
+<blockquote>#<br>
+# Copyright (c) 1983 Regents of the University of California.<br>
+# All rights reserved.<br>
+#<br>
+--snip<br>
+</p><p>
+txt|text:\<br>
+:lp=/dev/lp0:\<br>
+:sd=/usr/spool/txt:\<br>
+:lf=/usr/spool/txt/log:\<br>
+:af=/usr/spool/txt/acct:\<br>
+:if=/usr/bin/txt-if:\<br>
+:mx#0:\<br>
+:sh: <br>
+</p><p>
+lp|ps|PostScript:\<br>
+:lp=/dev/lp0:\<br>
+:sd=/usr/spool/lp:\<br>
+:lf=/usr/spool/lp/log:\<br>
+:af=/usr/spool/lp/acct:\<br>
+:if=/usr/bin/lp-if:\<br>
+:mx#0:\<br>
+:sh:<br>
+</p><p>
+</blockquote>PSファイルの場合：lpr -Plp<br>
+TXTファイルの場合：lpr -Ptxt<br>
+</p><p>
+現在ってescpfは見つからないもんなのか？？<br>
+FreeBSDのPortsにはあるような気がするけど。。<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-11-23-1.html">固定リンク</a> ｜
+<a href="2005-11-23-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200511231-->
+</div>
+<!-- end:2005-11-23-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

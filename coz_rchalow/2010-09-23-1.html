@@ -1,0 +1,96 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>続SC420にGentoo／パワージューサー</title>
+</head>
+<body>
+
+<a href="2010-09-22-7.html">Prev</a>
+
+
+ / <a href="2010-09-23-3.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>続SC420にGentoo／パワージューサー[SC420][Gentoo][ひとりごと]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2010-09-23.html">2010-09-23</a>
+<div class="body">
+<!-- start:2010-09-23-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2010-09-23-1" href="2010-09-23-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">続SC420にGentoo／パワージューサー</span> [<a href="cat_sc420.html">SC420</a>][<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>]</h3>
+<p>墓参りも済んでるし、雨がひどいし、家から出ない祝日。<br>
+<blockquote>emerge -pv --update --deep --newuse world<br>
+&nbsp;&nbsp;[blocks B  ]lzma-utilsなので<br>
+emerge -C lzma-utils<br>
+そしていよいよ<br>
+emerge --update --deep --newuse world<br>
+&nbsp;&nbsp;１３３個更新されるみたい。<br>
+emerge --depclean<br>
+revdep-rebuild<br>
+etc-update<br>
+</blockquote>余計なモジュールが起動されるのを減らす<br>
+<blockquote>genkernel の ロードする kernel モジュールを最低限にする。<br>
+&nbsp;&nbsp;&nbsp;<a href="http://insnvlovn.blogspot.com/2009/11/genkernellsmod.html">http://insnvlovn.blogspot.com/2009/11/genkernellsmod.html</a><br>
+</blockquote>/etc/modules.autoload.d/kernel-2.6 修正<br>
+/usr/share/genkernel/arch/x86/modules_load も修正<br>
+<blockquote>sudo genkernel initramfs<br>
+</blockquote>emerge xorg-x11 して xorgが起動するとこまで終りました。<br>
+再度<br>
+<blockquote>emerge --update --deep --newuse world<br>
+&nbsp;&nbsp;５個更新<br>
+emerge --depclean<br>
+revdep-rebuild<br>
+</blockquote>普段使いはPlamoなので暇ができたらまたいじりましょ。<br>
+<hr>パワージューサーたぶん到着しただろう。<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002L3ST3Y/akapy-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B002L3ST3Y.09.MZZZZZZZ.jpg"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B002L3ST3Y/akapy-22/ref=nosim"></a><br>
+9/24追記：<br>
+親戚んちでは、誰から送られてきたものか分からず大騒ぎになっていたそうだ。<br>
+業者に電話して確認したとのこと(苦笑<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2010-09-23-1.html">固定リンク</a> ｜
+<a href="2010-09-23-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201009231-->
+</div>
+<!-- end:2010-09-23-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

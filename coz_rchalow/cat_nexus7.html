@@ -1,0 +1,285 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Nexus7 / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>Nexus7 - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2017-01-17-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2017-01-17-1" href="2017-01-17-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</span> [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>WiFiなNexus7(2012)<br>
+調子が悪いのでAndroid4.4.4に戻してroot化などいじり倒してたらOSが起動しなくなった。<br>
+　・googleロゴ画面から進まない<br>
+　・ブートローダー画面は表示できる<br>
+　・RecoveryModeを試したが先に進まない<br>
+　<br>
+Lubuntu-PCにUSB接続してlsusbしてみると<br>
+<blockquote>Bus 002 Device 064: ID 18d1:4e40 Google Inc. Nexus 7 (fastboot)<br>
+</blockquote>Nexus7単体だけでは復旧できない状態のようだ。<br>
+　<br>
+　<br>
+準備<br>
+・電源の入るNexus7(2012)本体 (unlock済み)<br>
+・ちゃんとしたmicroUSBケーブル(重要！)<br>
+・Lubuntu16.04(32bit)なPC<br>
+・以下を読む<br>
+　　・<a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165">http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165</a><br>
+　　・<a href="http://mariyudu.hatenablog.com/entry/2015/09/07/215045">http://mariyudu.hatenablog.com/entry/2015/09/07/215045</a><br>
+　　・<a href="http://d.hatena.ne.jp/moremagic/20160228/1456663922">http://d.hatena.ne.jp/moremagic/20160228/1456663922</a><br>
+　<br>
+まず<br>
+$ sudo apt-get install android-tools-fastboot<br>
+今回は使わないけどついでに<br>
+$ sudo apt-get install android-tools-adb<br>
+　<br>
+/etc/udev/rules.d/52-android.rulesを編集<br>
+　(うちの環境では51-android.rulesじゃなかった)<br>
+<blockquote>SUBSYSTEM＝＝"usb", ATTRS{idProduct}＝＝"4e40", MODE＝"0666", GROUP＝"plugdev"<br>
+　　　　　　(諸事情でわざと半角文字じゃないイコール文字)<br>
+</blockquote>　<br>
+$ sudo chmod 644 /etc/udev/rules.d/52-android.rules<br>
+$ sudo /etc/init.d/udev restart<br>
+　<br>
+$ fastboot devices<br>
+　<br>
+で接続を確認<br>
+　<br>
+　<br>
+適当な作業ディレクトリを作ってイメージファイルをダウンロード<br>
+今回は<br>
+<a href="https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip">https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip</a><br>
+　<br>
+$ mkdir work<br>
+$ cd work<br>
+$ unzip nakasi-ktu84p-factory-9482e892.zip<br>
+$ cd nakasi-ktu84p<br>
+$ ./flash-all.sh<br>
+　<br>
+運が良ければ？ これでリカバリーできる。<br>
+細部は忘れたがだいたいこんな感じだったかと(苦笑)<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2017-01-17-1.html">固定リンク</a> ｜
+<a href="2017-01-17-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201701171-->
+</div>
+<!-- end:2017-01-17-1 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2014-06-28-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-06-28-1" href="2014-06-28-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">献血３６回／液晶修理から戻ってきたNexus7</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>暇だったので献血に行ってきた。<br>
+往復５時間足らずのアホな行動<br>
+献血カードには３６回と表示されてます。<br>
+イオンは すごい混んでるのに献血車は閑散としてたな。<br>
+骨髄バンクの方に仙女の里村さんが来てたようだけど、そっちの成果はどうだったのか。。<br>
+</p><p>
+<hr><a href="2014-06-18-1.html">[2014-06-18-1]</a>に修理に出したNexus7、<br>
+思ったより早く帰ってきました。<br>
+19時すぎ、風呂に入ってる時だったので余計にビックリ！<br>
+LCDだけ2013版になったらしい(笑)<br>
+<table><tr><td> LCD部品代 <td>  8,000円<tr><td> 検証料金  <td>  4,000円<tr><td> 修理料金  <td>  2,000円<tr><td> 消費税    <td>  1,120円<tr><td> 合計      <td> 15,120円</table>  <br>
+リカバリーされてたので初期設定とシステムアップデート<br>
+アプリは勝手にインストされた。<br>
+LINEデータのバックアップなんてしなかったので過去のやりとりは消滅<br>
+</p><p>
+<hr>１２０５日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-06-28-1.html">固定リンク</a> ｜
+<a href="2014-06-28-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201406281-->
+</div>
+<!-- end:2014-06-28-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2014-06-18-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-06-18-1" href="2014-06-18-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Nexus7修理</span> [<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>5/17に落下させてしまって、打ちどころが悪く液晶割れ<br>
+<blockquote>Nexus7(2013)を買うべきか悩んだのは言うまでもない(苦笑)<br>
+</blockquote>ASUSのサポートにメールしたら着払いで送れとのこと<br>
+買った日付の分かるレシート類を同封<br>
+修理依頼確認書も。<br>
+&nbsp;&nbsp;<br>
+<s>たぶん10,800円で修理できる模様</s><br>
+見積り結果の電話きた。15,8?0円と聞こえた。<br>
+</p><p>
+<hr>１１９５日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="referer"><span>Referrer (Inside):
+<a href="2014-06-28-1.html">[2014-06-28-1]</a></span></div>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-06-18-1.html">固定リンク</a> ｜
+<a href="2014-06-18-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201406181-->
+</div>
+<!-- end:2014-06-18-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2013-12-05-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2013-12-05-1" href="2013-12-05-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">おいっち(おいかわあきひろ)とDecoretta</span> [<a href="cat_efbca6efbcade383a9e382b8e382aa.html">ＦＭラジオ</a>][<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>12/4放送のFrick_Motionの中で おいっちが紹介してたアプリ<br>
+運転中で名前を覚えられなくて探してた。<br>
+オフィシャルなFacebookで回答をいただいた。<br>
+ありがとう＞担当の方<br>
+&nbsp;&nbsp;<br>
+Decoretta<br>
+&nbsp;&nbsp;&nbsp;<a href="http://jp.access-company.com/files/legacy/products/nflife/decoretta/index.html">http://jp.access-company.com/files/legacy/products/nflife/decoretta/index.html</a><br>
+デコメの一種かな？<br>
+相手も同等のソフトが入ってないと見られないのか。<br>
+ま、試してみるか。<br>
+リアルな年賀状じゃない方がいい相手にはピッタリとか思ったのだが。<br>
+<hr>１０００日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2013-12-05-1.html">固定リンク</a> ｜
+<a href="2013-12-05-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201312051-->
+</div>
+<!-- end:2013-12-05-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2013-05-13-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2013-05-13-1" href="2013-05-13-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ポケモンキーボード</span> [<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>昨日の朝に発注をかけたポケモンキーボードが到着した。<br>
+<a href="https://picasaweb.google.com/lh/photo/YRF3_tiVmhQ3ZmuG7Ettdo2ncPELi18Uy9eejp7QL5o?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-QSlbtr9k3Io/UZFKgvgaklI/AAAAAAAAIJU/k1rMbTnceAE/s400/P1070311.JPG" alt="画像"></a><br>
+やっぱテキスト入力はキーボードに限るね。<br>
+たまに誤入力(勝手に確定されてしまう)もあるけどストレスが減る〜！<br>
+設定をいじってたら面倒になったので ATOK_for_Androidも買ってみた。1,500円<br>
+日本語106/109キーボードレイアウトというアプリも入れてみた。<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005VN4XX6/akapy-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B005VN4XX6.09.MZZZZZZZ.jpg"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005VN4XX6/akapy-22/ref=nosim"></a><br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005VN4XX6/akapy-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B005VN4XX6.09.MZZZZZZZ.jpg"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005VN4XX6/akapy-22/ref=nosim">俗にポケモンキーボードと呼ばれるもの</a><br>
+</p><p>
+<hr>７９４日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2013-05-13-1.html">固定リンク</a> ｜
+<a href="2013-05-13-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201305131-->
+</div>
+<!-- end:2013-05-13-1 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2013-01-19-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2013-01-19-1" href="2013-01-19-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">Nexus7(2012)</span> [<a href="cat_nexus7.html">Nexus7</a>][<a href="cat_e5aeb4e4bc9a.html">宴会</a>]</h3>
+<p>石巻のK'sデンキでNexus7(2012)を買った。<br>
+久しぶりに高額な買物<br>
+ソープより安いけど(笑)<br>
+<a href="https://picasaweb.google.com/lh/photo/joWFryIp1Hn3RD7GNr63kdMTjNZETYmyPJy0liipFm0?feat=embedwebsite"><img src="https://lh6.googleusercontent.com/-5Fj6XPEwl1o/UP5KbtE90II/AAAAAAAAHkQ/f5o2uDLfHu8/s288/%25E7%2594%25BB%25E5%2583%258F-0014.jpg" alt="画像"></a><br>
+鹿島台で充電だけ<br>
+<hr>ちーちゃんちの祝い事の招待状などの準備<br>
+そのまま宴会<br>
+ついでに涌谷の飲み屋に新年の挨拶<br>
+<hr>６２０日後<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2013-01-19-1.html">固定リンク</a> ｜
+<a href="2013-01-19-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201301191-->
+</div>
+<!-- end:2013-01-19-1 -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2018-01-05 09:01
+
+</div></div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

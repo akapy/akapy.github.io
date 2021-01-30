@@ -1,0 +1,96 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>０８１６の暇人</title>
+</head>
+<body>
+
+<a href="2014-08-16-4.html">Prev</a>
+
+
+ / <a href="2014-08-17-1.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>０８１６の暇人[行動]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2014-08-16.html">2014-08-16</a>
+<div class="body">
+<!-- start:2014-08-16-6 -->
+<div class="section">
+<h3 class="subtitle"><a name="2014-08-16-6" href="2014-08-16-6.html"><span class="sanchor">＊</span></a> <span class="clitemheader">０８１６の暇人</span> [<a href="cat_e8a18ce58b95.html">行動</a>]</h3>
+<p>4:00尿意でも寝る<br>
+5:30起床、メール<br>
+<blockquote>茶のみアズマさん<br>
+</blockquote>朝飯6:35<br>
+Clog、BS花子とアン、さわこ朝、Nexus7<br>
+8:30出、セブン銀行まつかわ、本屋敷、もどり9:16<br>
+茶の間掃除中。台所でterutoメールと新聞--9:57<br>
+Lubuntuのdmesgを確認<br>
+<blockquote>dmesgのiwlwifi部分が違っているのが分かったのでカーネル再構築<br>
+</blockquote>昼飯(４人)<br>
+生活笑百科、昼寝--13:10<br>
+官兵衛<br>
+<blockquote>.configが編集されてない？ もう１回genkernelか？  違う新しいカーネルがgrubに登録されてないだけだ<br>
+</blockquote>新しいカーネルを登録：grub2-mkconfig -o /boot/grub/grub.cfg    --15:28<br>
+CONFIG_IWLWIFI_DEBUGFSはdisabledでいいのに勘違いで.configの変更で悩む＋カーネル消してしまう(泣) <br>
+emerge -uD world  で、まんま<br>
+3.14.16消してしまって再	genkernel --bootloader=grub --xconfig all  17:30--<br>
+再度grub2-mkconfig -o /boot/grub/grub.cfg。成功18:03<br>
+夕飯18:10ごろ<br>
+風呂19:10--19:27<br>
+志村動物園<br>
+<blockquote>19:35ごろ姪が帰省<br>
+</blockquote>関ジャニ仕分け<br>
+20:35ごろ部屋<br>
+スーパードライ350ながらめちゃイケ<br>
+BS映画「メダリオン」(ジャッキーチェン)ながら就寝<br>
+1:20ごろ便所<br>
+<blockquote>夜中2時すぎには雨の音<br>
+</blockquote><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2014-08-16-6.html">固定リンク</a> ｜
+<a href="2014-08-16-6.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201408166-->
+</div>
+<!-- end:2014-08-16-6 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2014-08-27 13:29</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

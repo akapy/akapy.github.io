@@ -1,0 +1,118 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</title>
+</head>
+<body>
+
+<a href="2017-01-16-5.html">Prev</a>
+
+
+ / <a href="2017-01-18-1.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)[Linux][Lubuntu][Nexus7]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2017-01-17.html">2017-01-17</a>
+<div class="body">
+<!-- start:2017-01-17-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2017-01-17-1" href="2017-01-17-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</span> [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]</h3>
+<p>WiFiなNexus7(2012)<br>
+調子が悪いのでAndroid4.4.4に戻してroot化などいじり倒してたらOSが起動しなくなった。<br>
+　・googleロゴ画面から進まない<br>
+　・ブートローダー画面は表示できる<br>
+　・RecoveryModeを試したが先に進まない<br>
+　<br>
+Lubuntu-PCにUSB接続してlsusbしてみると<br>
+<blockquote>Bus 002 Device 064: ID 18d1:4e40 Google Inc. Nexus 7 (fastboot)<br>
+</blockquote>Nexus7単体だけでは復旧できない状態のようだ。<br>
+　<br>
+　<br>
+準備<br>
+・電源の入るNexus7(2012)本体 (unlock済み)<br>
+・ちゃんとしたmicroUSBケーブル(重要！)<br>
+・Lubuntu16.04(32bit)なPC<br>
+・以下を読む<br>
+　　・<a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165">http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165</a><br>
+　　・<a href="http://mariyudu.hatenablog.com/entry/2015/09/07/215045">http://mariyudu.hatenablog.com/entry/2015/09/07/215045</a><br>
+　　・<a href="http://d.hatena.ne.jp/moremagic/20160228/1456663922">http://d.hatena.ne.jp/moremagic/20160228/1456663922</a><br>
+　<br>
+まず<br>
+$ sudo apt-get install android-tools-fastboot<br>
+今回は使わないけどついでに<br>
+$ sudo apt-get install android-tools-adb<br>
+　<br>
+/etc/udev/rules.d/52-android.rulesを編集<br>
+　(うちの環境では51-android.rulesじゃなかった)<br>
+<blockquote>SUBSYSTEM＝＝"usb", ATTRS{idProduct}＝＝"4e40", MODE＝"0666", GROUP＝"plugdev"<br>
+　　　　　　(諸事情でわざと半角文字じゃないイコール文字)<br>
+</blockquote>　<br>
+$ sudo chmod 644 /etc/udev/rules.d/52-android.rules<br>
+$ sudo /etc/init.d/udev restart<br>
+　<br>
+$ fastboot devices<br>
+　<br>
+で接続を確認<br>
+　<br>
+　<br>
+適当な作業ディレクトリを作ってイメージファイルをダウンロード<br>
+今回は<br>
+<a href="https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip">https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip</a><br>
+　<br>
+$ mkdir work<br>
+$ cd work<br>
+$ unzip nakasi-ktu84p-factory-9482e892.zip<br>
+$ cd nakasi-ktu84p<br>
+$ ./flash-all.sh<br>
+　<br>
+運が良ければ？ これでリカバリーできる。<br>
+細部は忘れたがだいたいこんな感じだったかと(苦笑)<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2017-01-17-1.html">固定リンク</a> ｜
+<a href="2017-01-17-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--201701171-->
+</div>
+<!-- end:2017-01-17-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2017-01-30 06:34</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

@@ -1,0 +1,97 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>ext2パーティションサイズ変更</title>
+</head>
+<body>
+
+<a href="2006-02-02-1.html">Prev</a>
+
+
+ / <a href="2006-02-02-4.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>ext2パーティションサイズ変更[Plamo][VP16C号]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2006-02-02.html">2006-02-02</a>
+<div class="body">
+<!-- start:2006-02-02-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-02-02-3" href="2006-02-02-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ext2パーティションサイズ変更</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>]</h3>
+<p>・PartitionMagicではうまくいかない。パラメータの認識が変。<br>
+</p><p>
+・partedを試す <a href="http://www.gnu.org/software/parted/">http://www.gnu.org/software/parted/</a><br>
+結果的にはダメだった。<br>
+check 1  でも何かメッセージが出てました。<br>
+<blockquote>This ext2 filesystem has a rather strange layout!<br>
+</blockquote>ここに対策らしきものが書いてある：<a href="http://www.9203.net/pukiwiki/index.php?cmd=read&amp;page=Tools%2Fparted">http://www.9203.net/pukiwiki/index.php?cmd=read&amp;page=Tools%2Fparted</a><br>
+確定申告終わったらパーティション切り直して再インストールするか。<br>
+</p><p>
+とりあえず、<br>
+ルート・パーティションをいじりたいのでフロッピーから起動する。<br>
+フロッピーの作り方は <a href="http://uno.ac/d/20050523.html">http://uno.ac/d/20050523.html</a><br>
+<s>２枚目の作り方がピンとこなかった。</s> 2009/5/18修正<br>
+<blockquote>[Debian][parted]partbootの作り方<br>
+</p><p>
+パーティションのサイズを変更するの続き。<br>
+</p><p>
+ルートパーティションのサイズを変更するため、parted用のブートディスク(FD)を用意する。FDは計2枚必要。<br>
+</p><p>
+$ wget <a href="http://ftp.gnu.org/gnu/parted/bootdisk/partboot.img">http://ftp.gnu.org/gnu/parted/bootdisk/partboot.img</a><br>
+$ wget <a href="http://ftp.gnu.org/gnu/parted/bootdisk/partroot-1.6.6.gz">http://ftp.gnu.org/gnu/parted/bootdisk/partroot-1.6.6.gz</a><br>
+(FD1枚目を入れる)<br>
+$ dd if=partboot.img of=/dev/fd0 bs=1440k<br>
+(FD2枚目を入れる)<br>
+$ fdformat /dev/fd0<br>
+$ cat partroot-1.6.6.gz > /dev/fd0<br>
+</p><p>
+(2006-3-21更新: FDを入れるタイミングを追記)<br>
+</blockquote>usb接続フロッピーから起動できるのもあるようだ。<br>
+&nbsp;&nbsp;<a href="http://www003.upp.so-net.ne.jp/tshiono/partboot-usb/index-jp.html">http://www003.upp.so-net.ne.jp/tshiono/partboot-usb/index-jp.html</a><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-02-02-3.html">固定リンク</a> ｜
+<a href="2006-02-02-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200602023-->
+</div>
+<!-- end:2006-02-02-3 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>

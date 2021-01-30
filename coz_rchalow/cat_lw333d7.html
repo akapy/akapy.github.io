@@ -1,0 +1,238 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>LW333D7 / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>LW333D7 - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2006-03-21-7 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-03-21-7" href="2006-03-21-7.html"><span class="sanchor">＊</span></a> <span class="clitemheader">LW333にPlamo4.2β２</span> [<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>LW333<br>
+実家にて<br>
+subversionコンパイル、インストール<br>
+ChangeLog ＯＫ！<br>
+stunnelコンパイル、インストール<br>
+IMAPもＯＫ！<br>
+</p><p>
+やっぱ IDEコントローラが(HDDが？)エラーを起こすことがあるようだ。<br>
+熱暴走かな？<br>
+ext3-fsにしてるのでデータはある程度だいじょうぶだろう。<br>
+でもshutdownコマンドが使えなくなるのは気持ち悪い。<br>
+</p><p>
+kazehakase-0.3.5をインスト<br>
+/etc/login.defs にPATH追加<br>
+</p><p>
+mew4.2.53が忘れられないのでmew4.2消してみる。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-03-21-7.html">固定リンク</a> ｜
+<a href="2006-03-21-7.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200603217-->
+</div>
+<!-- end:2006-03-21-7 -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2006-03-20-6 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-03-20-6" href="2006-03-20-6.html"><span class="sanchor">＊</span></a> <span class="clitemheader">LW333にPlamo4.2β２</span> [<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>LW333<br>
+<blockquote>sudo chown -R root:root /home/old/vp16c/etc<br>
+</blockquote>ssh OK!<br>
+mew OK! でもフォントがデカ過ぎ<br>
+いろいろダウンロード<br>
+</p><p>
+実家にて<br>
+subversionコンパイル、インストール<br>
+ChangeLog ＯＫ！<br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-03-20-6.html">固定リンク</a> ｜
+<a href="2006-03-20-6.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200603206-->
+</div>
+<!-- end:2006-03-20-6 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-03-18-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-03-18-5" href="2006-03-18-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">LW333にPlamo4.2β</span> [<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>LW333<br>
+<blockquote>ssh-keygen -t dsa<br>
+/etc/sudoers 編集(ファイルの所有者に気を付けましょうroot:root)<br>
+sudo mkdir /home/old<br>
+sudo chown akapy:users /home/old<br>
+scp -p akapy@PC:/home/akapy/download/vp16c-20060317.tar.bz2 /home/old<br>
+cd /home/old<br>
+tar -xvjf vp16c-20060317.tar.bz2<br>
+mv tmp/buckup vp16c<br>
+rm -r tmp<br>
+</blockquote><br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-03-18-5.html">固定リンク</a> ｜
+<a href="2006-03-18-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200603185-->
+</div>
+<!-- end:2006-03-18-5 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-03-17-5 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-03-17-5" href="2006-03-17-5.html"><span class="sanchor">＊</span></a> <span class="clitemheader">ノートのパーティション切り直しとPlamo4.2β</span> [<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>vp16cの ~ と /etc をバックアップ<br>
+<blockquote>mkdir /tmp/backup<br>
+cd /tmp/backup<br>
+sudo cp -a /etc .<br>
+sudo chown -R akapy:users etc<br>
+cd /old<br>
+tar -p -s --atime-preserve --numeric-owner -cvjf vp16c-20060317.tar.bz2 /tmp/backup<br>
+scp で適当なPCにコピー<br>
+</blockquote>とりあえずLW333にPlamo4.2βをインストしてみる。ずいぶん変わっているかもしれないので。<br>
+CDにキズが付かないことを祈りながら<br>
+<a href="http://121ware.com/support/product/catalogue/nx/lavie/19990517/index.html">http://121ware.com/support/product/catalogue/nx/lavie/19990517/index.html</a><br>
+neo2160<br>
+2M<br>
+hsync 28.00-49.31<br>
+vsync 55.00-65.00<br>
+Xorg -configure<br>
+</p><p>
+vp16cは /etc/X11R6/Xorg.confを作りなおす必要が。というか4.03をインストしたほうがいいかも。でXF86Configをコピーすべき。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-03-17-5.html">固定リンク</a> ｜
+<a href="2006-03-17-5.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200603175-->
+</div>
+<!-- end:2006-03-17-5 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-14-3 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-02-14-3" href="2006-02-14-3.html"><span class="sanchor">＊</span></a> <span class="clitemheader">続 LW333D/7</span> [<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>CD-ROMは傷がつくので使わない方がよい。knoppixのCDはダメになった。<br>
+今のところ、数箇所のキーが反応しなくなる以外は大丈夫そうだ。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-02-14-3.html">固定リンク</a> ｜
+<a href="2006-02-14-3.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200602143-->
+</div>
+<!-- end:2006-02-14-3 -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-11-2 -->
+<div class="section">
+<h3 class="subtitle"><a name="2006-02-11-2" href="2006-02-11-2.html"><span class="sanchor">＊</span></a> <span class="clitemheader">LW333D/7</span> [<a href="cat_lw333d7.html">LW333D7</a>]</h3>
+<p>９日からジャンクなLaVie NX(LW333D/7)を検査している。<br>
+確かにIDEコントローラーまわりがおかしいようだ。<br>
+でもメモリを交換したりすると落ち着くこともあるような。。。<br>
+取り付けてあったBUFFALOのメモリも怪しい。<br>
+</p><p>
+在庫だった遠淳メモリはやっぱりおかしい。swap_freeなんたらとエラーが出る。<br>
+</p><p>
+ハングってる状態に近くなると<br>
+&nbsp;&nbsp;&nbsp;Enter、q、d、x、v あたりのキーが反応しない。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HDDが止まる<br>
+</p><p>
+よりみちしてframebufferをいじろうと vga=0x313とかやってみたり。<br>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2006-02-11-2.html">固定リンク</a> ｜
+<a href="2006-02-11-2.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200602112-->
+</div>
+<!-- end:2006-02-11-2 -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2012-07-04 06:43
+
+</div></div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+
+</body></html>

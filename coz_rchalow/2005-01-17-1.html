@@ -1,0 +1,107 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+ <link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>チューニング</title>
+</head>
+<body>
+
+<a href="2005-01-16-3.html">Prev</a>
+
+
+ / <a href="2005-01-17-2.html">Next</a>
+
+/ <a href="index.html">あかぴのChangeLog by rchalow</a>
+<h1>チューニング[修行][SOLO2300号][VP16C号][Ooo]<br><TMPL_VAR name=cat></h1>
+<div class="day">
+<a href="2005-01-17.html">2005-01-17</a>
+<div class="body">
+<!-- start:2005-01-17-1 -->
+<div class="section">
+<h3 class="subtitle"><a name="2005-01-17-1" href="2005-01-17-1.html"><span class="sanchor">＊</span></a> <span class="clitemheader">チューニング</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_vp16ce58fb7.html">VP16C号</a>][<a href="cat_ooo.html">Ooo</a>]</h3>
+<p>topの動作を見ている限り、やらなくていいのかも。<br>
+考え過ぎなのかもしれない。でもマシンが非力だからなんとかしたい。<br>
+</p><p>
+＜Openoffice.org＞<br>
+チューニング方法が見つからない。<br>
+<s>関係ないかもしれないが次のファイルをいじると何かできるかも。</s>これ1.0あたりの話みたい。common.xmlなんて無い。似ているファイルも無い。<br>
+&nbsp;&nbsp;&nbsp;<s><a href="http://www.atmarkit.co.jp/flinux/rensai/linuxtips/339noapplybtn.html">http://www.atmarkit.co.jp/flinux/rensai/linuxtips/339noapplybtn.html</a>より</s><br>
+<blockquote>OpenOffice.orgを終了した状態で、設定ファイルを変更する。設定ファイルは、~/OpenOffice.org/user/config/registry/instance/org/openoffice/<br>
+Office/Common.xmlだ。<br>
+</blockquote><br>
+＜firefox＞<br>
+firefox-binの数を減らしたいんだけど。。。よく分からん。<br>
+ネスケの時はdot.mozillaかなんかを編集すると減ったんだけどね。<br>
+今はメモリの状態で自動的に調整される？ そんな感じ。<br>
+高速化？<a href="http://firefox.geckodev.org/?cmd=read&amp;page=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0&amp;word=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0">http://firefox.geckodev.org/?cmd=read&amp;page=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0&amp;word=%A5%C1%A5%E5%A1%BC%A5%CB%A5%F3%A5%B0</a><br>
+./mozilla/firefox/???.default/user.js 作成・編集<br>
+<blockquote>user_pref("browser.cache.memory.capacity", 65536);<br>
+user_pref("browser.cache.disk_cache_ssl", true);<br>
+user_pref("browser.xul.error_pages.enabled", true);<br>
+user_pref("content.interrupt.parsing", true);<br>
+user_pref("content.max.tokenizing.time", 3000000);<br>
+user_pref("content.maxtextrun", 8191);<br>
+user_pref("content.notify.backoffcount", 5);<br>
+user_pref("content.notify.interval", 750000);<br>
+user_pref("content.notify.ontimer", true);<br>
+user_pref("content.switch.threshold", 750000);<br>
+// user_pref("network.http.max-connections", 32);<br>
+user_pref("network.http.max-connections", 4);<br>
+user_pref("network.http.max-connections-per-server", 8);<br>
+user_pref("network.http.max-persistent-connections-per-proxy", 8);<br>
+user_pref("network.http.max-persistent-connections-per-server", 4);<br>
+user_pref("network.http.pipelining", true);<br>
+user_pref("network.http.pipelining.maxrequests", 8);<br>
+user_pref("network.http.proxy.pipelining", true);<br>
+user_pref("nglayout.initialpaint.delay", 750);<br>
+user_pref("plugin.expose_full_path", true);<br>
+user_pref("signed.applets.codebase_principal_support", true);<br>
+</blockquote>それから<strong>シングルウインドウモード</strong><br>
+<a href="http://level.s69.xrea.com/mozilla/tips.html#aboutconfig">http://level.s69.xrea.com/mozilla/tips.html#aboutconfig</a><br>
+</p><p>
+</p><p>
+
+</p>
+
+<div class="comment">
+<div class="caption">［
+<a href="2005-01-17-1.html">固定リンク</a> ｜
+<a href="2005-01-17-1.html#disqus_thread">Comments (View)</a>
+］</div>
+
+</div>
+
+<!--200501171-->
+</div>
+<!-- end:2005-01-17-1 -->
+<!-- 広告とか -->
+
+
+
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/akapy/embed.js"></script><noscript><a href="http://akapy.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</div></div>
+<!--<p>last update: 2012-07-04 06:43</p>-->
+
+</div>
+
+<!-- Disqus -->
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/akapy/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+<!-- /Disqus -->
+</body></html>
