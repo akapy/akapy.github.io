@@ -15,7 +15,51 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2019-12-31-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2019-12-27-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2019-12-31-5.html">
+ <title>今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2019-12-31-5.html</link>
+ <description>
+  気仙沼の朝の最低気温 2.6 ℃ (06:39)気仙沼：朝方まで雨？　南東から青空＆朝日7:00すぎ三陸道：志津川くもり＋米谷あたり？濃霧仙台：雲と青空＋ポツリ雨三陸道：志津川あたり雪ちらつき気仙沼：まあはれ＋強風仙台の日中の最高気温 14.8 ℃ (10:49)気仙沼の日中の最高気温 12.2 ℃ (10:25)歩数 10667 歩活動カロリー 837 kcal歩行距離 7.6 km脂肪燃焼量 33.7 gエクササイズ量 7.0 Ex推定Ex歩行時間 92 分市役所前まで往復
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2019-12-31T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>気仙沼の朝の最低気温 2.6 ℃ (06:39)<br>
+気仙沼：朝方まで雨？　南東から青空＆朝日7:00すぎ<br>
+三陸道：志津川くもり＋米谷あたり？濃霧<br>
+仙台：雲と青空＋ポツリ雨<br>
+三陸道：志津川あたり雪ちらつき<br>
+気仙沼：まあはれ＋強風<br>
+仙台の日中の最高気温   14.8 ℃ (10:49)<br>
+気仙沼の日中の最高気温 12.2 ℃ (10:25)<br>
+<table><tr><td>歩数<td> 10667 歩</tr><tr><td>活動カロリー<td> 837 kcal</tr><tr><td>歩行距離<td> 7.6 km</tr><tr><td>脂肪燃焼量<td> 33.7 g</tr><tr><td>エクササイズ量<td> 7.0 Ex</tr><tr><td>推定Ex歩行時間<td> 92 分</tr></table>市役所前まで往復<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+
+<item rdf:about="https://akapy.github.io/rchalow/2019-12-27-1.html">
+ <title>ルパン三世</title>
+ <link>https://akapy.github.io/rchalow/2019-12-27-1.html</link>
+ <description>
+  レティシアの声が合ってないような気が。。３２１３日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2019-12-27T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>レティシアの声が合ってないような気が。。<br>
+</p><p>
+</p><p>
+</p><p>
+<hr>３２１３日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 </rdf:RDF>
