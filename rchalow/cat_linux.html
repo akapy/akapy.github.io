@@ -1,0 +1,387 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Linux / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>Linux - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2017-01-24-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2017-01-24-1" href="2017-01-24-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">`NSS_3.23' not found　</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2017-01-24-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2017-01-24-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2017-01-24-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>Plamo-6.1 で新しいfirefox を起動しようとして<br>
+<blockquote>　　<br>
+version `NSS_3.23' not found<br>
+　　<br>
+</blockquote>みたいなエラーが見えたら<br>
+<blockquote>sudo updatepkg 04_xapps/nss-3.27.1-i686-P1.txz<br>
+</blockquote>する<br>
+　<br>
+<hr>はじめてfirefoxのビルドに挑戦してみたら、<br>
+autoconf213、nspr4、nss-3.27、sqlite-3.15とかも入れる必要があると勉強した。<br>
+</p><p>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2017-01-17-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2017-01-17-1" href="2017-01-17-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</span> [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2017-01-17-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2017-01-17-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2017-01-17-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>WiFiなNexus7(2012)<br>
+調子が悪いのでAndroid4.4.4に戻してroot化などいじり倒してたらOSが起動しなくなった。<br>
+　・googleロゴ画面から進まない<br>
+　・ブートローダー画面は表示できる<br>
+　・RecoveryModeを試したが先に進まない<br>
+　<br>
+Lubuntu-PCにUSB接続してlsusbしてみると<br>
+<blockquote>Bus 002 Device 064: ID 18d1:4e40 Google Inc. Nexus 7 (fastboot)<br>
+</blockquote>Nexus7単体だけでは復旧できない状態のようだ。<br>
+　<br>
+　<br>
+準備<br>
+・電源の入るNexus7(2012)本体 (unlock済み)<br>
+・ちゃんとしたmicroUSBケーブル(重要！)<br>
+・Lubuntu16.04(32bit)なPC<br>
+・以下を読む<br>
+　　・<a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165">http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165</a><br>
+　　・<a href="http://mariyudu.hatenablog.com/entry/2015/09/07/215045">http://mariyudu.hatenablog.com/entry/2015/09/07/215045</a><br>
+　　・<a href="http://d.hatena.ne.jp/moremagic/20160228/1456663922">http://d.hatena.ne.jp/moremagic/20160228/1456663922</a><br>
+　<br>
+まず<br>
+$ sudo apt-get install android-tools-fastboot<br>
+今回は使わないけどついでに<br>
+$ sudo apt-get install android-tools-adb<br>
+　<br>
+/etc/udev/rules.d/52-android.rulesを編集<br>
+　(うちの環境では51-android.rulesじゃなかった)<br>
+<blockquote>SUBSYSTEM＝＝"usb", ATTRS{idProduct}＝＝"4e40", MODE＝"0666", GROUP＝"plugdev"<br>
+　　　　　　(諸事情でわざと半角文字じゃないイコール文字)<br>
+</blockquote>　<br>
+$ sudo chmod 644 /etc/udev/rules.d/52-android.rules<br>
+$ sudo /etc/init.d/udev restart<br>
+　<br>
+$ fastboot devices<br>
+　<br>
+で接続を確認<br>
+　<br>
+　<br>
+適当な作業ディレクトリを作ってイメージファイルをダウンロード<br>
+今回は<br>
+<a href="https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip">https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip</a><br>
+　<br>
+$ mkdir work<br>
+$ cd work<br>
+$ unzip nakasi-ktu84p-factory-9482e892.zip<br>
+$ cd nakasi-ktu84p<br>
+$ ./flash-all.sh<br>
+　<br>
+運が良ければ？ これでリカバリーできる。<br>
+細部は忘れたがだいたいこんな感じだったかと(苦笑)<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2014-07-16-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2014-07-16-1" href="2014-07-16-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">苔玉／knoppix／白金豚</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2014-07-16-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2014-07-16-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2014-07-16-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>去年買った<a href="2013-08-20-1.html">[2013-08-20-1]</a>苔テラリウムが旭小屋の寒さに耐えられなかったようで苔玉なるものを買ってみた。<br>
+<a href="https://picasaweb.google.com/lh/photo/s6m1bXwdYNLo8jXBjvV0AtildUuK-JubLA6mJzhq12M?feat=embedwebsite"><img src="https://lh3.googleusercontent.com/-a7_vN1KJYTI/U8b69a7fwiI/AAAAAAAAKHQ/V0oxGM0_Yvg/s288/IMG_20140717_071829.jpg" alt="画像"></a><br>
+盆栽やる年齢になったか(笑)<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005DX63SW/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B005DX63SW.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005DX63SW/ftnk1221-22/ref=nosim">3寸苔玉パキラ小鳥ピック付角皿</a><br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005DX63SW/akapy-22/ref=nosim"><img src="http://ecx.images-amazon.com/images/I/41%2BPnQ5c7uL._SY355_.jpg" alt="画像"></a><br>
+</p><p>
+<hr>P-Plamoではstunnelが動いてくれないようなので<br>
+別なLiveCDディストロで試してみようか。<br>
+emacsでtamago、egg-cannaが使えると嬉しい。<br>
+knoppixをUSBメモリにインストするのは簡単だな。<br>
+Lubuntuも試すのであった。<br>
+</p><p>
+<hr>御中元でもらったらしい。<br>
+白金豚 味噌漬け<br>
+<a href="http://store.shopping.yahoo.co.jp/japangift/go4337-16.html">http://store.shopping.yahoo.co.jp/japangift/go4337-16.html</a><br>amazonだと「西京みそ漬け」しか扱ってないのか <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B006T78HVW/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B006T78HVW.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B006T78HVW/ftnk1221-22/ref=nosim">白金豚-モモロース西京みそ漬け</a><br>
+</p><p>
+<hr>１２２３日後<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2013-05-17-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2013-05-17-1" href="2013-05-17-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">ＣＦとWinXP</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_linux.html">Linux</a>][<a href="cat_cfe381a8ssd.html">CFとSSD</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2013-05-17-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2013-05-17-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2013-05-17-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_linux.html">Linux</a>][<a href="cat_cfe381a8ssd.html">CFとSSD</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><table><tr><td> SiliconPowerのＣＦ <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001D0W8CY/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B001D0W8CY.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001D0W8CY/ftnk1221-22/ref=nosim">SP032GBCFC200V10</a> <td> WinXPのＳＳＤとしては使えない。Linuxなら大丈夫。</tr><tr><td> TranscendのＣＦ <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000W0BC7I/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B000W0BC7I.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B000W0BC7I/ftnk1221-22/ref=nosim">TS16GCF133</a> <td> WinXPでもＳＳＤとして使える。でも1024の壁あり今のところ、D: がうまく認識されない</tr></table><br>
+本日、AmazonでIDE-SATA変換コネクタなど５点を発注。全部で1万円余り<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005JNK4FY/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B005JNK4FY.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005JNK4FY/ftnk1221-22/ref=nosim">2.5inch IDE 44pin to CF Card Metal Case【DeLOCK】</a>  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001J2R41Q/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B001J2R41Q.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B001J2R41Q/ftnk1221-22/ref=nosim"></a>  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005SVN8CI/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B005SVN8CI.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B005SVN8CI/ftnk1221-22/ref=nosim"></a>  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00CJUTG7C/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B00CJUTG7C.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B00CJUTG7C/ftnk1221-22/ref=nosim">2.5”IDE HDD用SATA変換アダプタZ型【ニードネットワーク】</a>  <a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0012Q2PD6/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/B0012Q2PD6.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/B0012Q2PD6/ftnk1221-22/ref=nosim"></a><br>
+<hr>７９８日後<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2008-05-23-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2008-05-23-3" href="2008-05-23-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">今日やったこと</span> [<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2008-05-23-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2008-05-23-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2008-05-23-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><a href="http://web.kyoto-inet.or.jp/people/jeanne/linux/linuxtips.html">http://web.kyoto-inet.or.jp/people/jeanne/linux/linuxtips.html</a><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2008-02-16-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2008-02-16-1" href="2008-02-16-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">セキュリティキャンプ・キャラバン with プログラミング　-仙台-</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2008-02-16-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2008-02-16-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2008-02-16-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><a href="2008-02-06-1.html">[2008-02-06-1]</a><br>
+行ってきました。<br>
+他の地域より年齢層が高いそうです(苦笑<br>
+あっしも高齢者チームなのは確かです。<br>
+</p><p>
+Rails＠東北も同じような感じみたいですね。<br>
+参加したことはありませんが。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-03-31-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-03-31-1" href="2006-03-31-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">traceroute</span> [<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-03-31-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-03-31-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-03-31-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>traceroute<br>
+このコマンドがどうも思い出せない時が多いのよね。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-09-30-4 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-09-30-4" href="2004-09-30-4.html"><span class="sanchor">■</span></a> <span class="clitemheader">scp</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-09-30-4.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-09-30-4.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-09-30-4.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>scp -pr 転送ファイル ユーザー@pub.cozmixng.org:/home/ユーザー/パス<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-09-20-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-09-20-1" href="2004-09-20-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">インストールへの要望</span> [<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-09-20-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-09-20-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-09-20-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>&nbsp;KNOPPIXなどCDから起動して使うものはハードの自動認識にすぐれてますよね。HDDにインストールしても同じ様に自動認識してくれれば楽なのにな。<br>
+&nbsp;GentooのLiveCDもカーネルオプションさえ与えれば自動認識すごいと思います。あのままHDDにインストールできたら嬉しいな。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-09-11-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-09-11-2" href="2004-09-11-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">kiku２号、画面表示せず。</span> [<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-09-11-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-09-11-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-09-11-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>&nbsp;ノートに浮気していたせいか？メインマシンのkiku２号が機嫌を損ねたようだ。<br>
+HDDは動いているようなのでビデオカードを交換して試してみる。無事表示した。<br>
+matroxのG55カードが壊れたのか？AGPバスが死んだのか？これしかDVI出力ないのにな。<br>
+&nbsp;G55のDVI出力だけがおかしいようだ。他のLCDつないでみたら赤っぽい表示となった。L465は無事。<br>
+ジャンクの在庫を調べたらATI Xpert98というのが３枚もあったので試した。<br>
+xf86configの76番あたりにカードドライバがあるな。アナログだけどまあいいや。しかしひどい週末になったもんだ。<br>
+&nbsp;カード交換したらscanpci。あとはxf86cfg -textmodeで設定。ダメならxf86config。<br>
+FlexScan L465はアナログだと水平24.8-80KHz、垂直50-75KHz。デジタルは水平31.5-64KHz、垂直60KHz。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-07-29-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-07-29-2" href="2004-07-29-2.html"><span class="sanchor">■</span></a> <span class="clitemheader"> カーネル構築</span> [<a href="cat_linux.html">Linux</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-07-29-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-07-29-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-07-29-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>&nbsp;menuconfigの選択項目見ても、さっぱり意味不明です。2.4系は初めて(笑)<br>
+&nbsp;う〜ん夏休みのような生活。というよりは売れないマンガ家or自称研究生？バイトする気もないし。そのうち金欠になるのは目に見えてるな。でも今やるべきことはインストールのような気がする(爆)<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-06 16:31
+
+</div></div></body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2006-03-22-1.html">
+    <title>風博士を試してみました</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2006-03-21-9.html">Prev</a>
+            
+            
+            / <a href="2006-03-22-2.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2006-03-22.html">2006-03-22</a> / <a href="2006-03-22-1.html">風博士を試してみました[ひとりごと]</a>
+                  <span class="hatesta"><a href="2006-03-22-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2006-03-22-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p>昨日<em><a href="http://pub.cozmixng.org/~akapy/ChangeLogMemo/2006-03-21.html#2006-03-21-1">2006-03-21-1]]</em>のつづき<br>
+<strong>[[昨日</a></strong>のつづき<br>
+<blockquote>cvs -z3 -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/kazehakase co kazehakase<br>
+</blockquote>やっぱり途中で止まる。<br>
+-z3 を外したら うまくいった。<br>
+<blockquote>cvs -d:pserver:anonymous@cvs.sourceforge.jp:/cvsroot/kazehakase co kazehakase<br>
+</blockquote>それで<br>
+<blockquote>akapy@lw333:~/kazehakase$ ./autogen.sh <br>
+You should add the contents of `/usr/share/aclocal/libtool.m4' to `aclocal.m4'.<br>
+/usr/share/aclocal/vorbis.m4:9: warning: underquoted definition of XIPH_PATH_VORBIS<br>
+&nbsp;&nbsp;run info '(automake)Extending aclocal'<br>
+&nbsp;&nbsp;or see <a href="http://sources.redhat.com/automake/automake.html#Extending-aclocal">http://sources.redhat.com/automake/automake.html#Extending-aclocal</a><br>
+/usr/share/aclocal/pstoedit.m4:7: warning: underquoted definition of AM_PATH_PSTOEDIT<br>
+/usr/share/aclocal/ogg.m4:8: warning: underquoted definition of XIPH_PATH_OGG<br>
+/usr/share/aclocal/nspr.m4:8: warning: underquoted definition of AM_PATH_NSPR<br>
+/usr/share/aclocal/libIDL.m4:6: warning: underquoted definition of AM_PATH_LIBIDL<br>
+/usr/share/aclocal/imlib.m4:9: warning: underquoted definition of AM_PATH_IMLIB<br>
+/usr/share/aclocal/imlib.m4:167: warning: underquoted definition of AM_PATH_GDK_IMLIB<br>
+/usr/share/aclocal/gtk.m4:7: warning: underquoted definition of AM_PATH_GTK<br>
+/usr/share/aclocal/glib.m4:8: warning: underquoted definition of AM_PATH_GLIB<br>
+/usr/share/aclocal/audiofile.m4:12: warning: underquoted definition of AM_PATH_AUDIOFILE<br>
+aclocal:configure.in:358: warning: macro `AM_PATH_LIBGNUTLS' not found in library<br>
+configure.in: installing `./install-sh'<br>
+configure.in: installing `./missing'<br>
+ext/ruby/Makefile.am: installing `./depcomp'<br>
+src/libegg/pixbufthumbnail/Makefile.am: installing `./compile'<br>
+po/Makefile.in.in exists: use option -f if you really want to delete it.<br>
+configure.in:358: error: possibly undefined macro: AM_PATH_LIBGNUTLS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If this token and others are legitimate, please use m4_pattern_allow.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;See the Autoconf documentation.<br>
+akapy@lw333:~/kazehakase$ ./co<br>
+compile       config.guess  config.sub    configure     <br>
+akapy@lw333:~/kazehakase$ ./configure <br>
+checking for a BSD-compatible install... /usr/bin/install -c<br>
+checking whether build environment is sane... yes<br>
+checking for gawk... gawk<br>
+checking whether make sets $(MAKE)... yes<br>
+checking build system type... i686-pc-linux-gnu<br>
+checking host system type... i686-pc-linux-gnu<br>
+checking for style of include used by make... GNU<br>
+checking for gcc... gcc<br>
+checking for C compiler default output file name... a.out<br>
+checking whether the C compiler works... yes<br>
+checking whether we are cross compiling... no<br>
+checking for suffix of executables... <br>
+checking for suffix of object files... o<br>
+checking whether we are using the GNU C compiler... yes<br>
+checking whether gcc accepts -g... yes<br>
+checking for gcc option to accept ANSI C... none needed<br>
+checking dependency style of gcc... gcc3<br>
+checking for a sed that does not truncate output... /usr/bin/sed<br>
+checking for egrep... grep -E<br>
+checking for ld used by gcc... /usr/i586-pc-linux/bin/ld<br>
+checking if the linker (/usr/i586-pc-linux/bin/ld) is GNU ld... yes<br>
+checking for /usr/i586-pc-linux/bin/ld option to reload object files... -r<br>
+checking for BSD-compatible nm... /usr/bin/nm -B<br>
+checking whether ln -s works... yes<br>
+checking how to recognise dependent libraries... pass_all<br>
+checking how to run the C preprocessor... gcc -E<br>
+checking for ANSI C header files... yes<br>
+checking for sys/types.h... yes<br>
+checking for sys/stat.h... yes<br>
+checking for stdlib.h... yes<br>
+checking for string.h... yes<br>
+checking for memory.h... yes<br>
+checking for strings.h... yes<br>
+checking for inttypes.h... yes<br>
+checking for stdint.h... yes<br>
+checking for unistd.h... yes<br>
+checking dlfcn.h usability... yes<br>
+checking dlfcn.h presence... yes<br>
+checking for dlfcn.h... yes<br>
+checking for g++... g++<br>
+checking whether we are using the GNU C++ compiler... yes<br>
+checking whether g++ accepts -g... yes<br>
+checking dependency style of g++... gcc3<br>
+checking how to run the C++ preprocessor... g++ -E<br>
+checking for g77... g77<br>
+checking whether we are using the GNU Fortran 77 compiler... yes<br>
+checking whether g77 accepts -g... yes<br>
+checking the maximum length of command line arguments... 32768<br>
+checking command to parse /usr/bin/nm -B output from gcc object... ok<br>
+checking for objdir... .libs<br>
+checking for ar... ar<br>
+checking for ranlib... ranlib<br>
+checking for strip... strip<br>
+checking if gcc static flag  works... yes<br>
+checking if gcc supports -fno-rtti -fno-exceptions... no<br>
+checking for gcc option to produce PIC... -fPIC<br>
+checking if gcc PIC flag -fPIC works... yes<br>
+checking if gcc supports -c -o file.o... yes<br>
+checking whether the gcc linker (/usr/i586-pc-linux/bin/ld) supports shared libraries... yes<br>
+checking whether -lc should be explicitly linked in... no<br>
+checking dynamic linker characteristics... GNU/Linux ld.so<br>
+checking how to hardcode library paths into programs... immediate<br>
+checking whether stripping libraries is possible... yes<br>
+checking if libtool supports shared libraries... yes<br>
+checking whether to build shared libraries... yes<br>
+checking whether to build static libraries... no<br>
+configure: creating libtool<br>
+appending configuration tag "CXX" to libtool<br>
+checking for ld used by g++... /usr/i586-pc-linux/bin/ld<br>
+checking if the linker (/usr/i586-pc-linux/bin/ld) is GNU ld... yes<br>
+checking whether the g++ linker (/usr/i586-pc-linux/bin/ld) supports shared libraries... yes<br>
+checking for g++ option to produce PIC... -fPIC<br>
+checking if g++ PIC flag -fPIC works... yes<br>
+checking if g++ supports -c -o file.o... yes<br>
+checking whether the g++ linker (/usr/i586-pc-linux/bin/ld) supports shared libraries... yes<br>
+checking dynamic linker characteristics... GNU/Linux ld.so<br>
+checking how to hardcode library paths into programs... immediate<br>
+checking whether stripping libraries is possible... yes<br>
+appending configuration tag "F77" to libtool<br>
+checking if libtool supports shared libraries... yes<br>
+checking whether to build shared libraries... yes<br>
+checking whether to build static libraries... no<br>
+checking for g77 option to produce PIC... -fPIC<br>
+checking if g77 PIC flag -fPIC works... yes<br>
+checking if g77 supports -c -o file.o... yes<br>
+checking whether the g77 linker (/usr/i586-pc-linux/bin/ld) supports shared libraries... yes<br>
+checking dynamic linker characteristics... GNU/Linux ld.so<br>
+checking how to hardcode library paths into programs... immediate<br>
+checking whether stripping libraries is possible... yes<br>
+checking for pkg-config... /usr/bin/pkg-config<br>
+checking whether we are using the GNU C++ compiler... (cached) yes<br>
+checking whether g++ accepts -g... (cached) yes<br>
+checking dependency style of g++... (cached) gcc3<br>
+checking for gcc... (cached) gcc<br>
+checking whether we are using the GNU C compiler... (cached) yes<br>
+checking whether gcc accepts -g... (cached) yes<br>
+checking for gcc option to accept ANSI C... (cached) none needed<br>
+checking dependency style of gcc... (cached) gcc3<br>
+checking how to run the C preprocessor... gcc -E<br>
+checking for a BSD-compatible install... /usr/bin/install -c<br>
+checking whether ln -s works... yes<br>
+checking whether make sets $(MAKE)... (cached) yes<br>
+checking for gawk... (cached) gawk<br>
+mozilla<br>
+checking pkg-config is at least version 0.9.0... yes<br>
+checking for MOZILLA_COMPONENT... yes<br>
+checking for compiler -fshort-wchar option... yes<br>
+-g -O2 -fno-rtti  -fshort-wchar  <br>
+checking for gecko version... 1.7<br>
+checking whether nsPIDOMWindow methods return nsPIDOMWindow*... no<br>
+checking whether nsIFilePicker methods expect nsAString&amp;... yes<br>
+checking whether nsIMIMEInfo methods expect nsAString&amp;... no<br>
+checking whether nsICacheSession methods expect nsAString&amp;... no<br>
+checking whether nsIHelperAppLauncherDialog methods expect PRBool... yes<br>
+checking for /usr/include/mozilla-1.7.12/nsIWebProgressListener2.h... no<br>
+checking for /usr/include/mozilla-1.7.12/uriloader/nsIWebProgressListener2.h... no<br>
+checking for /usr/include/mozilla-1.7.12/nsITransfer.h... no<br>
+checking for /usr/include/mozilla-1.7.12/uriloader/nsITransfer.h... no<br>
+checking for /usr/include/mozilla-1.7.12/nsIPresContext.h... no<br>
+checking for /usr/include/mozilla-1.7.12/layout/nsIPresContext.h... yes<br>
+checking for /usr/include/mozilla-1.7.12/nsIPassword.h... yes<br>
+checking for /usr/include/mozilla-1.7.12/wallet/nsIPassword.h... no<br>
+checking whether nsIDocShell::GetSecureUI exists... no<br>
+checking for pkg-config... (cached) /usr/bin/pkg-config<br>
+checking for GTK+ - version >= 2.4.0... yes (version 2.8.8)<br>
+checking for glib-genmarshal... /usr/bin/glib-genmarshal<br>
+checking for glib-mkenums... /usr/bin/glib-mkenums<br>
+./configure: line 22937: syntax error near unexpected token `1.2.0,'<br>
+./configure: line 22937: `   AM_PATH_LIBGNUTLS(1.2.0,'<br>
+akapy@lw333:~/kazehakase$ <br>
+</blockquote>autogen.sh で既に warning が出てますね。<br>
+./configure では syntax error ？！<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2006-03-21-9.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-06T16:31:37+09:00">
+              2021-02-06 16:31</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

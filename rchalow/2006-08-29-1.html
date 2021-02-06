@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2006-08-29-1.html">
+    <title>pam-login が　blockされる</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2006-08-28-7.html">Prev</a>
+            
+            
+            / <a href="2006-08-29-2.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2006-08-29.html">2006-08-29</a> / <a href="2006-08-29-1.html">pam-login が　blockされる[Gentoo]</a>
+                  <span class="hatesta"><a href="2006-08-29-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2006-08-29-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p>[blocks B ] sys-apps/pam-login (is blocking sys-apps/shadow-4.0.15-r2)<br>
+対処に悩んだのだが、あっしだけじゃなかったのね。<br>
+&nbsp;&nbsp;<a href="http://72.14.235.104/search?q=cache:vELeNmUIgtsJ:cvzn.com/xoops2/modules/news/index.php%3Fstorytopic%3D4+portage+pam-login&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=3&amp;lr=lang_ja">http://72.14.235.104/search?q=cache:vELeNmUIgtsJ:cvzn.com/xoops2/modules/news/index.php%3Fstorytopic%3D4+portage+pam-login&amp;hl=ja&amp;gl=jp&amp;ct=clnk&amp;cd=3&amp;lr=lang_ja</a><br>
+<blockquote>emerge -C pam-login<br>
+</blockquote>していいんだ。なんだー！<br>
+</p><p>
+<em>Gentoo Weekly Newsletter: 12 June 2006</em><br>
+<blockquote>shadowとpam-loginの競合<br>
+</p><p>
+多くのユーザは、新しいバージョンのpam-loginとshadowがお互いにブロックする事象に遭遇しています。 /bin/loginファイルが、主に歴史的な理由からpam-loginによって提供されていることが原因です。 現在、shadow 4.0もこのファイルを提供するようになり、 混乱を避けるために言っておくと、現在このファイルはshadowによって提供されます。 また、pam-loginの残りのファイルは、shadowに同梱されています。 したがって、これら2つのパッケージがお互いにブロックする事象に出くわしたら、 pam-loginをunmergeして、最新のshadowパッケージをemergeしてください。<br>
+</p><p>
+より詳しい情報は、 Diego Pettenのブログを見てください。<br>
+</blockquote>で<br>
+<blockquote>emerge xorg-x11<br>
+Ｘorg -configure<br>
+cp -p /root/xorg.conf.new /etc/Ｘ11<br>
+して編集<br>
+</blockquote>USEフラグは(/etc/make.conf で設定のこと)<br>
+&nbsp;&nbsp;<a href="http://www.gentoo.org/dyn/use-index.xml">http://www.gentoo.org/dyn/use-index.xml</a><br>
+</p><p>
+nVidiaのせいか、うまくＸが動かん。vesaでしか。<br>
+カーネルをコンパイルし直してnVidiaモジュール作ったらいいのか？<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2006-08-28-7.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-06T16:31:37+09:00">
+              2021-02-06 16:31</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

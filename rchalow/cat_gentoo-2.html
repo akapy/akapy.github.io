@@ -1,0 +1,694 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Gentoo / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+ / <a href="cat_gentoo.html">カテゴリ最新ページ</a> / 
+
+<a href="cat_gentoo.html">前ページ</a>
+
+<a href="cat_gentoo.html">1</a> 2 <a href="cat_gentoo-3.html">3</a>
+
+<a href="cat_gentoo-3.html">次ページ</a>
+
+/ page 2 (3)
+
+<h1>Gentoo - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2006-06-07-4 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-07-4" href="2006-06-07-4.html"><span class="sanchor">■</span></a> <span class="clitemheader">手動 glsa-check</span> [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-07-4.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-07-4.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-07-4.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge -u dev-lang/ruby ずいぶん時間かかってるな。<br>
+げ！gccまでアップデートすんのか。２１個もbuildするんなら時間もかかるわな。<br>
+マシンもマシンだし。MMX-Pen 166(笑)<br>
+寝る時間になっても終わらない。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2006-06-06-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-06-3" href="2006-06-06-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">emerge world２（手動glsa-check？）</span> [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-06-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-06-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-06-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge system なのかも知れないけど。<br>
+"MASKED PACKAGE"がどうのこうのエラー回避のため<br>
+&nbsp;&nbsp;&nbsp;<a href="http://mux03.panda64.net/diary/20060308.html">http://mux03.panda64.net/diary/20060308.html</a><br>
+を読んで /etc/portage/package.unmask を書く。<br>
+</p><p>
+emerge system すると長くなりそうなので<br>
+&nbsp;&nbsp;glsa-check -p $(glsa-check -t all)<br>
+の結果から選んでやろ。<br>
+<blockquote>emerge media-libs/tiff<br>
+</blockquote>なんだか１回目失敗。２回目成功。/etc/portage/package.unmask を有効にするために<br>
+何か唱えなければならなかったのか？ 成功すればどうでもいいです。<br>
+<blockquote>emerge net-misc/rsync<br>
+emerge app-arch/tar<br>
+emerge sys-devel/flex<br>
+emerge net-misc/openssh<br>
+emerge dev-libs/openssl<br>
+emerge net-print/cups<br>
+emerge dev-lang/python<br>
+emerge sys-apps/file<br>
+emerge sys-apps/texinfo<br>
+emerge sys-apps/util-linux<br>
+emerge net-ftp/proftpd<br>
+&nbsp;&nbsp;エラー<br>
+emerge -C net-ftp/proftpd<br>
+emerge net-misc/dhcpcd<br>
+emerge app-admin/sudo<br>
+emerge -C media-libs/libungif<br>
+emerge media-libs/giflib<br>
+emerge media-libs/gdk-pixbuf<br>
+equery files libXext<br>
+&nbsp;&nbsp;なし<br>
+emerge -d app-editors/emacs<br>
+emerge -u dev-lang/ruby<br>
+<<<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-05-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-05-3" href="2006-06-05-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">emerge world</span> [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-05-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-05-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-05-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_gentoo.html">Gentoo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>急に<br>
+<blockquote>emerge sync<br>
+emerge world<br>
+</blockquote>してみようと思い立つ。<br>
+emergeにバグがあるというような表示。<br>
+<blockquote>emerge-webrsync<br>
+emerge -d sys-apps/portage<br>
+etc-update<br>
+emerge-webrsync            # 念のためもう１回<br>
+emerge sync                # 念のため<br>
+</blockquote>なんかgentoo.jpのemergeにエラーか？<br>
+と思ったらebuildJPを使えるようにした方がいいのかな。<br>
+&nbsp;&nbsp;<a href="http://www.gentoo.gr.jp/jpmain/ebuild-uploader.xml">http://www.gentoo.gr.jp/jpmain/ebuild-uploader.xml</a><br>
+<blockquote>emerge -d gentoolkit-dev<br>
+touch /etc/gensync/ebuildjp.syncsource<br>
+emacs /etc/gensync/ebuildjp.syncsource<br>
+gensync ebuildjp<br>
+emerge sync                # 試しに<br>
+emerge -p system<br>
+</blockquote>"MASKED PACKAGE"がどうのこうのと文句言ってるな。<br>
+24:40で寝る<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-26-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-26-2" href="2005-01-26-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">まとめframebuffer-Gentoo</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-26-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-26-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-26-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><blockquote>Gentoo 2006.0より前の話だろうな。<br>
+</blockquote>結局必要なことなど<br>
+まず <a href="http://www.sen2or.com/index.php?itemid=581&amp;catid=14">http://www.sen2or.com/index.php?itemid=581&amp;catid=14</a> を読む。<br>
+&nbsp;&nbsp;適ベン <a href="http://forums.gentoo.org/viewtopic.php?t=49036">http://forums.gentoo.org/viewtopic.php?t=49036</a> もながめる。<br>
+そして、<a href="http://d.hatena.ne.jp/y4su0/20030530#p2">http://d.hatena.ne.jp/y4su0/20030530#p2</a> の通り、<br>
+・/etc/make.conf編集<br>
+<blockquote>USE="aalib directfb fbcon svga"<br>
+</blockquote>・emerge -k bootsplash<br>
+・emerge -k gentoo-artwork<br>
+・カーネル再構築<br>
+<blockquote>    <a href="http://www.sen2or.com/index.php?itemid=655">http://www.sen2or.com/index.php?itemid=655</a> を参考にする。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Frame-bufferの中はデフォのままいじらないほうがいい。モジュールのまま。<br>
+</blockquote>・emerge -k bootsplash-themes-livecd<br>
+・/sbin/splash -s -f /etc/bootsplash/livecd-2004.2/config/bootsplash-800x600.cfg >> /boot/initrd-800x600<br>
+<blockquote>  /usr/share/bootsplash/以下のファイルをコピーしてもいいらしい。<br>
+</blockquote>・/etc/conf.d/bootsplash編集<br>
+<blockquote> BOOTSPLASH_THEME="livecd-2004.2"<br>
+</blockquote>・rc-update add bootsplash default<br>
+・/boot/grub/grub.conf編集<br>
+<blockquote>default 0<br>
+timeout 30<br>
+splashimage=(hd0,0)/boot/grub/splash.xpm.gz<br>
+title=only bzImage2.4.28<br>
+root (hd0,0)<br>
+kernel (hd0,0)/boot/bzImage-2.4.28-r5 root=/dev/hda3<br>
+#<br>
+# ここが牛の絵の出る部分<br>
+title=2428vesa32k-ushi<br>
+root (hd0,0)<br>
+kernel (hd0,0)/boot/bzImage-2.4.28-r5 root=/dev/hda3 video=vesafb:ywrap,mtrr vga=0x313 splash=silent<br>
+initrd (hd0,0)/boot/initrd-800x600<br>
+#ここまで<br>
+#<br>
+title=gentoo2.4.26<br>
+root (hd0,0)<br>
+kernel (hd0,0)/boot/kernel-2.4.26-gentoo-r9 root=/dev/ram0 real_root=/dev/hda3 init=/linuxrc ramdisk=8192<br>
+initrd (hd0,0)/boot/initrd-2.4.26-gentoo-r9<br>
+</p><p>
+title=2.4.20<br>
+root (hd0,0)<br>
+kernel (hd0,0)/boot/kernel-2.4.20-gentoo-r6 root=/dev/hda3<br>
+initrd (hd0,0)/boot/initrd-2.4.20-gentoo-r6<br>
+</blockquote><br>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-26-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-26-3" href="2005-01-26-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">作業中framebuffer-Gentoo</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-26-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-26-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-26-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>ん？！ /boot/System.mapが2.4.20にリンクされてる。<br>
+ln -s /boot/System.map /boot/System.map-2.4.28関係ないね。<br>
+やっぱgenkernelで作ったカーネルは動かない。<br>
+menuの選び方が悪かったのだろうけど。<br>
+</p><p>
+手動で作ったカーネルで成功。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-25-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-25-2" href="2005-01-25-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">作業中framebuffer-Gentoo</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-25-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-25-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-25-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・朝５時ごろgenkernel正常終了みたい。<br>
+・/boot/grub/grub.conf 編集<br>
+・emerge -k bootsplash-themes-livecd<br>
+・/sbin/splash -s -f /etc/bootsplash/livecd-2004.2/config/bootsplash-800x600.cfg > /boot/initrd-800x600<br>
+・/etc/conf.d/bootsplash 編集？<br>
+・rc-update add bootsplash default<br>
+再起動 ダメ失敗<br>
+・/boot/grub/grub.conf メニュー作りまくり<br>
+結局ダメ。カーネルのみでもカーネルパニック。<br>
+手動でカーネルコンパイル。<br>
+・make clean<br>
+・make menuconfig<br>
+・make dep &amp;&amp; make bzImage modules modules_install<br>
+寝る前(22時)には終わってました。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-24-5 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-24-5" href="2005-01-24-5.html"><span class="sanchor">■</span></a> <span class="clitemheader">危険なetc-update</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-24-5.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-24-5.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-24-5.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge portage終わってた。<br>
+etc-updateしたら色々書き換えられちゃったみたいで。。。<br>
+・/etc/group<br>
+・あとkeymap。/etc/rc.conf<br>
+再起動<br>
+・DHCPが動いてない。  /etc/conf.d/net<br>
+・/etc/inittabの agetty行コメントアウト<br>
+これからは  dispatch-conf を使うように＞自分<br>
+あ<br>
+あとやったこと。まずSD誌2005/1号を参考に。<br>
+・emerge -k genflags<br>
+・info2flags >> /etc/make.conf<br>
+・/etc/make.confに LINGUAS="ja"追加<br>
+・emerge -k esearch<br>
+<blockquote> eupdatedb<br>
+&nbsp;esearch fdisk<br>
+</blockquote>・emerge -C sys-kernel/gentoo-sources-2.4.28-r5<br>
+再起動(/etc/inittab変更反映のため)<br>
+・emerge genkernel<br>
+・emerge gentoo-sources<br>
+・emerge -k gentoo-artwork<br>
+懲りずに<br>
+・genkernel --menuconfig --bootsplash all(16:30ごろか？)<br>
+またエラー。再び.config見直し。<br>
+・genkernel -----  (23時過ぎ)<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-22-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-22-2" href="2005-01-22-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">作業中framebuffer-Gentoo</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-22-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-22-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-22-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・ゆうべのgenkernelはエラーで止まってました。<br>
+&nbsp;&nbsp;make modulesの途中のaty128fbのところみたい。<br>
+&nbsp;&nbsp;カーネルコンフィグし直して再び<br>
+<blockquote>genkernel --menuconfig --bootsplash all  (9:30ごろ開始)<br>
+</blockquote>電源トラブルで15時ごろ再度やり直し。アホだ。。。<br>
+22時ちょうど頃またエラーで止まる。<br>
+source入れ直してからやり直そうと思い、<br>
+<blockquote>emerge sync<br>
+またportage  updateしろとか出ているようなので<br>
+emerge -ukp sys-apps/portage<br>
+画面いっぱいにupdateが必要なパッケージが羅列。<br>
+また時間かかりそうだ。。。<br>
+emerge -uk sys-apps/portage<br>
+寝る。<br>
+</blockquote><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-21-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-21-2" href="2005-01-21-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">作業中framebuffer-Gentoo</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-21-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-21-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-21-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><a href="http://www.sen2or.com/index.php?itemid=655">http://www.sen2or.com/index.php?itemid=655</a><br>
+<a href="http://www.sen2or.com/index.php?itemid=581&amp;catid=14">http://www.sen2or.com/index.php?itemid=581&amp;catid=14</a><br>
+<blockquote>emerge gentoo-sources<br>
+emerge -ku genkernel<br>
+emerge -k bootsplash-themes-livecd<br>
+rm /usr/src/linux<br>
+ln -s /usr/src/linux-2.4.28-gentoo-r5<br>
+genkernel --menuconfig --bootsplash all<br>
+...<br>
+</p><p>
+<<<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-21-4 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-21-4" href="2005-01-21-4.html"><span class="sanchor">■</span></a> <span class="clitemheader">Gentooの日本語デスクトップ環境構築の夢？</span> [<a href="cat_gentoo.html">Gentoo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-21-4.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-21-4.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-21-4.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><strong>・<a href="http://www.deer-n-horse.jp/linux/dialy/linux_jul_2003.html">http://www.deer-n-horse.jp/linux/dialy/linux_jul_2003.html</a></strong>のJul 29 2003<br>
+&nbsp;&nbsp;&nbsp;emerge japanese って、できたら感動だな〜。<br>
+<strong>・<a href="http://www.sen2or.com/index.php?catid=14&amp;blogid=1">http://www.sen2or.com/index.php?catid=14&amp;blogid=1</a></strong><br>
+&nbsp;&nbsp;&nbsp;よくまとまってます。<br>
+<strong>・<a href="http://wiki.gentoo.gr.jp/index.php?%5B%5B%C6%FC%CB%DC%B8%EC%A5%C7%A5%B9%A5%AF%A5%C8%A5%C3%A5%D7%B4%C4%B6%AD%5D%5D">http://wiki.gentoo.gr.jp/index.php?%5B%5B%C6%FC%CB%DC%B8%EC%A5%C7%A5%B9%A5%AF%A5%C8%A5%C3%A5%D7%B4%C4%B6%AD%5D%5D</a></strong><br>
+&nbsp;&nbsp;&nbsp;でもオオモトはここかな。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-15-19 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-15-19" href="2005-01-15-19.html"><span class="sanchor">■</span></a> <span class="clitemheader">フォント</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_ooo.html">Ooo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-15-19.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-15-19.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-15-19.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>][<a href="cat_ooo.html">Ooo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>Plamoの /usr/X11R6/lib/X11/fonts を丸ごとコピーしてみました。/tmpに。<br>
+使えるんだろうか？<br>
+で、<br>
+	<a href="http://sourceforge.jp/projects/waooo/files/">http://sourceforge.jp/projects/waooo/files/</a><br>
+OpenOfficeは独自ビルド1.1.4を拾ってきて入れました。こっちの方が速いし、日本語もちゃんとしてます。<br>
+なのでemergeした1.1.3と両方入っていることになりますね。<br>
+Plamo用 Ooo はtzgは無いね。独自ビルドひろってきて入れるんだろうな。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-14-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-14-1" href="2005-01-14-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">日本語関係＋ほか</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-14-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-14-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-14-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>昨日から参考にしているのは<br>
+<a href="http://wiki.gentoo.gr.jp/index.php?%5B%5B%C6%FC%CB%DC%B8%EC%A5%C7%A5%B9%A5%AF%A5%C8%A5%C3%A5%D7%B4%C4%B6%AD%2F%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%5D%5D">http://wiki.gentoo.gr.jp/index.php?%5B%5B%C6%FC%CB%DC%B8%EC%A5%C7%A5%B9%A5%AF%A5%C8%A5%C3%A5%D7%B4%C4%B6%AD%2F%A5%D1%A5%C3%A5%B1%A1%BC%A5%B8%5D%5D</a><br>
+<table><tr><td>manpage-ja<td>emerge -C groffemerge manpage</tr><tr><td>jless<td>jlessjless</tr><tr><td>時間合わせ<td>emerge ntp/sbin/hwclock</tr></table><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-13-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-13-1" href="2005-01-13-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">ssh成功</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-13-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-13-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-13-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><table><tr><td>proftpd<td>emerge proftpdcp /etc/proftpd/proftpd.conf.sample /etc/proftpd/proftpd.conf/etc/ini.d/proftpd start</tr><tr><td>ssh<td>vp16cにてftp solo2300get .ssh/id_dsa.pubscp id_dsa.pub serverして.ssh/authorized_keysに追加でsolo2300よりssh server成功！</tr><tr><td>ChangeLogMemo<td>svn co svn+ssh://server/home/akapy/svnrepos/成功したけど~/svnrepos/trunk/ChangeLog深いけどいいか。。。とりあえず。</tr><tr><td>X.org<td>/etc/X11/xorg.conf見直し８００×６００までなのね。</tr><tr><td>Mew<td>/usr/lib/emacs/etc/Mew をtarしてコピー tar -cvzf ./mewpng.tar.gz /usr/lib/emacs/Mew~/Mailもtarしてコピー番号が出ない？？？mewのバージョンの仕様かな？</tr><tr><td>imap<td>ln -s /usr/sbin/stunnel /usr/bin/stunnel%フォルダに移動は3Z</tr></table><br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-01-12-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-01-12-2" href="2005-01-12-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">ooo＆それから</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-01-12-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-01-12-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-01-12-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><table><tr><td>OpenOffice.org<td>数日ぶりに emerge OpenOffice.org が終わりました。４日は動きっぱなしだったと思われる。</tr><tr><td>font<td>念のため emerge kochi-substiturefc-cache -fv</tr><tr><td>emacs-w3m<td>emerge emacs-w3mしたけどmenu-treeがどうのこうのとエラーになっているのでemerge -C emacs-w3mそしてemacs-w3m-1.4.2.tar.gzを手動でインストール。</tr><tr><td>だめmenu-tree.el<td>emacs_cvs_sep8_jpmenu.tgzの中のmenu-tree.elを/usr/share/emacs/site-lisp/ あたりにコピー。</tr><tr><td>.Xresources<td>.Xresources作成。</tr><tr><td>fdclone<td>fdcloneをインストール。machine.hは編集しなくてもＯＫ！<a href="http://discypus.jp/pukiwiki/">http://discypus.jp/pukiwiki/</a> pukiwiki.php?cmd=read&amp;page=Linux%2FRedHat%2Ffdclone</tr><tr><td>wb-line-number.el<td> 拾ってくるwb-line-number.el</tr><tr><td>nkf<td>emerge nkf</tr><tr><td>だめmenu-tree.el<td>ただコピペしたので文字コードこけているかも。<a href="http://homepage3.nifty.com/peterpan/">http://homepage3.nifty.com/peterpan/</a> Emacs/em213-customize-2.htmlnkf -e menu-tree.el</tr></table>||subversion||寝る前にemerge subversion しておきました。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-21-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-12-21-2" href="2004-12-21-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-12-21-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-12-21-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-12-21-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge canna<br>
+emerge kinput<br>
+emerge tamago<br>
+emerge -C net-www/mozilla-firefox-bin<br>
+emerge -C net-www/mozilla-firefox<br>
+</p><p>
+firefox-1.0.installer.tar.gzインスト<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-20-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-12-20-2" href="2004-12-20-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-12-20-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-12-20-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-12-20-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>/etc/inittabの agetty行コメントアウト<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-18-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-12-18-2" href="2004-12-18-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-12-18-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-12-18-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-12-18-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge net-www/mozilla-firefox-bin<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-17-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-12-17-2" href="2004-12-17-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-12-17-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-12-17-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-12-17-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge mew<br>
+途中まで emerge net-www/mozilla-firefox<br>
+[ゆ]で続き(再実行) emerge net-www/mozilla-firefox<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2004-12-16-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2004-12-16-2" href="2004-12-16-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">SOLO2300号</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2004-12-16-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2004-12-16-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2004-12-16-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_solo2300e58fb7.html">SOLO2300号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>emerge -p kterm と打ったら何か出てきたので、<br>
+<blockquote>emerge -n '>=sys-apps/portage-2.0.51'<br>
+cd /etc/<br>
+rm make.profile<br>
+ln -s ../usr/portage/profiles/default-linux/x86/2004.3 make.profile<br>
+</blockquote>emerge --help config<br>
+etc-update<br>
+emerge sync<br>
+emerge w3m してみたが無意味らしい。昨日やったからね。<br>
+emerge emacs<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-06 16:31
+
+</div></div></body></html>

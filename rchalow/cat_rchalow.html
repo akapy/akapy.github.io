@@ -1,0 +1,241 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>rchalow / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>rchalow - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2009-02-26-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-26-2" href="2009-02-26-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">Disqus再設定</span> [<a href="cat_rchalow.html">rchalow</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-26-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-26-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-26-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_rchalow.html">rchalow</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>Disqusのアカウントを消してしまったようなので再度チャレンジしてみた。<br>
+&nbsp;&nbsp;&nbsp;<br>
+まず以下の必要部分を読む。<br>
+- Disqus をつけてみた - ~fumi/ChangeLog：<a href="http://www.ftnk.jp/~fumi/cl/2008-07-06-3.html">http://www.ftnk.jp/~fumi/cl/2008-07-06-3.html</a><br>
+<hr>Disqusにサインインする。<br>
+「Welcome to Disqus!」とメールがくるので、Verify your email address for access to more sites:の後ろのリンクをクリックして登録確認する。<br>
+<hr><pre>http://disqus.com/integrate/アカウント/generic/</pre> にアクセスして埋め込むコードを確認する。<br>
+<hr>[Code Snippet #1]部分を template/item_page.htmlのコメントを表示させたい所に埋め込む。<br>
+<hr>template/item_page.htmlの固定リンクのうしろに<br>
+<blockquote>&lt;a href="<%= data[:url] %>#disqus_thread">Comments (View)&lt;/a><br>
+</blockquote>を追加。kuttukibbs.cgiの部分とか削除。<br>
+<hr>template/item_page.html<br>
+template/day_page.html<br>
+template/index.html<br>
+template/category_page.html<br>
+template/month_page.html<br>
+の<br>
+<strong>&lt;/body></strong>の前に<br>
+[Code Snippet #2]を追加。<br>
+<hr>そんな感じ。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2009-02-13-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-13-3" href="2009-02-13-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">コメントをDisqusにして使ってみよう</span> [<a href="cat_rchalow.html">rchalow</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-13-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-13-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-13-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_rchalow.html">rchalow</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>template/item.html<br>
+template/item_page.html<br>
+template/index.html<br>
+template/sidebar.html<br>
+を編集<br>
+さて、うまくいくのか？<br>
+<blockquote>Disqusにサインインした時に重要な表示があったんだろうな。。。<br>
+<<<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-02-12-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-12-2" href="2009-02-12-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">rchalow-0.0.2が公開されたのでテスト</span> [<a href="cat_rchalow.html">rchalow</a>][<a href="cat_chalow.html">chalow</a>][<a href="cat_chalow-rb.html">chalow-rb</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-12-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-12-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-12-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_rchalow.html">rchalow</a>][<a href="cat_chalow.html">chalow</a>][<a href="cat_chalow-rb.html">chalow-rb</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>「rchalow - chalow の Ruby 実装」：<a href="http://www.ftnk.jp/~fumi/cl/2009-02-12-1.html">http://www.ftnk.jp/~fumi/cl/2009-02-12-1.html</a><br>
+</p><p>
+<hr>youtubeプラグイン<br>
+<object width="425" height="350">
+<param name="movie" value="$url"></param>
+<embed src="http://www.youtube.com/v/c2o-HtDwTIk" type="application/x-shockwave-flash" 
+width="425" height="350"></embed></object>
+
+<br>
+amazon_imgプラグイン<br>
+<a href="http://www.amazon.co.jp/exec/obidos/ASIN/4894513277/ftnk1221-22/ref=nosim"><img src="http://images-jp.amazon.com/images/P/4894513277.09.MZZZZZZZ.jpg" alt=""></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4894513277/ftnk1221-22/ref=nosim"></a><br>
+</p><p>
+<hr>＜inside ref＞<br>
+item への ref <a href="2005-11-08-2.html">[2005-11-08-2]</a><br>
+<a href="2005-11-08.html">[2005-11-08]</a><br>
+</p><p>
+<hr>＜readmore＞<br>
+foo bar<br>
+<div class="readmore"><p>
+<hr>＜Hiki 記法のテスト table＞<br>
+<table><tr><td>a<td>b<td>c</tr><tr><td>1<td>2<td>3</tr></table><br>
+<hr>＜長い url のテスト＞<br>
+<a href="http://ja.wikipedia.org/wiki/0.999...%E3%81%8C1%E3%81%AB%E7%AD%89%E3%81%97%E3%81%84%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E">http://ja.wikipedia.org/wiki/0.999...%E3%81%8C1%E3%81%AB%E7%AD%89%E3<br>
+%81%97%E3%81%84%E3%81%93%E3%81%A8%E3%81%AE%E8%A8%BC%E6%98%8E</a><br>
+</p><p>
+<hr>＜hiki url＞<br>
+<a href="http://ftnk.no-ip.com/~fumi/cl/">cl</a><br>
+</p><p>
+<hr>＜引用のテスト＞<br>
+">>" と "<<" による引用<br>
+<blockquote>ここから<br>
+1<br>
+2<br>
+ここまで<br>
+</blockquote><br>
+">" による引用<br>
+<blockquote>ここも引用(>)<br>
+</blockquote><br>
+">" による複数行の引用<br>
+<blockquote>ここから<br>
+1<br>
+2<br>
+ここまで<br>
+</blockquote><br>
+"|" による引用<br>
+<blockquote>引用 (|)<br>
+</blockquote><br>
+<hr>＜文字修飾のテスト＞<br>
+取り消し <s>ABC</s><br>
+強調 <em>ABC</em><br>
+さらに強調 <strong>ABC</strong><br>
+</p><p>
+<hr>＜rchalow の test 5＞<br>
+<pre>./rchalow ChangeLog</pre><p>
+<hr>＜rchalow の test 4＞<br>
+entry 数を増やす<br>
+</p><p>
+<hr>＜rchalow の test 3＞：item header の行から始まる場合．<br>
+</p><p>
+<hr>＜rchalow の test 2＞<br>
+<a href="2005-11-05-1.html">[2005-11-05-1]</a> のつづき<br>
+<a href="http://ftnk.no-ip.com/~fumi/cl/">http://ftnk.no-ip.com/~fumi/cl/</a><br>
+</p><p>
+<hr>＜rchalow の test＞<br>
+test<br>
+「__DATA__」で始まる行があると、それ以降の記述は無視される。タブで始まっても無視される。<br>
+</p></div><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-02-03-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-03-1" href="2009-02-03-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">rchalowを使って気が付いたこと</span> [<a href="cat_rchalow.html">rchalow</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-03-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-03-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-03-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_rchalow.html">rchalow</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><s>１) rcl.conf：@page_mode = 1 にすると</s><br>
+<blockquote>         <s><a href="http://pub.cozmixng.org/~akapy/rchalow/2009-02-10.html$2009-02-10-1">http://pub.cozmixng.org/~akapy/rchalow/2009-02-10.html$2009-02-10-1</a></s><br>
+</blockquote>         <s>$ が # になればいいかな。</s><br>
+&nbsp;&nbsp;&nbsp;<br>
+２) 文章中に空行が必要な時には[TAB][space]だけの行を入れておく<br>
+&nbsp;&nbsp;&nbsp;<br>
+３) rchalow -c で他のファイルを指定しても ./rcl.conf が適用されてるかも。<br>
+&nbsp;&nbsp;<br>
+４) 文頭の[space]の入り方、文字のずれ方がtxtと違うような。。。<br>
+&nbsp;&nbsp;<br>
+５) clsearch.rbが欲しい<br>
+&nbsp;&nbsp;&nbsp;<br>
+<s>６) item_header_mark が表示されない</s> dot-pink*.pngが不足してたようだ。2009/5/19<br>
+&nbsp;&nbsp;&nbsp;<br>
+７) month_page.html の[前の月][次の月]へのリンクがおかしいかも。<br>
+&nbsp;&nbsp;&nbsp;<br>
+８) 同じエントリー内に<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ｅｓｃ]hoge[/ｅｓｃ]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ｅｓｃ]hugahuga[/ｅｓｃ]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;があると両方ともhugahugaになったりするみたい。。。<br>
+<blockquote>       <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;…<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+</blockquote>    １個しか使わないことにしよう。<br>
+</p><p>
+      
+    </p>
+    
+    <div class="referer">
+      <span>Referrer (Inside): <a href="2010-06-05-5.html">[2010-06-05-5]</a></span>
+    </div>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-06 16:31
+
+</div></div></body></html>

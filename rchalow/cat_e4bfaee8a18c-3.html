@@ -1,0 +1,793 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>修行 / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+ / <a href="cat_e4bfaee8a18c.html">カテゴリ最新ページ</a> / 
+
+<a href="cat_e4bfaee8a18c-2.html">前ページ</a>
+
+<a href="cat_e4bfaee8a18c.html">1</a> <a href="cat_e4bfaee8a18c-2.html">2</a> 3 <a href="cat_e4bfaee8a18c-4.html">4</a> <a href="cat_e4bfaee8a18c-5.html">5</a> <a href="cat_e4bfaee8a18c-6.html">6</a> <a href="cat_e4bfaee8a18c-7.html">7</a>
+
+<a href="cat_e4bfaee8a18c-4.html">次ページ</a>
+
+/ page 3 (7)
+
+<h1>修行 - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2006-06-18-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-18-3" href="2006-06-18-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">衝突したら</span> [<a href="cat_subversion.html">subversion</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-18-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-18-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-18-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_subversion.html">subversion</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>svn update すると一時ファイルと合わせて４つのファイルができる<br>
+<blockquote>-rw-r--r--   1 akapy users 694008 2006-06-18 17:15 ChangeLog<br>
+-rw-r--r--   1 akapy users 693935 2006-06-18 17:06 ChangeLog.mine<br>
+-rw-r--r--   1 akapy users 693483 2006-06-18 17:06 ChangeLog.r924<br>
+-rw-r--r--   1 akapy users 693556 2006-06-18 17:06 ChangeLog.r925<br>
+</blockquote>ChangeLog を手動で編集する。衝突マーカを見れば簡単。<br>
+その後、一時ファイルを消去<br>
+<blockquote>rm trunk/ChangeLog.mine<br>
+rm trunk/ChangeLog.r924<br>
+rm trunk/ChangeLog.r925<br>
+</blockquote>svn resolved を実行<br>
+<blockquote>svn resolved trunk/ChangeLog<br>
+</blockquote>で、svn co<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2006-06-10-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-10-1" href="2006-06-10-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">トラブル</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-10-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-10-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-10-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>旭小屋に戻ったらnetst号でメール受信ができなかった。<br>
+何だ？<br>
+/home が満杯になってる。<br>
+/dev/hda3のパラメーターの値が変になってる。<br>
+簡単に直りそうもない。でもデータは無事だった。<br>
+原因はスクリプトの結果データがデカくなってしまったようだ。<br>
+いろいろやって復活できた。<br>
+<blockquote>cp -a /home/* /back<br>
+</blockquote>HDDが死んだんじゃなくて助かった。<br>
+チャグチャグ馬コには行くな ということだろう。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-06-07-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-06-07-3" href="2006-06-07-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">ic-netのPOPに失敗したら</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-06-07-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-06-07-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-06-07-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>ic-netのメールをPOP受信できないことがあるのよね。<br>
+何かが bsfilterに引っかかるみたい。それともmewか？<br>
+とにかくWeb-mailで変なメール消せばいいはず。<br>
+</p><p>
+今日の原因は<br>
+「河北新報コルネット　ニュースヘッドライン」みたいだ。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-28-4 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-02-28-4" href="2006-02-28-4.html"><span class="sanchor">■</span></a> <span class="clitemheader">tdiaryのデータ</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-02-28-4.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-02-28-4.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-02-28-4.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>うちのデータは data/diary 内にあるようだ。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-25-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-02-25-1" href="2006-02-25-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">確定申告とe-TAX</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-02-25-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-02-25-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-02-25-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>国税庁の確定申告書作成コーナーを使っていたら「電子申告用データの作成」というボタンがあった。<br>
+印刷しなくていいなら楽だな〜と思ってe-Taxのページを確認したら、WinとIE6以上じゃないとダメなんだと。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.e-tax.nta.go.jp/systemriyou/systemriyou2.html">http://www.e-tax.nta.go.jp/systemriyou/systemriyou2.html</a><br>
+あっさり捨て。<br>
+年に一回のことだしね。紙も残しておかないと不安だし。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-02-25-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-02-25-2" href="2006-02-25-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">mew添付ファイル送信</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-02-25-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-02-25-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-02-25-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>C-c C-a<br>
+ファイル位置の .の場所で c<br>
+エコーエリアでファイル名入力<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2006-01-19-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2006-01-19-2" href="2006-01-19-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">cl2kaimonocsv.rb</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_rubye381aee58b89e5bcb7.html">rubyの勉強</a>][<a href="cat_chalow.html">chalow</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2006-01-19-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2006-01-19-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2006-01-19-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_rubye381aee58b89e5bcb7.html">rubyの勉強</a>][<a href="cat_chalow.html">chalow</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><blockquote>[src]<br>
+#!/usr/bin/env ruby<br>
+$KCODE="EUC"<br>
+#<br>
+##!/usr/bin/env perl<br>
+# $Id: ChangeLog 1250 2007-06-05 14:58:37Z akapy $<br>
+# ChangeLog メモで家計簿!<br>
+#  ref. &lt;<a href="http://nais.to/~yto/doc/zb/0016.html#kakeibo">http://nais.to/~yto/doc/zb/0016.html#kakeibo</a>><br>
+#<br>
+# ■フォーマット<br>
+#買a物ログ:<br>
+# ^\t[費目][スペース][コメント][金額]$<br>
+# - スペースは半角でも全角でも良い。<br>
+# - 金額は半角数字。桁カンマは入れてはいけない。<br>
+#<br>
+# ■注意<br>
+# - 日本語コードは EUC を仮定<br>
+# - Excel に読み込ませる前に文字コードを Shift-JIS に変換する必要あり<br>
+#<br>
+# ■記述例＆実行例<br>
+# <br>
+# $ cat ChangeLog<br>
+# 2003-08-02  YAMASHITA Tatsuo  &lt;yto@example.com><br>
+# <br>
+# 	* できごと: だらだらしてた。<br>
+# <br>
+# 	* p:買a物ログ: <br>
+# 	食 スーパー 1050<br>
+# 	本 コンビニで雑誌 380<br>
+# <br>
+# 2003-08-01  YAMASHITA Tatsuo  &lt;yto@example.com><br>
+# <br>
+# 	* できごと: 川崎で映画。<br>
+# <br>
+# 	* p:買a物ログ: <br>
+# 	外 ファーストフード 525<br>
+# 	遊 映画 2000<br>
+# 	交 川崎往復 420<br>
+# 	食 スーパー 780<br>
+# <br>
+# 2003-07-31  YAMASHITA Tatsuo  &lt;yto@example.com><br>
+# <br>
+# 	* できごと: 渋谷に出掛けた。<br>
+# <br>
+# 	* p:買a物ログ: <br>
+# 	外 レストラン 3000<br>
+# 	交 渋谷往復 640<br>
+# 	雑 ペンとメモ帳 550<br>
+# <br>
+# $ cl2moneycsv.pl ChangeLog<br>
+#           ,  外,  食,  交,  遊,  本,  音,  雑,  衣,  他<br>
+# 2003.07.31,3000,   0, 640,   0,   0,   0, 550,   0,   0<br>
+# 2003.08.01, 525, 780, 420,2000,   0,   0,   0,   0,   0<br>
+# 2003.08.02,   0,1050,   0,   0, 380,   0,   0,   0,   0<br>
+# $ cl2moneycsv.pl -m ChangeLog  (←月毎に集計)<br>
+#           ,  外,  食,  交,  遊,  本,  音,  雑,  衣,  他<br>
+# 2003-07,3000,   0, 640,   0,   0,   0, 550,   0,   0<br>
+# 2003-08, 525,1830, 420,2000, 380,   0,   0,   0,   0<br>
+# $ cl2moneycsv.pl -m ChangeLog | nkf -s > kaimono.csv<br>
+</p><p>
+# use strict;<br>
+</p><p>
+</p><p>
+# 費目 an item of expendidure<br>
+#my @lioe = ('外', '食', '交', '遊', '本', '音', '雑', '衣', '他')<br>
+lioe = ["外","食","交","遊","本","音","雑","衣","他"]<br>
+#lioe = %w(外 食 交 )<br>
+</p><p>
+inside_flag = 0<br>
+</p><p>
+entry = {}<br>
+p lioe<br>
+</p><p>
+</p><p>
+#while (<>) {<br>
+#while <><br>
+while line = ARGF.gets<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if /^((\d{4}-\d\d)-\d\d)/ =~ line then  # 日付をキープ<br>
+&nbsp;&nbsp;&nbsp;&nbsp;date = $1		# = year-month-day<br>
+#	    $date =~ s|-|.|g	# for Excel<br>
+#            p date<br>
+&nbsp;&nbsp;&nbsp;&nbsp;elsif /買a物ログ:/ =~ line then	# 家計簿データ記述ブロックの始まり<br>
+inside_flag = 1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;elsif inside_flag == 1 then   # ブロック内<br>
+if /^\s*$/ =~ line and inside_flag == 1 then  # ブロックの終わり<br>
+&nbsp;&nbsp;&nbsp;&nbsp;inside_flag = 0<br>
+else	#  /^\t(.+?)(\s|\xa1\xa1).*(\s|\xa1\xa1)(\d+)$/<br>
+&nbsp;&nbsp;kamoku = $1<br>
+&nbsp;&nbsp;naiyou = $2<br>
+&nbsp;&nbsp;kingaku = $3<br>
+&nbsp;&nbsp;p date,line.chomp.split(nil)<br>
+#	  p date,kamoku,naiyou,kingaku<br>
+&nbsp;&nbsp;# $1,$2,$3,$4,$5<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;end<br>
+&nbsp;&nbsp;&nbsp;&nbsp;end<br>
+end<br>
+</p><p>
+=begin<br>
+85,89,92<br>
+#print " " x 10, ",  ", join(',  ', @lioe), "\n"<br>
+p " " x 10, ",  ", join(',  ', lioe), "\n"<br>
+</p><p>
+#foreach date (sort keys entry) {<br>
+#    print "$date,"<br>
+#    print join(',', map {sprintf "%4d", $entry{$date}{$_}} @lioe), "\n"<br>
+#}<br>
+date.times<br>
+&nbsp;&nbsp;&nbsp;p date ;<br>
+end<br>
+</p><p>
+=end<br>
+[src]<br>
+<<<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-22-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-22-3" href="2005-10-22-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">設定</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-22-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-22-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-22-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・IMAPS成功<br>
+&nbsp;&nbsp;&nbsp;&nbsp;stunnel-4.12<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s>./configure</s><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./configure --prefix=/usr<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<s># ln -s /usr/local/sbin/stunnel /usr/bin/</s><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mewを再起動<br>
+</p><p>
+・ssh<br>
+svn co svn+sshするには、まずsshできないとダメみたい。<br>
+&nbsp;&nbsp;&nbsp;ssh-keygen -t dsa<br>
+&nbsp;&nbsp;&nbsp;できた .ssh/id_dsa.pub をサーバーの.ssh/authorized_keys に追加。<br>
+これでssh成功。<br>
+</p><p>
+・Subversion<br>
+&nbsp;&nbsp;&nbsp;subversion-1.2.3<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;./configure<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;make<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# make install<br>
+</p><p>
+・ChangeLogメモ<br>
+&nbsp;&nbsp;&nbsp;svn co svn+ssh://サーバー/home/akapy/svnrepos/trunk/<br>
+パス入力３回目で成功。<br>
+&nbsp;&nbsp;&nbsp;svn update<br>
+成功！<br>
+</p><p>
+関係ないけど今週も「踊る大捜査線」<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-21-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-21-1" href="2005-10-21-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">設定</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-21-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-21-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-21-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・canna user辞書をコピー：/usr/lib/canna/dic/user/usr1.ctdを編集。<br>
+</p><p>
+・hdaとhdbを入れ換え。grubを設定し直さないと起動しないわな。<br>
+&nbsp;&nbsp;&nbsp;まず入れ換える前に<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/etc/fstab、/etc/grub.confを編集。(hdb-->hda)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;grub-install /dev/hdb<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;4.03側をMaster( /dev/hda )につなぐ。<br>
+&nbsp;&nbsp;&nbsp;あとは4.0側の/etc/fstab、/etc/grub.confを適ベン編集。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;注意）Plamo4.03のインストールCDで起動してgrubを設定できないか試したがダメ。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;）KNOPPIXのCDでもやってみたが検討外れなコマンドを打ってたかも。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;）結局 hdbのPlamo4.03を起動して grub-install /dev/hdb を試すに至った。<br>
+&nbsp;これでPlamo4.0のHDDは外しても大丈夫になった。めでたし^2<br>
+</p><p>
+</p><p>
+ToDo:<br>
+&nbsp;&nbsp;&nbsp;IMAP:stunnel？<br>
+&nbsp;&nbsp;&nbsp;ChangeLogMemo:Subversion<br>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-20-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-20-1" href="2005-10-20-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">設定</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-20-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-20-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-20-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>bsfilterの設定。kakasiのRubyバインディングが入ってないらしい。<br>
+どうせだからMecabをインストール。ipadicが必要。dirを間違えて何度か失敗。<br>
+良く確認したら成功。<br>
+bsfilter.confも書き換えて無事動く。icのメールも読めた。<br>
+dot.mew.elなどを変更してX-spam-flag:Yesのとき自動的にDマーク。感動。<br>
+</p><p>
+ToDo:<br>
+&nbsp;&nbsp;&nbsp;IMAP:stunnel？<br>
+&nbsp;&nbsp;&nbsp;ChangeLogMemo:Subversion<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-19-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-19-1" href="2005-10-19-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">インストールやりなおし</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-19-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-19-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-19-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>firefox1.07が変なので最初からPlamo4.03インストやりなおししてみた。<br>
+・まずfirefox1.07をインスト。今度は成功。<br>
+・removepkg mozilla<br>
+・removepkg mew<br>
+・mew-4.2.53をmake、make info、make install、make jinfo、make install-jinfo<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Mew.pngのためのdot.emacs記述追加。<br>
+・ruby-1.83インスト。<br>
+・bsfilter-1.09インスト。設定はまだ。<br>
+20時ごろ--23:30<br>
+</p><p>
+nifのメールは問題なく送受信ＯＫ！<br>
+icのはbsfilterが必要。<br>
+cozはstunnelだけだっけ？<br>
+メール環境を整えるだけで大変だ。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-15-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-15-1" href="2005-10-15-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">PerlユーザーのためのＲｕｂｙ入門</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_e69cac.html">本</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-15-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-15-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-15-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_e69cac.html">本</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>本やタウンにて発注<br>
+これでRuby関係の本は３冊になりました。<br>
+でも今日はやめよ。踊る大捜査線だし。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-14-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-14-1" href="2005-10-14-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">マシン改造</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-14-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-14-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-14-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_netste58fb7.html">NetSt号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>Netst号にHDDを増設してPlamo4.03とPlamo4.0をデュアルブートしよ。<br>
+・増設しようとしていたスマイルHDDが死んでいた(泣<br>
+・NetSt号のCDROMではPlamo4.03のCDが起動できなかった。<br>
+&nbsp;&nbsp;別なマシンのDVDドライブを取り付けて起動した。<br>
+・インストールは終わってデュアルブートできるようになった。<br>
+・removepkg mew した。<br>
+・<a href="http://web.kyoto-inet.or.jp/people/jeanne/linux/linuxmemo27.html">http://web.kyoto-inet.or.jp/people/jeanne/linux/linuxmemo27.html</a> を読んで、<br>
+&nbsp;&nbsp;&nbsp;mew4.2.53をmake、make info、make install、make jinfo、make install-jinfo<br>
+&nbsp;&nbsp;でも起動しない。Mew.pngがないとか。<br>
+・removepkg mozilla。firefox1.07インストールしたが変。<br>
+19時ごろ--23:30<br>
+</p><p>
+む。タレからメールがきてる。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-13-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-13-1" href="2005-10-13-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">マシン改造方針</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-13-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-13-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-13-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・Netst号にHDDを増設してPlamo4.03とPlamo4.0をデュアルブートしよ。<br>
+・GW-naka号にHDDを増設してGentooをインストするかも。<br>
+・VP16CノートのHDDを6Gに交換しよ。で、Plamo4.03インスト。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-10-12-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-10-12-1" href="2005-10-12-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">マシンの現状確認までいけなかった</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e69cac.html">本</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-10-12-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-10-12-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-10-12-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e69cac.html">本</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>・「Rubyプログラミング入門」   原 信一郎  店頭で購入<br>
+・「Ｐｅｒｌユ−ザ−のためのＲｕｂｙ入門」本やタウンで発注<br>
+</p><p>
+Plamo4.03のISOイメージDownload、CD焼き<br>
+今使えそうなマシンは  kiku2号、Netst号、Gw-n号<br>
+消して使ってもいいHDDは ４０G、８０G がある。<br>
+/etc、/home は tarしてバックアップしよ。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-09-27-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-09-27-1" href="2005-09-27-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">stingerにて</span> [<a href="cat_e381a7e3818de38194e381a8.html">できごと</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-09-27-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-09-27-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-09-27-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381a7e3818de38194e381a8.html">できごと</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>某ヒデぱそこんでstingerを実行したらNetskyが発見されました。<br>
+感染ファイルは１つだったみたいだけど完全な駆除はできてないだろうな。<br>
+あとは自分でなんとかするように。<br>
+これやればいいかも↓<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.symantec.com/region/jp/avcenter/venc/data/jp-w32.netsky@mm.removal.tool.html">http://www.symantec.com/region/jp/avcenter/venc/data/jp-w32.netsky@mm.removal.tool.html</a><br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-09-24-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-09-24-2" href="2005-09-24-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">どっとmew</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e383a1e383a2.html">メモ</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-09-24-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-09-24-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-09-24-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_e383a1e383a2.html">メモ</a>][<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>今更ながら[cozmix:671]を参考に変更してみた。<br>
+どうやってチェックしようかな。<br>
+</p><p>
+ん？ これって Mew4でないとダメ？？<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-09-15-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-09-15-3" href="2005-09-15-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">ＦＭアンテナ</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-09-15-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-09-15-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-09-15-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>やっとＦＭアンテナをあげた。屋根に登ってテレビのアンテナの下に取り付けた。<br>
+1990年ごろ買ったトンボアンテナ(位相差給電方式)<br>
+&nbsp;&nbsp;&nbsp;参考写真 <a href="http://www.geocities.jp/tu879r/sub9.html">http://www.geocities.jp/tu879r/sub9.html</a><br>
+すごく感度が良くなった。パソコンのノイズも関係ないし。<br>
+ＦＭ岩手が入る。ラジオ石巻も辛うじて聞ける。なんかもっと入るんだけど<br>
+どこの局だか分からない。<br>
+石巻に向ければラジオ石巻はもっと良く入るのだが、Date-fmを優先したため<br>
+今の状態に決めた。<br>
+<blockquote>76.1 MHz  ＦＭ岩手  <a href="http://www.fmii.co.jp/">http://www.fmii.co.jp/</a><br>
+76.4 MHz  ラジオ石巻  <a href="http://www.fm764.jp/">http://www.fm764.jp/</a><br>
+77.1 MHz  Date-fm  <a href="http://www.datefm">http://www.datefm</a><br>
+78.1 MHz  [塩釜] BAYWAVE（ベイウェーブ） <a href="http://www.bay-wave.co.jp/">http://www.bay-wave.co.jp/</a><br>
+78.8 MHz  ＦＭじょんぱ  <a href="http://fm788.net/">http://fm788.net/</a>だと思われる<br>
+81.8 MHz  ふくしまＦＭ  <a href="http://www.fmf.co.jp/pc/">http://www.fmf.co.jp/pc/</a><br>
+82.5 MHz  NHK-FM<br>
+</blockquote>全国のNHK-FMの周波数 <a href="http://www.nhk.or.jp/res/tvres5/h50303.htm">http://www.nhk.or.jp/res/tvres5/h50303.htm</a><br>
+宮城県のNHKの周波数 <a href="http://www.nhk.or.jp/sendai/top/jyusin/channel/miyagi.html">http://www.nhk.or.jp/sendai/top/jyusin/channel/miyagi.html</a><br>
+</p><p>
+本間のあにきにメールしてみた。放送された。<br>
+<blockquote>Subject: アンテナ設置。<br>
+From: akapy<br>
+To: jam@datefm.co.jp<br>
+Cc: akapy<br>
+Date: Thu, 15 Sep 2005 15:56:15 +0900 (JST)<br>
+X-Mailer: Mew version 3.3 on Emacs 21.3 / Mule 5.0 (SAKAKI)<br>
+</p><p>
+To: 本間のあにき<br>
+</p><p>
+旧河南町北村のあかぴです。<br>
+</p><p>
+あにきー、本日、自宅にアンテナをあげましたよ。<br>
+ＦＭ専用アンテナっす。<br>
+ずいぶん前から物置で眠ってたんですが やっと重い腰をあげました。<br>
+</p><p>
+自分で屋根に上がってアンテナの向きを調整してたら<br>
+某石巻のコミュニティＦＭが聞こえてきたんですよ。<br>
+なんか聞いた事のある女性の声だったような。。<br>
+危うくそっちにアンテナを向けそうになりましたが<br>
+Date-fmに戻しました。<br>
+なんてりっぱなリスナーなんだ＞自分<br>
+</p><p>
+今までモノラルでないと聞くに耐えない状態だったのが、<br>
+携帯で言うところのアンテナ２.５本くらいのすばらしい状態に<br>
+なりました。これでステレオ状態で聞けます。<br>
+</p><p>
+ではこれからも宜しくお願い致します。<br>
+---<br>
+あかぴ  赤畑慶幸<br>
+石巻市<br>
+</blockquote><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2005-09-14-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2005-09-14-2" href="2005-09-14-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">念願の土鍋</span> [<a href="cat_e4bfaee8a18c.html">修行</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2005-09-14-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2005-09-14-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2005-09-14-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>やっと土鍋を買いました。<br>
+土鍋といっても鍋パーティーやるためのものとは違います。<br>
+ご飯を炊くために用意したんです。おヒツに使うのもいいそうです。<br>
+さっそく雑炊。新しい土鍋はおかゆや雑炊を作ると隙間が埋まって良いそうです。<br>
+と思ったらオイが作ったのはおじやだな。<br>
+&nbsp;&nbsp;<a href="http://d.hatena.ne.jp/keyword/%BB%A8%BF%E6">http://d.hatena.ne.jp/keyword/%BB%A8%BF%E6</a><br>
+お粥、雑炊、おじや。う〜ん。<br>
+いいね〜。 <a href="http://search.hatena.ne.jp/">http://search.hatena.ne.jp/</a><br>
+</p><p>
+ところでガッテンでマイタケやってるな。<br>
+勉強しとこ。<br>
+料理は６０〜７０℃か。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-06 16:31
+
+</div></div></body></html>
