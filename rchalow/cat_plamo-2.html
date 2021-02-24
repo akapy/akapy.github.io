@@ -1,0 +1,827 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Plamo / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+ / <a href="cat_plamo.html">カテゴリ最新ページ</a> / 
+
+<a href="cat_plamo.html">前ページ</a>
+
+<a href="cat_plamo.html">1</a> 2 <a href="cat_plamo-3.html">3</a> <a href="cat_plamo-4.html">4</a> <a href="cat_plamo-5.html">5</a>
+
+<a href="cat_plamo-3.html">次ページ</a>
+
+/ page 2 (5)
+
+<h1>Plamo - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2011-01-19-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2011-01-19-1" href="2011-01-19-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">パスポート切替書類／2609-73JにPlamo-4.73</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2011-01-19-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2011-01-19-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2011-01-19-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>役場と石巻合同庁舎に行った。申請書類確保。<br>
+合庁の建物古いね。<br>
+実際の手続きは来月にしよう。金も少ないので。<br>
+<hr>万を持して？、2609-73JにPlamo-4.73をインスト<br>
+相変わらずnfsに手間取る。。。<br>
+まずmanmaru号からnfsマウントできるようにしてから。<br>
+<blockquote>SC420の/etc/exports<br>
+<hr>----------<br>
+/plamo-ftp  192.168.1.0/255.255.255.0(ro)<br>
+</p><p>
+</p><p>
+/etc/hosts.allow<br>
+<hr>------------------<br>
+ALL : 192.168.1.0/255.255.255.0<br>
+# End of hosts.allow.<br>
+</p><p>
+</p><p>
+/etc/hosts.deny<br>
+<hr>---------------<br>
+ALL : ALL<br>
+# End of hosts.deny.<br>
+</blockquote>nfsインストにて /plamo-ftp/plamo  でＯＫ！<br>
+Ｘはあっさり起動。デフォの xf86-video-siliconmotion-1.7.3 にて<br>
+mewの丸数字は文字化け直らず。なんでmanmaru号は大丈夫なんだろう？<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2010-11-10-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-11-10-1" href="2010-11-10-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">updatepkg linux_pam-1.1.3-i586-P1.tgz</span> [<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-11-10-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-11-10-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-11-10-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><blockquote>sudo removepkg linux_pam<br>
+</blockquote>とかやっちゃうとハマります(苦笑<br>
+&nbsp;&nbsp;<br>
+正解は<br>
+&nbsp;&nbsp;sudo updatepkg linux_pam-1.1.3-i586-P1.tgz<br>
+または<br>
+&nbsp;&nbsp;/var/log/packages/linux_pam をリネームしてからinstallpkg<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-10-16-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-10-16-1" href="2010-10-16-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo-4.73でDVDを焼く</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_gentoo.html">Gentoo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-10-16-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-10-16-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-10-16-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_gentoo.html">Gentoo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>はじめてLinux上でDVDを焼いてみた(笑)<br>
+Windowsのソフトより速いし安定感あるな。<br>
+CDのisoイメージをDVDに焼いても起動できるのね。<br>
+<blockquote>~$ sudo cdrecord -scanbus<br>
+Cdrecord-ProDVD-ProBD-Clone 2.01.01a75 (i686-pc-linux-gnu) Copyright (C) 1995-2010 J g Schilling<br>
+Linux sg driver version: 3.5.34<br>
+Using libscg version 'schily-0.9'.<br>
+scsibus0:<br>
+0,0,0	  0) 'ATA     ' 'ST380013AS      ' '8.12' Disk<br>
+0,1,0	  1) *<br>
+0,2,0	  2) *<br>
+0,3,0	  3) *<br>
+0,4,0	  4) *<br>
+0,5,0	  5) *<br>
+0,6,0	  6) *<br>
+0,7,0	  7) *<br>
+scsibus4:<br>
+4,0,0	400) 'ATA     ' 'ST380011A       ' '3.16' Disk<br>
+4,1,0	401) '_NEC    ' 'DVD_RW ND-3540A ' '1.22' Removable CD-ROM<br>
+4,2,0	402) *<br>
+4,3,0	403) *<br>
+4,4,0	404) *<br>
+4,5,0	405) *<br>
+4,6,0	406) *<br>
+4,7,0	407) *<br>
+</p><p>
+~$ sudo cdrecord dev=4,1,0 -data download/livedvd-x86-amd64-32ul-10.1.iso<br>
+cdrecord: No write mode specified.<br>
+cdrecord: Assuming -sao mode.<br>
+cdrecord: If your drive does not accept -sao, try -tao.<br>
+cdrecord: Future versions of cdrecord may have different drive dependent defaults.<br>
+Cdrecord-ProDVD-ProBD-Clone 2.01.01a75 (i686-pc-linux-gnu) Copyright (C) 1995-2010 J g Schilling<br>
+scsidev: '4,1,0'<br>
+scsibus: 4 target: 0 lun: 0<br>
+Linux sg driver version: 3.5.34<br>
+Using libscg version 'schily-0.9'.<br>
+Device type    : Removable CD-ROM<br>
+Version        : 5<br>
+Response Format: 2<br>
+Capabilities   : <br>
+Vendor_info    : '_NEC    '<br>
+Identifikation : 'DVD_RW ND-3540A '<br>
+Revision       : '1.22'<br>
+Device seems to be: Generic mmc2 DVD-R/DVD-RW/DVD-RAM.<br>
+Using generic SCSI-3/mmc   CD-R/CD-RW driver (mmc_cdr).<br>
+Driver flags   : MMC-3 SWABAUDIO BURNFREE <br>
+Supported modes: TAO PACKET SAO SAO/R96R RAW/R96R<br>
+cdrecord: Warning: Cannot read drive buffer.<br>
+cdrecord: Warning: The DMA speed test has been skipped.<br>
+Starting to write CD/DVD/BD at speed 4 in real SAO mode for single session.<br>
+Last chance to quit, starting real write    0 seconds. Operation starts.<br>
+Turning BURN-Free off<br>
+cdrecord: WARNING: Drive returns wrong startsec (0) using -150<br>
+Track 01: Total bytes read/written: 116617216/116617216 (56942 sectors).<br>
+~$ <br>
+</blockquote><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-10-06-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-10-06-1" href="2010-10-06-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo-4.73で Rabbit／firefoxアドオン「システムモニター」</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_rabbit.html">Rabbit</a>][<a href="cat_sc420.html">SC420</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-10-06-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-10-06-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-10-06-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_rabbit.html">Rabbit</a>][<a href="cat_sc420.html">SC420</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>朝から<a href="http://www.clear-code.com/blog/2010/10/5.html">「CPUの使用率とメモリの使用量を表示するFirefoxアドオン「システムモニター」を更新しました」</a>を読んだりして。気が向いたのでインストしてみた。<br>
+某kou氏に聞くと libgtopが必要らしいので、libgtop-2.28.1 をインスト<br>
+<blockquote>プラットフォームは、WindowsXP SP1以降、Mac OS X、Linuxをサポートしています。Linuxではlibgtop2を使用していますので、別途インストールしてください。<br>
+&nbsp;&nbsp;&nbsp;<a href="http://www.clear-code.com/blog/2009/10/19.html">http://www.clear-code.com/blog/2009/10/19.html</a><br>
+</blockquote>それからいよいよ<br>
+&nbsp;&nbsp;&nbsp;<a href="https://addons.mozilla.org/ja/firefox/addon/15093/">https://addons.mozilla.org/ja/firefox/addon/15093/</a><br>
+をインスト<br>
+firefoxの右上にグラフが出るようになる。web表示が遅い時などチェック！<br>
+<a href="http://picasaweb.google.co.jp/akapy1967/20109#5525095173211140322"><img src="http://lh4.ggpht.com/_QpYCoUDlOek/TK0UyW15sOI/AAAAAAAAFao/Lm2eip4jcTo/s288/sys-moni2.jpg" alt="画像"></a><br>
+<hr>昨日に引続き<a href="http://www.cozmixng.org/~rwiki/?cmd=view;name=Rabbit%3A%3AUsersGroup.ja">ショッカー</a>のおつとめ<br>
+今日はPlamo-4.73   こっちも前回は４年前<a href="2006-09-30.html">[2006-09-30]</a> ＋ <a href="2006-10-01.html">[2006-10-01]</a>あたり。<br>
+まず、rubygems-1.3.7.tgzをインスト<br>
+<blockquote>tar -xzvf rubygems-1.3.7.tgz<br>
+cd rubygems-1.3.7<br>
+sudo ruby setup.rb<br>
+</blockquote>次に、rdtool-0.6.22.tar.gzインスト<br>
+<blockquote>tar -xzvf rdtool-0.6.22.tar.gz<br>
+cd rdtool-0.6.22<br>
+sudo ruby setup.rb<br>
+</blockquote>で、いよいよ<br>
+<blockquote>sudo gem install --remote rabbit<br>
+</blockquote>これで rabbit-0.9.0 を使えるようになりました。<br>
+<a href="http://picasaweb.google.co.jp/akapy1967/20109#5524866662403799250"><img src="http://lh3.ggpht.com/_QpYCoUDlOek/TKxE9Rv5-NI/AAAAAAAAFaA/juW3XO7ozTk/s288/plamo4.73-Rabbit090.jpg" alt="画像"></a><br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-09-22-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-09-22-1" href="2010-09-22-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">SC420にGentoo</span> [<a href="cat_sc420.html">SC420</a>][<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-09-22-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-09-22-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-09-22-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_sc420.html">SC420</a>][<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>連休前からGentoo熱が。<br>
+なぜかパーティションは準備してあった(笑)<a href="2009-05-18.html">[2009-05-18]</a><br>
+Plamo-4.73からchrootしてインストール。<br>
+genkernelの途中でlzmaコマンドが無いというエラーで止まったので<br>
+<blockquote>emerge lzma-utils<br>
+</blockquote>これでgenkernelも成功！<br>
+デュアルブートで起動できるとこまで完了。<br>
+やっぱgenttoのインストは神経使う。風呂とポン酒で疲れを癒す(笑)<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-09-03-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-09-03-1" href="2010-09-03-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo-4.73インスト</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_manmarue58fb7.html">manmaru号</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-09-03-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-09-03-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-09-03-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_manmarue58fb7.html">manmaru号</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>とりあえずmanmaru号にインスト。<br>
+起動時にペンギンが現れるようになったか。manmaru号は１匹。<br>
+最新のlibflashplayer.soでも大丈夫みたいだ。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-08-03-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-08-03-1" href="2010-08-03-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">サボテン／SC420のfirefox-3.6.7が不調なので</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_sc420.html">SC420</a>][<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-08-03-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-08-03-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-08-03-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_sc420.html">SC420</a>][<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>昨日咲いた花は<a href="2010-08-02.html">[2010-08-02]</a>しぼんでしまいました。１日だけなんだ…。<br>
+<a href="http://picasaweb.google.co.jp/akapy1967/20107#5500761360428834834"><img src="http://lh5.ggpht.com/_QpYCoUDlOek/TFahUCKOIBI/AAAAAAAAFOU/Y6ra2JDA6Z4/s288/P1060753.JPG" alt="画像"></a>  --->  <a href="http://picasaweb.google.co.jp/akapy1967/20107#5501018141133734722"><img src="http://lh3.ggpht.com/_QpYCoUDlOek/TFeK2o1Bg0I/AAAAAAAAFPI/Is9QlnhISGc/s288/P1060760.JPG" alt="画像"></a><br>
+<hr>今日はピンク色<br>
+<a href="http://picasaweb.google.co.jp/akapy1967/20107#5501018114326460642"><img src="http://lh6.ggpht.com/_QpYCoUDlOek/TFeK1E9q-OI/AAAAAAAAFPA/Q_puzmy6n_Q/s288/P1060758.JPG" alt="画像"></a>  <a href="http://picasaweb.google.co.jp/akapy1967/20107#5501018127220451090"><img src="http://lh4.ggpht.com/_QpYCoUDlOek/TFeK10_1pxI/AAAAAAAAFPE/qrj83f2ynVk/s288/P1060759.JPG" alt="画像"></a><br>
+<hr>SC420でfirefox-3.6.7を使っていると反応しなくなることがあるので、<br>
+xf86-video-intel-2.10.903.tar.bz2 ( <a href="http://www.x.org/releases/individual/">http://www.x.org/releases/individual/</a> )<br>
+をインストした。<br>
+<blockquote><a href="http://www.linet.gr.jp/~kojima/Plamo/ML/htdocs/201003/msg00072.html"> [plamo:30541] Re: Plamo Linux 4.72 on Let's Note CF R3 が起動時に固まる</a>を読んで xf86_video_intel-2.9.1-i586-P1.tgzをインストしてみたりもした。<br>
+新たにxfplamoconfigした xorg.confでは起動しなかったり。<br>
+</blockquote>Plamo-4.72のデフォは xf86-video-intel-2.10.0<br>
+firefox-3.6.7と相性が悪いだけかもしれないし、カーネルやxorg.confも見直さないといけないのかもしれない。<br>
+&nbsp;&nbsp;<br>
+8/4追記：<br>
+firefox-3.6.8をインストしてみた。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-04-25-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-04-25-1" href="2010-04-25-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo-4.72とLynxEM+</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-04-25-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-04-25-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-04-25-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>2609-73JにPlamo-4.72をインストするにあたりハマった２点。<br>
+&nbsp;&nbsp;<br>
+１.nfsマウントでインストールしようとしたが、うまくいかない<br>
+<blockquote>/etc/hosts.denyの内容がPlamo-4.6と違っていた。<br>
+ホスト側も4.72に上げたばかりだった。<br>
+</blockquote>２.Xorgが立ち上がらない<br>
+&nbsp;&nbsp;&nbsp;やっぱLynxEM+は鬼門なのか<a href="2009-04-22-1.html">[2009-04-22-1]</a><br>
+&nbsp;&nbsp;&nbsp;ついでに <a href="http://hptomohiro.txt-nifty.com/blog/2010/03/ibmthinkpad-130.html">http://hptomohiro.txt-nifty.com/blog/2010/03/ibmthinkpad-130.html</a><br>
+<blockquote><a href="http://www.x.org/releases/individual/driver/xf86-video-siliconmotion-1.7.2.tar.gz">xf86-video-siliconmotion-1.7.2.tar.gz</a>をインストすることで解決。<br>
+1.7.3や1.7.0ではダメ。<br>
+&nbsp;&nbsp;<br>
+./configure --prefix=/usr/X11R7<br>
+make<br>
+# make install<br>
+</blockquote><br>
+ついでにcannaのuser辞書もコピー<br>
+<a href="http://www.ep.sci.hokudai.ac.jp/~choji/comp/jisho.html">http://www.ep.sci.hokudai.ac.jp/~choji/comp/jisho.html</a><br>
+<blockquote># cat ~/back/usr1.ctd >> /var/lib/canna/dic/user/akapy/usr1.ctd <br>
+</blockquote>  <br>
+フラッシュも。<br>
+fp9_archive.zip をダウンロード、libflashplayer.soをコピー。<br>
+<hr>天気が良いので<br>
+大河原あたりまでＪＲで南下ながら車窓から一目千本桜を眺めようかと思っていたのだが、<br>
+すっかりハマって14時ごろまでPCとにらめっこ。<br>
+布団干ししかできなかった。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2010-04-12-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2010-04-12-1" href="2010-04-12-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo-4.72／今日の夕飯</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_manmarue58fb7.html">manmaru号</a>][<a href="cat_sc420.html">SC420</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2010-04-12-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2010-04-12-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2010-04-12-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_manmarue58fb7.html">manmaru号</a>][<a href="cat_sc420.html">SC420</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>manmaru号にPlamo-4.72をインストしてみた。<br>
+firefoxずいぶん軽快に動いてるような感じ。でもflashのインストがうまくいかない。。。<br>
+追記：4/20に再度インスト<a href="2010-04-20.html">[2010-04-20]</a><br>
+&nbsp;&nbsp;<br>
+P-Plamo20100329も試してみた。<br>
+念願だったUSBメモリからの起動も成功した。<a href="2010-02-09-1.html">[2010-02-09-1]</a><br>
+USBメモリ起動できるマシンはSC420しかない(笑)<br>
+<hr>豚肉豆腐<br>
+<a href="http://cookpad.com/recipe/280787"><img src="http://img4.cookpad.com/recipe/p/57/297/7D7257AA3CC5FF9AD9021C236F3E47BB.jpg" alt="画像"></a><br>
+まぐろ角煮(マルチュウ斉藤商店)<br>
+<a href="http://www.city.kesennuma.lg.jp/icity/browser?ActionCode=content&amp;ContentID=1237254475728&amp;SiteID=0"><img src="http://www.city.kesennuma.lg.jp/www/contents/1237254475728/simple/090317105008_0.JPG" alt="画像"></a><br>
+</p><p>
+      
+    </p>
+    
+    <div class="referer">
+      <span>Referrer (Inside): <a href="2010-04-20-8.html">[2010-04-20-8]</a></span>
+    </div>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-05-18-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-05-18-1" href="2009-05-18-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">sc420への移行</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_sc420.html">SC420</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-05-18-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-05-18-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-05-18-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_sc420.html">SC420</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><blockquote>cd /plamo-ftp<br>
+wget -U Mozilla/5.0[ja] -np -r -N -v -a /home/akapy/wget.log <a href="ftp://plamo.linet.gr.jp/pub/Plamo-4.6/*">ftp://plamo.linet.gr.jp/pub/Plamo-4.6/*</a><br>
+</blockquote>contrib.oldがDownloadされる。<br>
+DVDからコピーしたもののパーミッションがおかしいので修正<br>
+<blockquote>wget -U Mozilla/5.0[ja] -np -r -N -v -a /home/akapy/wget.log <a href="ftp://plamo.linet.gr.jp/pub/Plamo-4.6/plamo/*">ftp://plamo.linet.gr.jp/pub/Plamo-4.6/plamo/*</a><br>
+</blockquote>/plamo-ftp内がいっぱいになっちゃう。<br>
+netst-dirを移動<br>
+再度wget<br>
+&nbsp;&nbsp;<br>
+gparted-Live も使ってみた。良いネ。PartionMagic８より高機能だ。<br>
+home-dirは前のままなのでメール環境は簡単に設定終わり。<br>
+あとは後日。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-05-10-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-05-10-2" href="2009-05-10-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">９時間ずれる問題</span> [<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-05-10-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-05-10-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-05-10-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_2609-73j.html">2609-73J</a>][<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>参考：<a href="http://d.hatena.ne.jp/mariyie/20071219/1198060686">http://d.hatena.ne.jp/mariyie/20071219/1198060686</a><br>
+/etc/rc.d/rc.Sを編集<br>
+<blockquote>/sbin/hwclock --localtime<br>
+</blockquote>対処としては正解ではないような気がするが、目的を達しているからいいか。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-05-09-4 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-05-09-4" href="2009-05-09-4.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo4.6、egg-cannaで全角ローマ字の入力方法</span> [<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-05-09-4.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-05-09-4.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-05-09-4.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>google先生に真面目に聞いたら<br>
+&nbsp;&nbsp;<a href="http://www.stex.phys.tohoku.ac.jp/~ohba/canna/node2.html">http://www.stex.phys.tohoku.ac.jp/~ohba/canna/node2.html</a><br>
+で解決。<br>
+Q 押してから<br>
+<blockquote>Plamo4.03の時代は L 押してから、だったのだが。<br>
+Plamo4.2xでも全角ローマ字の入力に悩んでいたのでした(苦笑<br>
+</blockquote>  <br>
+あとは C-s したときに、ミニバッファ(エコーエリア)に日本語が入力できない問題。<br>
+以前は山内さんので解決したらしいとこまでは発見したのだが、今はどうなのか？<br>
+&nbsp;&nbsp;<br>
+10/3追記：９月に分かっていたのだが、<br>
+<blockquote>              <a href="http://cns-guide.sfc.keio.ac.jp/2004/6/1/11.html">http://cns-guide.sfc.keio.ac.jp/2004/6/1/11.html</a><br>
+</blockquote>          C-s Enter で日本語が入力できることを確認。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;あとはひたすら C-s すれば次々と検索される。C-r も同じ。<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-04-29-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-04-29-1" href="2009-04-29-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">「昭和の日」の過ごし方</span> [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-04-29-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-04-29-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-04-29-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a>][<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>快晴！ 散歩以外は家で過ごした。<br>
+布団も干した。<br>
+懸案となっていたtwm稼働のemacsでの日本語入力が解決。kinput2を起動しなければ良し。C-\すれば問題ないことも判明したが。<br>
+skk関連もコメントアウト。usr1.ctdの内容もコピー完了。<br>
+これで2609-73Jは機動性が必要な時に出動できる。<br>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-04-22-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-04-22-1" href="2009-04-22-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">カレー／2609-73Jのxorg</span> [<a href="cat_e382ace38383e38386e383b3.html">ガッテン</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-04-22-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-04-22-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-04-22-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e382ace38383e38386e383b3.html">ガッテン</a>][<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>どちらも昨日の話<br>
+今週は仕事もないようだし外食する金もないのでカレーで生き延びよう。<br>
+ガッテン流カレー：<a href="http://cgi2.nhk.or.jp/gatten/archive/recipe.cgi?r_id=R20070131_01">http://cgi2.nhk.or.jp/gatten/archive/recipe.cgi?r_id=R20070131_01</a><br>
+を参考にミキサーとか使わずに具は形を残したままのカレーを作った。<br>
+要するに唐辛子とニンニクと砂糖が入っているだけと言ってもいい。<br>
+バターは入れない。<br>
+ルウが少ない分、あっさりしてるようだ。<br>
+これで３日間は大丈夫だろう(苦笑<br>
+<hr><br>
+<a href="2009-03-22-2.html">[2009-03-22-2]</a>から放ったらかしになっていたi1124のxorgの設定に挑戦してみた。<br>
+vesaドライバでは問題なく動くが、ちょっともっさりとした動き。<br>
+siliconmotionドライバで動かしてみたい。<br>
+結論を言えば、<a href="http://lists.freedesktop.org/archives/xorg-announce/2008-December/000738.html<br>
+">xf86-video-siliconmotion 1.7.0</a>で動く。<br>
+<blockquote>Plamo4.6に入っているのは xf86-video-siliconmotion 1.6.0<br>
+</blockquote>念のため、2609-73Jは BIOSアップデートを行った。<a href="http://www-06.ibm.com/jp/domino05/pc/download/download.nsf/jtechinfo/SYD0-0306FFE">http://www-06.ibm.com/jp/domino05/pc/download/download.nsf/jtechinfo/SYD0-0306FFE</a><br>
+&nbsp;&nbsp;<br>
+LynxEM+（SM712）は結構な地雷っぽい。<br>
+&nbsp;&nbsp;&nbsp;<a href="http://his.luky.org/ML/linux-users.7/msg09316.html">http://his.luky.org/ML/linux-users.7/msg09316.html</a><br>
+&nbsp;&nbsp;&nbsp;<a href="http://search.luky.org/linux-users.8/msg02782.html">http://search.luky.org/linux-users.8/msg02782.html</a><br>
+&nbsp;&nbsp;<br>
+xfplamoconfig で xorg.conf を作り、<br>
+<a href="http://www.ukkii.com/solaris/XF86Config/xf86_smi.html">http://www.ukkii.com/solaris/XF86Config/xf86_smi.html</a> を参考にして<br>
+<blockquote>HorizSync 31.5-64.3<br>
+VertRefresh 50-90<br>
+</blockquote>だけ修正。24bit 1024×768で表示できた。<br>
+８時間ぐらい四苦八苦したかな。<br>
+</p><p>
+      
+    </p>
+    
+    <div class="referer">
+      <span>Referrer (Inside): <a href="2010-04-25-1.html">[2010-04-25-1]</a></span>
+    </div>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-03-22-2 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-03-22-2" href="2009-03-22-2.html"><span class="sanchor">■</span></a> <span class="clitemheader">ThinkPad(2609-73J)＋Extreme III(16G)＋Plamo</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-03-22-2.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-03-22-2.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-03-22-2.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>][<a href="cat_2609-73j.html">2609-73J</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>このマシンは、猫足さん<a href="2009-03-08-1.html">[2009-03-08-1]</a>、KIKUMASAさん、田添さん、の御協力の賜物です。<br>
+PUPPYの入ったHDDはそのまま保管。<br>
+&nbsp;&nbsp;<br>
+＜インストの詳細みたいなもの＞<br>
+とりあえず買った中古メモリ128Mを取り付けてBIOSを確認。ちゃんと認識されてます。<br>
+Extreme III(16G)をSSD(SolidStateDrive)として取り付ける。<br>
+そのまま起動してみるとCentOSが立ち上がった。# KIKUMASAさんがインストしたやつ<br>
+そのままCentを使ってみたいという気持ちもあったのだが、Plamoインスト開始。<br>
+まずNHK-BS2から録画したパフュームのDVDを再生(笑)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# このDVDはKIKUMASAさんからのスペシャルおまけ<br>
+パーティションは<br>
+<blockquote>/dev/hda1  512M  /boot<br>
+/dev/hda2  12G   /<br>
+/dev/hda2  2.5G  /home<br>
+/dev/hda4  550M  swap<br>
+</blockquote>あっさりインスト終了か、と思ったら、<br>
+GRUBをMBRに入れるところでエラー。<br>
+再起動してみるとGRUB自体は起動するが、メニュー出ない。Plamo起動せず。<br>
+たぶん、Centをインストした時のGRUBが残っていると思われ。<br>
+MBRの初期化が必要かと。<br>
+<a href="http://tipspc.blogspot.com/2008/02/linuxmbr.html">http://tipspc.blogspot.com/2008/02/linuxmbr.html</a><br>
+<blockquote>dd if=/dev/zero of=ディスク・デバイス bs=512 count=1<br>
+</blockquote>パーティションテーブルもきれいに消えてくれました。ちょっと(悲<br>
+再度パーティションの切り直しから。<br>
+今度はPlamoのインストールも正常終了。<br>
+無事起動しましたとさ。<br>
+&nbsp;&nbsp;<br>
+/etc/fstab に noatimeを追記。<br>
+xfplamoconfigしてstartxしたがＸ立ち上がらず。<br>
+ドライバが見当たらないみたい。<br>
+しょうがないのでvesaで起動しておく。<br>
+&nbsp;&nbsp;<br>
+サブノートという部類なんだろうか。<br>
+軽くて持ち運びに便利。<br>
+お出かけ用にはピッタリだろう。キーボードも押せる大きさだし。<br>
+      
+    </p>
+    
+    <div class="referer">
+      <span>Referrer (Inside): <a href="2009-04-22-1.html">[2009-04-22-1]</a></span>
+    </div>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-03-09-3 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-03-09-3" href="2009-03-09-3.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo4.6でkterm上、キー配列がjp106になってないPCがある。。。</span> [<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-03-09-3.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-03-09-3.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-03-09-3.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>k3号。xorg.confは問題ないと思われ。<br>
+xkb関係がエラー出てるみたい。<br>
+<blockquote>The XKEYBOARD keymap compiler (xkbcomp) reports:<br>
+＞ Warning:          Multiple names for keycode 211<br>
+＞                   Using &lt;I211>, ignoring &lt;AB11><br>
+Errors from xkbcomp are not fatal to the X server<br>
+</blockquote>どうした？<br>
+週末にでも詳細を調べよう。<br>
+&nbsp;&nbsp;<br>
+4/2 追記：<br>
+&nbsp;&nbsp;Plamo4.22のxorg.confを使いまわししたのがイケナかったのかも知れない。<br>
+&nbsp;&nbsp;xfplamoconfig実行したら正常になった。<br>
+&nbsp;&nbsp;&nbsp;# これでダメなら xorgconfig とか試そうかと思ってた<br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-02-25-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-25-1" href="2009-02-25-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo 4.6リリース</span> [<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-25-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-25-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-25-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><a href="http://plamo-linux.jp/plamo-4.6.html">http://plamo-linux.jp/plamo-4.6.html</a><br>
+&nbsp;&nbsp;&nbsp;<br>
+<a href="ftp://ftp.ne.jp/pub/Linux/distributions/plamolinux">ftp://ftp.ne.jp/pub/Linux/distributions/plamolinux</a> を試してみましたが速度が遅いようだな。。アクセスが集中してたのかも。<br>
+&nbsp;&nbsp;&nbsp;<br>
+さっさとインストしてみました。<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-02-18-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-18-1" href="2009-02-18-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">Plamo 4.51RC リリース後，udev 廻りに致命的な問題が見つかっています</span> [<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-18-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-18-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-18-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p><a href="http://www.linet.jp/~kojima/Plamo/plamo-4.5.html#4.5problem">http://www.linet.jp/~kojima/Plamo/plamo-4.5.html#4.5problem</a><br>
+<blockquote>Plamo 4.51RC リリース後，udev 廻りに致命的な問題が見つかっています．この問題は，Plamo 4.5 をお使いの場合でも，カーネルをご自身でバージョンアップすることにより発現する可能性があります．問題が発現すると，HDD 上のファイルが全て削除される危険性があります．<br>
+</blockquote>   <br>
+で、Plamo 4.6β1 リリース：<a href="http://www.linet.jp/~kojima/Plamo/plamo-4.6.html">http://www.linet.jp/~kojima/Plamo/plamo-4.6.html</a><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!-- start:2009-02-08-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2009-02-08-1" href="2009-02-08-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">HDD交換</span> [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_plamo.html">Plamo</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2009-02-08-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2009-02-08-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2009-02-08-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_e4bfaee8a18c.html">修行</a>][<a href="cat_plamo.html">Plamo</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>たぶん2004年ごろまでメインで使っていたマシン。HDD不調。<br>
+このマシンでしか更新できないWebサイトがあってどうしても蘇生が必要。<br>
+とりあえず現状確認。DriveCopy(kiku版)<br>
+&nbsp;&nbsp;<br>
+<table><tr><td> /dev/hda1/dev/hda2？ <td> Win-CWin-D <td> 3.0G1.0G</tr><tr><td> /dev/hdb1/dev/hdb2？ <td> Win-E/home <td> 1.5G0.5G</tr><tr><td> /dev/hdc1/dev/hdc2 <td> /swap <td> 2.0G128M</tr><tr><td> /dev/hdd <td> CDROM <td> ?</tr></table>  <br>
+<div class="readmore"><p><br>
+ルートのある/dev/hdcが不安定で死にかけている。<br>
+Winな部分を全部つぶして、Linux部分を/dev/hdaにまとめれば良さそう。<br>
+今どき4.0Gのシステムか(笑)<br>
+&nbsp;&nbsp;<br>
+<a href="http://www.tadachi-net.com/desktop_pc/asus_terminator/backup5.html">http://www.tadachi-net.com/desktop_pc/asus_terminator/backup5.html</a><br>
+などを参考にして作業。<br>
+「Plamo Linux Expert」本に付属していた「CD Plamo Linux 1.0」を使用。<br>
+まずfdiskで/dev/hdaにコピー元と同じようなパーティションを切る。<br>
+<blockquote>/dev/hda1   /     3.2G<br>
+/dev/hda2   /home 0.5G<br>
+/dev/hda3   swap  0.3G<br>
+</blockquote>不良ブロックをチェック<br>
+ファイルシステム作成<br>
+<blockquote># e2fsck -c /dev/hda1<br>
+# e2fsck -c /dev/hda2<br>
+&nbsp;&nbsp;<br>
+# mkswap /dev/hda3<br>
+&nbsp;&nbsp;<br>
+# mkfs -t ext3 /dev/hda1<br>
+# mkfs -t ext3 /dev/hda2<br>
+</blockquote>マウントしてデータコピー<br>
+<blockquote># cd /mnt/hdc1<br>
+# tar cpf - ./ | (cd /mnt/hda1; tar xpfv -)<br>
+&nbsp;&nbsp;<br>
+# cd /mnt/hdb2<br>
+# tar cpf - ./ | (cd /mnt/hda2; tar xpfv -)<br>
+</blockquote>MBRが不十分なはずなのでgrubをインストール<br>
+&nbsp;&nbsp;&nbsp;<a href="http://wind-master.dip.jp/soft-info/item/63">http://wind-master.dip.jp/soft-info/item/63</a><br>
+<blockquote># grub<br>
+grub> root (hd0,0)<br>
+grub> setup (hd0)<br>
+grub> quit<br>
+</blockquote>/mnt/hda1/etc/grub.conf変更<br>
+とりあえず無事起動。<br>
+後日チェックが必要。</p></div><br>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-25 08:38
+
+</div></div></body></html>

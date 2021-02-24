@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2010-10-05-1.html">
+    <title>Gentoo 10.0で Rabbit</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2010-10-04-7.html">Prev</a>
+            
+            
+            / <a href="2010-10-05-2.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2010-10-05.html">2010-10-05</a> / <a href="2010-10-05-1.html">Gentoo 10.0で Rabbit[Gentoo][Rabbit][SC420]</a>
+                  <span class="hatesta"><a href="2010-10-05-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2010-10-05-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p><a href="http://www.cozmixng.org/~rwiki/?cmd=view;name=Rabbit%3A%3AUsersGroup.ja">ショッカー</a>のおつとめとして <a href="http://www.cozmixng.org/~rwiki/?cmd=view;name=Rabbit">Rabbit</a>をインストしてみた。<br>
+前に試したのは４年前か<a href="2006-09-04.html">[2006-09-04]</a> 今回はGentoo 10.0 が相手です。<br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;ACCEPT_KEYWORDS=~X86 emerge rabbit<br>
+<blockquote>emerge: there are no ebuilds built with USE flags to satisfy ">=sys-fs/udev-146[extras]".<br>
+!!! One of the following packages is required to complete your request:<br>
+- sys-fs/udev-162 (Change USE: +extras)<br>
+</blockquote>と言われちゃった。udev-162をインストしても大丈夫なのか迷ったが<br>
+/etc/portage/package.use に<br>
+<blockquote>sys-fs/udev extras<br>
+</blockquote>を追記して再度emerge。無事成功しました。まだ Ver0.90には上がってないけども。<br>
+<a href="http://picasaweb.google.co.jp/akapy1967/20109#5524536864181963042"><img src="http://lh6.ggpht.com/_QpYCoUDlOek/TKsZAfodySI/AAAAAAAAFZ4/lt9MFlTrYaM/s288/rabbit-gentoo.jpg" alt="画像"></a><br>
+<hr>10/7追記：適当にebuildを作って無理矢理 Rabbit-0.9.0にしてみた。<br>
+<blockquote>mkdir /usr/local/myportage<br>
+chown …<br>
+</blockquote>make.confに追記<br>
+<blockquote>PORTDIR_OVERLAY="/usr/local/myportage"<br>
+</blockquote>/usr/portage/app-office/rabbitの中身を/usr/local/myportage/app-office/rabbitにコピー<br>
+/usr/local/myportage/app-office/rabbit/rabbit-0.6.4.ebuild から rabbit-0.9.0.ebuildを作成<br>
+<blockquote>sudo ACCEPT_KEYWORDS=~X86 emerge rabbit<br>
+</blockquote>これで成功した。<br>
+<blockquote>rabbitの前に ruby-gnome2-0.90.2.ebuild も同じ方法でやろうとしてた。<br>
+こっちは<br>
+&nbsp;&nbsp;&nbsp;sudo ebuild ruby-gnome2-0.90.2.ebuild marge<br>
+いいのか分からんがちゃんと終った。<br>
+</blockquote><br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2010-10-04-7.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

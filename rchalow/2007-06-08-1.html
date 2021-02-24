@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2007-06-08-1.html">
+    <title>/sbin/xfplamoconfig</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2007-06-07-8.html">Prev</a>
+            
+            
+            / <a href="2007-06-08-2.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2007-06-08.html">2007-06-08</a> / <a href="2007-06-08-1.html">/sbin/xfplamoconfig[PCG-808][Plamo]</a>
+                  <span class="hatesta"><a href="2007-06-08-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2007-06-08-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p><a href="http://www.sony.jp/ProductsPark/Consumer/PCOM/NoteA4CAT/spec.html">http://www.sony.jp/ProductsPark/Consumer/PCOM/NoteA4CAT/spec.html</a><br>
+<blockquote> NeoMagic MagicMedia 256AV（NM2200）<br>
+</blockquote>/sbin/xfplamoconfig  でいける。<br>
+</p><p>
+参考に <a href="http://www.unixgods.org/~tilo/XF86Config.PCG808">http://www.unixgods.org/~tilo/XF86Config.PCG808</a><br>
+<blockquote>###<br>
+### XF86Config file for SONY VAIO PCG-808 laptop<br>
+###                 with NeoMagic 256AV graphic chip<br>
+###<br>
+</p><p>
+</p><p>
+</p><p>
+Section "Files"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;RgbPath	"/usr/X11R6/lib/X11/rgb"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/misc:unscaled"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath	"/usr/X11R6/lib/X11/fonts/75dpi:unscaled"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath	"/usr/X11R6/lib/X11/fonts/100dpi:unscaled"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath	"/usr/X11R6/lib/X11/fonts/URW"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/75dpi/:unscaled"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/100dpi/:unscaled"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/Type1/"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/Speedo/"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/75dpi/"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;FontPath   "/usr/X11R6/lib/X11/fonts/100dpi/"<br>
+#    ModulePath "/usr/X11R6/lib/modules"<br>
+EndSection<br>
+</p><p>
+#Section "Module"<br>
+#    Load "xf86Jstk.so"<br>
+#EndSection<br>
+</p><p>
+Section "ServerFlags"<br>
+#    NoTrapSignals<br>
+#    DontZap<br>
+#    DontZoom<br>
+#    DisableVidModeExtension<br>
+#    AllowNonLocalXvidtune<br>
+#    DisableModInDev<br>
+#    AllowNonLocalModInDev<br>
+EndSection<br>
+</p><p>
+Section "Keyboard"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Protocol	"Standard"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;AutoRepeat	500 5<br>
+#    XkbDisable<br>
+&nbsp;&nbsp;&nbsp;&nbsp;XkbKeymap   "xfree86(us)"<br>
+EndSection<br>
+</p><p>
+Section "Pointer"<br>
+#    Protocol    "Microsoft"<br>
+#    Device      "/dev/ttyS0"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Protocol    "PS/2"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Device      "/dev/psaux"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Emulate3Buttons<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Emulate3Timeout    50<br>
+EndSection<br>
+</p><p>
+Section "Monitor"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Identifier  "Generic Multisync"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;VendorName  "Unknown"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ModelName   "Unknown"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;HorizSync   30-64<br>
+&nbsp;&nbsp;&nbsp;&nbsp;VertRefresh 50-100<br>
+</p><p>
+# 640x480 @ 60 Hz, 31.5 kHz hsync<br>
+Modeline "640x480"     25.175 640  664  760  800   480  491  493  525<br>
+# 800x600 @ 60 Hz, 37.8 kHz hsync<br>
+Modeline "800x600"     40     800  840  968 1056   600  601  605  628 +hsync +vsync<br>
+# 1024x768 @ 60 Hz, 48.4 kHz hsync<br>
+Modeline "1024x768"    65    1024 1032 1176 1344   768  771  777  806 -hsync -vsync<br>
+</p><p>
+EndSection<br>
+</p><p>
+Section "Device"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Identifier	"NeoMagic"<br>
+#    Chipset	"NM2160"<br>
+#    IOBase	0xfea00000<br>
+#    MemBase	0xfd000000<br>
+#    VideoRam	2048<br>
+#    DacSpeed	90<br>
+#    Option	"linear"<br>
+#    Option	"nolinear"<br>
+#    Option	"sw_cursor"<br>
+#    Option	"hw_cursor"<br>
+#    Option	"no_accel"<br>
+#    Option	"intern_disp"<br>
+#    Option	"extern_disp"<br>
+#    Option	"mmio"<br>
+#    Option	"no_mmio"<br>
+#    Option	"lcd_center"<br>
+#    Option	"no_stretch"<br>
+EndSection<br>
+</p><p>
+Section "Screen"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Driver      "svga"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Device      "NeoMagic"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Monitor     "Generic Multisync"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Subsection "Display"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depth       8<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modes       "1024x768" "800x600" "640x480"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;EndSubsection<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Subsection "Display"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depth       16<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modes       "1024x768" "800x600" "640x480"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;EndSubsection<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Subsection "Display"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depth       24<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modes       "1024x768" "800x600" "640x480"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;EndSubsection<br>
+EndSection<br>
+<<<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2007-06-07-8.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

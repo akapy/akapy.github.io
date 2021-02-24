@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:admin="http://webns.net/mvcb/"
+ xml:lang="ja">
+<channel rdf:about="https://akapy.github.io/rchalow/rcl.rdf">
+ <title>あかぴのChangeLog by rchalow</title>
+ <link>https://akapy.github.io/rchalow/</link>
+ <description>個人的なメモの羅列</description>
+ <dc:language>ja</dc:language>
+ <dc:date></dc:date>
+ <admin:generatorAgent rdf:resource=""/>
+ <items>
+ <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-02-24-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-02-24-1.html"/>
+ </rdf:Seq>
+ </items>
+</channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-02-24-5.html">
+ <title>今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2021-02-24-5.html</link>
+ <description>
+  気仙沼の朝の最低気温 -3.1 ℃ (06:22+07:56)気仙沼：はれ＋7:45雪＆薄日　　　　強風＆時々日射し　　　　午後は日射し＋14:15ごろ雪ちらつき気仙沼の日中の最高気温 1.5 ℃ (14:27)気仙沼の最低気温 -3.6 ℃ (22:20)歩数 14646 歩活動カロリー 651 kcal歩行距離 10.5 km脂肪燃焼量 36.3 gエクササイズ量 8.7 Ex推定Ex歩行時間 128 分後ろ九条散歩＋投函＆切手な便局散歩活動カロリー 889 kcal総消費カロリー 2903 kcal脂肪燃焼量 50.6 g歩数 14798 歩歩行距離 10.3 km階段歩数 1880 歩[画像]
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-02-24T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>気仙沼の朝の最低気温 -3.1 ℃ (06:22+07:56)<br>
+気仙沼：はれ＋7:45雪＆薄日<br>
+　　　　強風＆時々日射し<br>
+　　　　午後は日射し＋14:15ごろ雪ちらつき<br>
+気仙沼の日中の最高気温 1.5 ℃ (14:27)<br>
+気仙沼の最低気温 -3.6 ℃ (22:20)<br>
+<table><tr><td>歩数<td> 14646 歩</tr><tr><td>活動カロリー<td> 651 kcal</tr><tr><td>歩行距離<td> 10.5 km</tr><tr><td>脂肪燃焼量<td> 36.3 g</tr><tr><td>エクササイズ量<td> 8.7 Ex</tr><tr><td>推定Ex歩行時間<td> 128 分</tr></table>後ろ九条散歩＋投函＆切手な便局散歩<br>
+<table><tr><td>活動カロリー<td> 889 kcal</tr><tr><td>総消費カロリー<td> 2903 kcal</tr><tr><td>脂肪燃焼量<td> 50.6 g</tr><tr><td>歩数<td> 14798 歩</tr><tr><td>歩行距離<td> 10.3 km</tr><tr><td>階段歩数<td> 1880 歩</tr></table><a href="お惣菜屋でん吉"><img src="https://github.com/akapy/akapy.github.io/blob/main/sashin_105SH/210224_133843.jpg" alt="画像"></a><br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-02-24-1.html">
+ <title>お惣菜屋でん吉</title>
+ <link>https://akapy.github.io/rchalow/2021-02-24-1.html</link>
+ <description>
+  [画像]３６３８日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-02-24T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="お惣菜屋でん吉"><img src="https://github.com/akapy/akapy.github.io/blob/main/sashin_105SH/210224_133843.jpg" alt="画像"></a><br>
+</p><p>
+<hr>３６３８日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+</rdf:RDF>

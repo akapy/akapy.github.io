@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2004-12-03-3.html">
+    <title>練習 ChangeLogの特殊な記法</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2004-12-03-2.html">Prev</a>
+            
+            
+            / <a href="2004-12-03-4.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2004-12-03.html">2004-12-03</a> / <a href="2004-12-03-3.html">練習 ChangeLogの特殊な記法[chalow]</a>
+                  <span class="hatesta"><a href="2004-12-03-3.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2004-12-03-3 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p><hr><br>
+＜日付で参照リンク＞<br>
+<blockquote><pre>先日[2004-12-01]、どこかへ行った。</pre>
+</blockquote>先日<a href="2004-12-01.html">[2004-12-01]</a>、どこかへ行った。<br>
+</p><p>
+<hr><br>
+＜任意のURLへのリンク＞<br>
+単語|URL  を 2 つの半角カギカッコで囲むとを任意の URL へのリンクになります。<br>
+例： <br>
+<blockquote><pre>[[Yahoo!へのリンク|http://www.yahoo.co.jp/]]</pre>
+</blockquote><a href="http://www.yahoo.co.jp/">Yahoo!へのリンク</a><br>
+</p><p>
+&nbsp;&nbsp;長い URL は、バックスラッシュ('\')で途中改行することができる。下記のように変換される。<br>
+<blockquote><pre>http://example.com/123456789012345678901234567890\
+123456789012345678901234567890.html</pre>
+</blockquote><br>
+<a href="http://example.com/123456789012345678901234567890123456789012345678901234567890.html">http://example.com/123456789012345678901234567890<br>
+123456789012345678901234567890.html</a><br>
+</p><p>
+<hr><br>
+＜イメージへのリンク＞<br>
+<blockquote><pre>[[ハッスルぷろじぇくと写真|http://pub.cozmixng.org/~akapy/linux/hsl.jpg]]</pre>
+</blockquote>と書けば、<br>
+<a href="ハッスルぷろじぇくと写真"><img src="http://pub.cozmixng.org/~akapy/linux/hsl.jpg" alt="画像"></a><br>
+<hr><br>
+<blockquote><pre>[[すらっしゅどっとjp|http://slashdot.jp/images/banner/slash_hsgw.gif]]</pre>
+</blockquote>と書けば、<br>
+<a href="すらっしゅどっとjp"><img src="http://slashdot.jp/images/banner/slash_hsgw.gif" alt="画像"></a><br>
+<hr><br>
+<blockquote><pre>[[http://pub.cozmixng.org/~akapy/linux/hsl.jpg|ハッスルぷろじぇくと写真]]</pre>
+</blockquote>と書けば、<br>
+<a href="ハッスルぷろじぇくと写真"><img src="http://pub.cozmixng.org/~akapy/linux/hsl.jpg" alt="画像"></a><br>
+<hr><br>
+<blockquote><pre>[[http://slashdot.jp/images/banner/slash_hsgw.gif|すらっしゅどっとjp]]</pre>
+</blockquote>と書けば、<br>
+<a href="すらっしゅどっとjp"><img src="http://slashdot.jp/images/banner/slash_hsgw.gif" alt="画像"></a><br>
+<hr><br>
+<blockquote><pre>[[http://slashdot.jp/images/banner/slash_hsgw.gif|http://slashdot.jp/]]</pre>
+</blockquote>と書けば、<br>
+<a href="http://slashdot.jp/"><img src="http://slashdot.jp/images/banner/slash_hsgw.gif" alt="画像"></a><br>
+</p><p>
+<hr><br>
+＜ 引用 (citation)＞<br>
+タブの後に "|" か ">" が来る行は引用とみなし、blockquote で囲まれる。<br>
+</p><p>
+&nbsp;&nbsp;&nbsp;または、">>" と "<<" で囲まれた領域が blockquote で囲まれる。<br>
+<blockquote>引用<br>
+引用<br>
+引用<br>
+</blockquote><br>
+<hr><br>
+＜文字修飾の記法＞<br>
+</p><p>
+&nbsp;&nbsp;「'」2個ではさんだ部分は強調されます。「'」3個ではさんだ部分はさら<br>
+&nbsp;&nbsp;&nbsp;&nbsp;に強調されます。「=」2個ではさんだ部分は取消線になります。<br>
+</p><p>
+<blockquote><pre>      例： ==ABC==  ''ABC''  '''ABC'''</pre>
+</blockquote>      例： <s>ABC</s>  <em>ABC</em>  <strong>ABC</strong><br>
+</p><p>
+<hr><br>
+＜表(table)の記法＞<br>
+<table><tr><td>項目a<td>項目b<td>項目c</tr><tr><td>項目d<td>項目e<td>項目f</tr></table>>><br>
+<pre>||項目a||項目b||項目c
+||項目d||項目e||項目f</pre>
+</blockquote><br>
+<hr><br>
+＜プラグイン機能＞<br>
+<blockquote><pre>「{{」と「}}」で囲むとプラグイン (関数) を呼び出すことができます。
+      例: {{google_seach('海老名 映画館')}}</pre>
+</blockquote>プラグインは cl.conf に足して置けば使えます。<br>
+</p><p>
+<hr><br>
+＜エスケープ＞<br>
+以下の記法でHTMLを じか書きすることができます。<br>
+, , <br>
+</p><p>
+<hr><br>
+＜ソース＞<br>
+ソースの表示は  を使います。<br>
+内部ではエンティティ置換とpre囲みを行います。<br>
+<hr><br>
+</p><p>
+＜日々のメッセージ埋め込み＞なんてこともできます。<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2004-12-03-2.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2006-10-25-1.html">
+    <title>cl2moneycsv-kamoku.rb</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2006-10-24-7.html">Prev</a>
+            
+            
+            / <a href="2006-10-25-2.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2006-10-25.html">2006-10-25</a> / <a href="2006-10-25-1.html">cl2moneycsv-kamoku.rb[ひとりごと]</a>
+                  <span class="hatesta"><a href="2006-10-25-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2006-10-25-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p><blockquote><pre>#!/usr/bin/env ruby
+$KCODE=&quot;EUC&quot;
+#$/ = &quot;\n&quot;
+#$, = &quot;,&quot;
+#
+
+if ARGV[0] == nil
+  STDERR.puts &quot;引数が足りません&quot;
+  STDERR.puts &quot;例：./rubyprog/cl2moneycsv-kamoku.rb ~/trunk/ChangeLog&quot;
+  exit 0
+end
+
+# 費目 an item of expendidure
+#my @lioe = ('外', '食', '交', '遊', '本', '音', '雑', '衣', '他')
+lioe = [&quot;外&quot;,&quot;食&quot;,&quot;交&quot;,&quot;遊&quot;,&quot;本&quot;,&quot;音&quot;,&quot;雑&quot;,&quot;衣&quot;,&quot;他&quot;]
+#lioe = %w(外 食 交 )
+
+inside_flag = 0
+kamo = []
+k = 0
+
+entry = {}
+p lioe
+
+
+#while line = ARGF.gets
+while line = gets
+#  print line
+    if /^((\d{4}-\d\d)-\d\d)/ =~ line then  # 日付をキープ
+#     if /^((\d{4}-\d\d)-\d\d)/ and /^((2005-\d\d)-\d\d)/ =~ line then  # 日付をキープ
+    date = $1		# = year-month-day
+#	    $date =~ s|-|.|g	# for Excel
+#            p date
+    elsif /買#物ログ.*:/ =~ line then	# 家計簿データ記述ブロックの始まり
+inside_flag = 1
+tag = $&amp;
+    elsif inside_flag == 1 then   # ブロック内
+if /^\s*$/ =~ line and inside_flag == 1 then  # ブロックの終わり
+    inside_flag = 0
+else
+  /^\t(.+?)(\s|\xa1\xa1).*(\s|\xa1\xa1)(\d+)$/ =~ line
+yo = line.split(nil)
+#	  kamoku = $1
+#	  naiyou = $2
+#	  kingaku = $3
+  kamoku = yo[0]
+  naiyou = yo[1]
+  kingaku = yo[2]
+  sonota = yo[3]
+
+          kamo.push(yo[0])
+          kamo.uniq!
+          p kamo
+
+#	  p date,tag,line.chomp.split(nil)
+#	  if /2005-\d\d-\d\d/ =~ date then 
+#	    print date,&quot;,&quot;,tag,&quot;,&quot;,kamoku,&quot;,&quot;,naiyou,&quot;,&quot;,kingaku,&quot;\n&quot;
+#	  end
+       end
+    end
+end</pre>
+<<<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2006-10-24-7.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

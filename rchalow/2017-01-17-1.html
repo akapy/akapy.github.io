@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2017-01-17-1.html">
+    <title>fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2017-01-16-5.html">Prev</a>
+            
+            
+            / <a href="2017-01-18-1.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2017-01-17.html">2017-01-17</a> / <a href="2017-01-17-1.html">fastbootコマンドで&lt;文鎮化したNexus7(2012)&gt;を復旧する(Lubuntu16.04__32bit)[Linux][Lubuntu][Nexus7]</a>
+                  <span class="hatesta"><a href="2017-01-17-1.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2017-01-17-1 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p>WiFiなNexus7(2012)<br>
+調子が悪いのでAndroid4.4.4に戻してroot化などいじり倒してたらOSが起動しなくなった。<br>
+　・googleロゴ画面から進まない<br>
+　・ブートローダー画面は表示できる<br>
+　・RecoveryModeを試したが先に進まない<br>
+　<br>
+Lubuntu-PCにUSB接続してlsusbしてみると<br>
+<blockquote>Bus 002 Device 064: ID 18d1:4e40 Google Inc. Nexus 7 (fastboot)<br>
+</blockquote>Nexus7単体だけでは復旧できない状態のようだ。<br>
+　<br>
+　<br>
+準備<br>
+・電源の入るNexus7(2012)本体 (unlock済み)<br>
+・ちゃんとしたmicroUSBケーブル(重要！)<br>
+・Lubuntu16.04(32bit)なPC<br>
+・以下を読む<br>
+　　・<a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165">http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165</a><br>
+　　・<a href="http://mariyudu.hatenablog.com/entry/2015/09/07/215045">http://mariyudu.hatenablog.com/entry/2015/09/07/215045</a><br>
+　　・<a href="http://d.hatena.ne.jp/moremagic/20160228/1456663922">http://d.hatena.ne.jp/moremagic/20160228/1456663922</a><br>
+　<br>
+まず<br>
+$ sudo apt-get install android-tools-fastboot<br>
+今回は使わないけどついでに<br>
+$ sudo apt-get install android-tools-adb<br>
+　<br>
+/etc/udev/rules.d/52-android.rulesを編集<br>
+　(うちの環境では51-android.rulesじゃなかった)<br>
+<blockquote>SUBSYSTEM＝＝"usb", ATTRS{idProduct}＝＝"4e40", MODE＝"0666", GROUP＝"plugdev"<br>
+　　　　　　(諸事情でわざと半角文字じゃないイコール文字)<br>
+</blockquote>　<br>
+$ sudo chmod 644 /etc/udev/rules.d/52-android.rules<br>
+$ sudo /etc/init.d/udev restart<br>
+　<br>
+$ fastboot devices<br>
+　<br>
+で接続を確認<br>
+　<br>
+　<br>
+適当な作業ディレクトリを作ってイメージファイルをダウンロード<br>
+今回は<br>
+<a href="https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip">https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip</a><br>
+　<br>
+$ mkdir work<br>
+$ cd work<br>
+$ unzip nakasi-ktu84p-factory-9482e892.zip<br>
+$ cd nakasi-ktu84p<br>
+$ ./flash-all.sh<br>
+　<br>
+運が良ければ？ これでリカバリーできる。<br>
+細部は忘れたがだいたいこんな感じだったかと(苦笑)<br>
+</p><p>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2017-01-16-5.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>Lubuntu / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>Lubuntu - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2017-01-17-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2017-01-17-1" href="2017-01-17-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">fastbootコマンドで<文鎮化したNexus7(2012)>を復旧する(Lubuntu16.04__32bit)</span> [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2017-01-17-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2017-01-17-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2017-01-17-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_linux.html">Linux</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_nexus7.html">Nexus7</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>WiFiなNexus7(2012)<br>
+調子が悪いのでAndroid4.4.4に戻してroot化などいじり倒してたらOSが起動しなくなった。<br>
+　・googleロゴ画面から進まない<br>
+　・ブートローダー画面は表示できる<br>
+　・RecoveryModeを試したが先に進まない<br>
+　<br>
+Lubuntu-PCにUSB接続してlsusbしてみると<br>
+<blockquote>Bus 002 Device 064: ID 18d1:4e40 Google Inc. Nexus 7 (fastboot)<br>
+</blockquote>Nexus7単体だけでは復旧できない状態のようだ。<br>
+　<br>
+　<br>
+準備<br>
+・電源の入るNexus7(2012)本体 (unlock済み)<br>
+・ちゃんとしたmicroUSBケーブル(重要！)<br>
+・Lubuntu16.04(32bit)なPC<br>
+・以下を読む<br>
+　　・<a href="http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165">http://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10136977165</a><br>
+　　・<a href="http://mariyudu.hatenablog.com/entry/2015/09/07/215045">http://mariyudu.hatenablog.com/entry/2015/09/07/215045</a><br>
+　　・<a href="http://d.hatena.ne.jp/moremagic/20160228/1456663922">http://d.hatena.ne.jp/moremagic/20160228/1456663922</a><br>
+　<br>
+まず<br>
+$ sudo apt-get install android-tools-fastboot<br>
+今回は使わないけどついでに<br>
+$ sudo apt-get install android-tools-adb<br>
+　<br>
+/etc/udev/rules.d/52-android.rulesを編集<br>
+　(うちの環境では51-android.rulesじゃなかった)<br>
+<blockquote>SUBSYSTEM＝＝"usb", ATTRS{idProduct}＝＝"4e40", MODE＝"0666", GROUP＝"plugdev"<br>
+　　　　　　(諸事情でわざと半角文字じゃないイコール文字)<br>
+</blockquote>　<br>
+$ sudo chmod 644 /etc/udev/rules.d/52-android.rules<br>
+$ sudo /etc/init.d/udev restart<br>
+　<br>
+$ fastboot devices<br>
+　<br>
+で接続を確認<br>
+　<br>
+　<br>
+適当な作業ディレクトリを作ってイメージファイルをダウンロード<br>
+今回は<br>
+<a href="https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip">https://dl.google.com/dl/android/aosp/nakasi-ktu84p-factory-9482e892.zip</a><br>
+　<br>
+$ mkdir work<br>
+$ cd work<br>
+$ unzip nakasi-ktu84p-factory-9482e892.zip<br>
+$ cd nakasi-ktu84p<br>
+$ ./flash-all.sh<br>
+　<br>
+運が良ければ？ これでリカバリーできる。<br>
+細部は忘れたがだいたいこんな感じだったかと(苦笑)<br>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!-- start:2017-01-04-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2017-01-04-1" href="2017-01-04-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">RC-S330をLubuntu_16.04で使う</span> [<a href="cat_rc-s330.html">RC-S330</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_r731.html">R731</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2017-01-04-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2017-01-04-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2017-01-04-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_rc-s330.html">RC-S330</a>][<a href="cat_lubuntu.html">Lubuntu</a>][<a href="cat_r731.html">R731</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>google先生だと2014年以前の情報しか見つからなかったので書いておく。<br>
+うちの環境はLubuntu_16.04_LTS(64bit)<br>
+<blockquote>sudo apt-get install libnfc-dev<br>
+</blockquote>して再起動。<br>
+マイナンバーカードを載せたままUSB接続で認識された。<br>
+実際インストされたのは以下<br>
+<blockquote>Inst libusb-dev (2:0.1.12-28 Ubuntu:16.04/xenial [amd64])<br>
+Inst libnfc5 (1.7.1-4 Ubuntu:16.04/xenial [amd64])<br>
+Inst libnfc-dev (1.7.1-4 Ubuntu:16.04/xenial [amd64])<br>
+</blockquote>　<br>
+nfc-listを試したいなら<br>
+<blockquote>sudo apt-get install libnfc-bin<br>
+</blockquote>が必要みたい。<br>
+　　<br>
+gsuica、nfcpy あたりをインストすれば少し遊べそう。<br>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- ReplaceOnce -->
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2021-02-25 08:38
+
+</div></div></body></html>

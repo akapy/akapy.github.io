@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+      <link href="cl.css" rel="stylesheet"> 
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="rcl.rdf">
+    <link rel="canonical" href="https://akapy.github.io/rchalow/2008-03-22-3.html">
+    <title>kuttuki-rss.rbみたいなもの</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="outer">
+        <div id="header">
+          <div class="title">
+            <h1><a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+          </div>
+        </div>
+        <div id='content' class='row-fluid'>
+          <p>
+            
+            <a href="2008-03-22-2.html">Prev</a>
+            
+            
+            / <a href="2008-03-22-6.html">Next</a>
+            
+          </p>
+          <div class='col-xs-12 col-md-8 main'>
+            <div class=autopagerize_page_element>
+              <div class="day entry">
+                <h3>
+                  <a href="2008-03-22.html">2008-03-22</a> / <a href="2008-03-22-3.html">kuttuki-rss.rbみたいなもの[chalow][修行]</a>
+                  <span class="hatesta"><a href="2008-03-22-3.html"></a></span>
+                </h3>
+                
+                <div class="body">
+                  <!-- start:2008-03-22-3 -->
+                  <div class="section entry-content">
+                    <!-- google_ad_section_start -->
+                    <p>なんか <a href="http://nais.to/~yto/tools/kuttuki-rss/">kuttuki-rss.pl</a> が動いてくれないので、<br>
+<a href="http://www.cozmixng.org/~rwiki/?cmd=view;name=RSS+Parser">RSS Parser</a>のsampleを切り貼り。オイにはこの程度で充分だ。<br>
+ありがとうございました＞kouさま<br>
+<blockquote>#!/usr/bin/env ruby<br>
+</p><p>
+$LOAD_PATH.unshift("/home/akapy/lib/ruby/rss/lib")<br>
+require 'rss'<br>
+require 'open-uri'<br>
+</p><p>
+require "nkf"<br>
+class String<br>
+&nbsp;&nbsp;# From tdiary.rb<br>
+&nbsp;&nbsp;def shorten( len = 120 )<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lines = NKF::nkf( "-e -m0 -f#{len}", self.gsub( /\n/, ' ' ) ).split( /\n/ )<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lines[0].concat( '...' ) if lines[0] and lines[1]<br>
+&nbsp;&nbsp;&nbsp;&nbsp;lines[0]<br>
+&nbsp;&nbsp;end<br>
+end<br>
+</p><p>
+def print_items(feed)<br>
+&nbsp;&nbsp;puts "document.writeln('&lt;h3>つっこみ一覧&lt;/h3>&lt;div class=\"stdbox\">&lt;p>recent entries&lt;/p>&lt;ul class=\"stdbox\">')"<br>
+&nbsp;&nbsp;feed.items.each do |item|<br>
+#    puts "document.writeln('&lt;li class=\"RSSitems\"> #{item.title.shorten(50)} : #{item.description.shorten(50)}&lt;/li>')"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;puts "document.writeln('&lt;li class=\"stdbox\"> #{item.description.shorten(20)}&lt;/li>')"<br>
+&nbsp;&nbsp;end<br>
+&nbsp;&nbsp;puts "document.writeln('&lt;/ul>&lt;/div>')"<br>
+end<br>
+</p><p>
+#ARGV.each do |fname|<br>
+#  feed = nil<br>
+#  begin<br>
+#    feed = RSS::Parser.parse(File.read(fname), false)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rss = RSS::Parser.parse(open("http://pub.cozmixng.org/~akapy/ChangeLogMemo/kblog/bbs.rdf").read, false)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;rss.output_encoding = "euc-jp"<br>
+</p><p>
+#  rescue RSS::Error<br>
+#  end<br>
+</p><p>
+&nbsp;&nbsp;if rss.nil?<br>
+&nbsp;&nbsp;&nbsp;&nbsp;puts "#{fname}はRSS 0.9x/1.0/2.0, Atom 1.0のいずれでもありません。"<br>
+&nbsp;&nbsp;else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;print_items(rss)<br>
+&nbsp;&nbsp;end<br>
+#end<br>
+<<<br>
+                    <!-- google_ad_section_end -->
+                    
+                    <!-- disqus -->
+                    <!-- BEGIN ZenBackWidget --><!-- END ZenBackWidget -->
+                  </div><!-- /section entry-content" -->
+                </div><!-- /body -->
+              </div><!-- /day entry -->
+            </div><!-- autopagerize_page_element -->
+            <div class="autopagerize_insert_before"></div>
+            <a href="2008-03-22-2.html" rel="next"></a>
+            <!-- for  autopagerize -->
+          </div> <!-- main -->
+          <div class='col-xs-12 col-md-4 sidebar'>
+            <div class="stdbox">
+  <h4>最近の話題</h4>
+  <div id='latest_items'></div>
+  <script async src="cl.js"></script>
+
+  <h4>過去ログ</h4>
+  <div id='logs'></div>
+</div>
+
+          </div>
+        </div><!-- content -->
+        <div class="clear"></div>
+        <div id="footer">
+          <p>最終更新時間: <abbr class="updated" title="2021-02-25T08:38:57+09:00">
+              2021-02-25 08:38</abbr>
+            By <span class="vcard author"><span class="fn">akapy</span></span>
+          </p>
+          
+          </div><!-- /footer -->
+      </div><!-- /outer -->
+    </div><!-- /container -->
+    <!-- jquery required by bootstap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
