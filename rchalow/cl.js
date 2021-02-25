@@ -4,7 +4,6 @@ latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/202
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-25.html">2021-02-25</a><br>');
 latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-02-25-6.html">今日の天気と万歩計</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-24.html">2021-02-24</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-02-24-5.html">今日の天気と万歩計</a><br>');
 latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-02-24-1.html">お惣菜屋でん吉</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-23.html">2021-02-23</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-22.html">2021-02-22</a><br>');
