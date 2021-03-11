@@ -1,15 +1,14 @@
 window.onload = function() {var latest_items = '';
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-27.html">2021-02-27</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-26.html">2021-02-26</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-25.html">2021-02-25</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-02-25-6.html">今日の天気と万歩計</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-24.html">2021-02-24</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-02-24-1.html">お惣菜屋でん吉</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-23.html">2021-02-23</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-22.html">2021-02-22</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-21.html">2021-02-21</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-20.html">2021-02-20</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-19.html">2021-02-19</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-02-18.html">2021-02-18</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-12.html">2021-03-12</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-11.html">2021-03-11</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-10.html">2021-03-10</a><br>');
+latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2021-03-10-5.html">今日の天気と万歩計</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-09.html">2021-03-09</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-08.html">2021-03-08</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-07.html">2021-03-07</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-06.html">2021-03-06</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-05.html">2021-03-05</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-04.html">2021-03-04</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2021-03-03.html">2021-03-03</a><br>');
 document.getElementById('latest_items').insertAdjacentHTML('afterbegin', latest_items);
 }
