@@ -15,53 +15,7 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-03-12-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-03-11-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-03-12-1.html">
- <title>コナン緋色の不在証明</title>
- <link>https://akapy.github.io/rchalow/2021-03-12-1.html</link>
- <description>
-  メンズday　海水浴シーン見て思い出したわ。。　緋色の弾丸を見るのに必要な情報なんだろうな。おにぎりを自作してリオーネに向かう(笑) [画像]ついでに茶房クレインでコーヒー豆を買ってみた。[[https://www.facebook.com/sabokrein/]]３６５４日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-03-12T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>メンズday<br>
-　<br>
-海水浴シーン見て思い出したわ。。<br>
-　<br>
-緋色の弾丸を見るのに必要な情報なんだろうな。<br>
-おにぎりを自作してリオーネに向かう(笑) <a href="https://www.instagram.com/yoshiyukiakahata/"><img src="https://akapy.github.io/sashin_105SH/210312_095848.jpg" alt="画像"></a><br>
-<hr>ついでに茶房クレインでコーヒー豆を買ってみた。<br>
-[[<a href="https://www.facebook.com/sabokrein/">https://www.facebook.com/sabokrein/</a>]]<br>
-<hr>３６５４日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-03-11-5.html">
- <title>今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2021-03-11-5.html</link>
- <description>
-  気仙沼の朝の最低気温 0.6 ℃ (06:19)気仙沼：はれ　　　　午後ボヤはれ気仙沼の日中の最高気温 12.0 ℃ (13:58)気仙沼の最低気温 0.3 ℃ (24:00)歩数 11813 歩活動カロリー 550 kcal歩行距離 8.5 km脂肪燃焼量 30.8 gエクササイズ量 7.5 Ex推定Ex歩行時間 97 分農園に道の駅むろねチューリップ移植散歩＋駅前便局ローソンさんぽ活動カロリー 711 kcal総消費カロリー 2730 kcal脂肪燃焼量 38.1 g歩数 11709 歩歩行距離 8.1 km階段歩数 770 歩[画像]
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-03-11T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 0.6 ℃ (06:19)<br>
-気仙沼：はれ<br>
-　　　　午後ボヤはれ<br>
-気仙沼の日中の最高気温 12.0 ℃ (13:58)<br>
-気仙沼の最低気温 0.3 ℃ (24:00)<br>
-<table><tr><td>歩数<td> 11813 歩</tr><tr><td>活動カロリー<td> 550 kcal</tr><tr><td>歩行距離<td> 8.5 km</tr><tr><td>脂肪燃焼量<td> 30.8 g</tr><tr><td>エクササイズ量<td> 7.5 Ex</tr><tr><td>推定Ex歩行時間<td> 97 分</tr></table>農園に道の駅むろねチューリップ移植散歩＋駅前便局ローソンさんぽ<br>
-<table><tr><td>活動カロリー<td> 711 kcal</tr><tr><td>総消費カロリー<td> 2730 kcal</tr><tr><td>脂肪燃焼量<td> 38.1 g</tr><tr><td>歩数<td> 11709 歩</tr><tr><td>歩行距離<td> 8.1 km</tr><tr><td>階段歩数<td> 770 歩</tr></table><a href="https://www.instagram.com/yoshiyukiakahata/"><img src="https://akapy.github.io/sashin_105SH/210311_141013.jpg" alt="画像"></a><br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
 </rdf:RDF>
