@@ -15,11 +15,32 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-12-5.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-09-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-08-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-04-12-5.html">
+ <title>ヤッセコーヒーに容器を持参する(笑)／今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2021-04-12-5.html</link>
+ <description>
+  気仙沼の朝の最低気温 2.0 ℃ (03:40)気仙沼：晴天＆車に霜　　　　はれ＋風すこし気仙沼の日中の最高気温 16.5 ℃ (14:01)歩数 12654 歩活動カロリー 627 kcal歩行距離 9.1 km脂肪燃焼量 32.4 gエクササイズ量 6.6 Ex推定Ex歩行時間 91 分ヨネキ散歩＋お惣菜屋でん吉＆駅前便局＆新鮮館さんぽ活動カロリー 866 kcal総消費カロリー 2885 kcal脂肪燃焼量 45.5 g歩数 12483 歩歩行距離 8.7 km階段歩数 870 歩面倒になったので容器(コーヒーキャニスター？)を持参することにした(笑) [画像]今までは袋を使い回してた。
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-04-12T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>気仙沼の朝の最低気温 2.0 ℃ (03:40)<br>
+気仙沼：晴天＆車に霜<br>
+　　　　はれ＋風すこし<br>
+気仙沼の日中の最高気温 16.5 ℃ (14:01)<br>
+<table><tr><td>歩数<td> 12654 歩</tr><tr><td>活動カロリー<td> 627 kcal</tr><tr><td>歩行距離<td> 9.1 km</tr><tr><td>脂肪燃焼量<td> 32.4 g</tr><tr><td>エクササイズ量<td> 6.6 Ex</tr><tr><td>推定Ex歩行時間<td> 91 分</tr></table>ヨネキ散歩＋お惣菜屋でん吉＆駅前便局＆新鮮館さんぽ<br>
+<table><tr><td>活動カロリー<td> 866 kcal</tr><tr><td>総消費カロリー<td> 2885 kcal</tr><tr><td>脂肪燃焼量<td> 45.5 g</tr><tr><td>歩数<td> 12483 歩</tr><tr><td>歩行距離<td> 8.7 km</tr><tr><td>階段歩数<td> 870 歩</tr></table>面倒になったので容器(コーヒーキャニスター？)を持参することにした(笑) <a href="https://www.facebook.com/YasseCoffee/"><img src="https://akapy.github.io/sashin_105SH/210412_090651.jpg" alt="画像"></a><br>
+今までは袋を使い回してた。<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2021-04-09-1.html">
  <title>劇場版_奥様は取り扱い注意</title>
@@ -41,29 +62,6 @@
 水仙や菜の花も良かった。<br>
 今週末はドライブがおすすめか。コロナ的にも。<br>
 <hr>３６８２日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-04-08-5.html">
- <title>レタスやブロッコリーなど＋今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2021-04-08-5.html</link>
- <description>
-  気仙沼の朝の最低気温 0.7 ℃ (05:30)気仙沼：はれ＋9時過ぎから風がだんだん出てきて中風ときどき強く[12.3m/s(11:12)＋12.6m/s(14:22)]　　　　14:30〜くもり＋15:45ごろ西の雲が薄くなってきて薄日気仙沼の日中の最高気温 13.3 ℃ (13:02)歩数 13805 歩活動カロリー 704 kcal歩行距離 9.9 km脂肪燃焼量 35.3 gエクササイズ量 7.6 Ex推定Ex歩行時間 96 分苗の定植＋WAON移行手続き散歩活動カロリー 964 kcal総消費カロリー 2983 kcal脂肪燃焼量 50.3 g歩数 14199 歩歩行距離 9.9 km階段歩数 740 歩[画像][画像][画像]
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-04-08T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 0.7 ℃ (05:30)<br>
-気仙沼：はれ＋9時過ぎから風がだんだん出てきて中風ときどき強く[12.3m/s(11:12)＋12.6m/s(14:22)]<br>
-　　　　14:30〜くもり＋15:45ごろ西の雲が薄くなってきて薄日<br>
-気仙沼の日中の最高気温 13.3 ℃ (13:02)<br>
-<table><tr><td>歩数<td> 13805 歩</tr><tr><td>活動カロリー<td> 704 kcal</tr><tr><td>歩行距離<td> 9.9 km</tr><tr><td>脂肪燃焼量<td> 35.3 g</tr><tr><td>エクササイズ量<td> 7.6 Ex</tr><tr><td>推定Ex歩行時間<td> 96 分</tr></table>苗の定植＋WAON移行手続き散歩<br>
-<table><tr><td>活動カロリー<td> 964 kcal</tr><tr><td>総消費カロリー<td> 2983 kcal</tr><tr><td>脂肪燃焼量<td> 50.3 g</tr><tr><td>歩数<td> 14199 歩</tr><tr><td>歩行距離<td> 9.9 km</tr><tr><td>階段歩数<td> 740 歩</tr></table><a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210408_054051.jpg" alt="画像"></a><br>
-<a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210408_104553.jpg" alt="画像"></a><br>
-<a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210408_104605.jpg" alt="画像"></a><br>
-</p><p>
 </p><p>
 </p><p>]]>
  </content:encoded>
