@@ -15,11 +15,37 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-16-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-12-5.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-09-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-04-16-1.html">
+ <title>騙し絵の牙／金曜ロードはコナン異次元の狙撃手</title>
+ <link>https://akapy.github.io/rchalow/2021-04-16-1.html</link>
+ <description>
+  メンズday　[画像]　おもしろい。出版業界の闇、人間不信にならない程度の騙し合い。松岡茉優いい感じ　２５人くらいいたかな。。予想外。。上に流れないエンドロール、なんか目に楽。１ページの表示時間が短いので文字は一部しか読めないけど(苦笑)今夜の金曜ロードはコナン異次元の狙撃手[2014-05-20-1]にMIVIX利府で観たはずだが。。気仙沼から利府まで行くだけで疲れたのか？(苦笑)３６８９日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-04-16T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>メンズday　<a href="http://www.cinema-rione.jp/"><img src="https://akapy.github.io/sashin_105SH/210416_130417.jpg" alt="画像"></a><br>
+　<br>
+おもしろい。出版業界の闇、人間不信にならない程度の騙し合い。<br>
+松岡茉優いい感じ<br>
+　<br>
+２５人くらいいたかな。。予想外。。<br>
+上に流れないエンドロール、なんか目に楽。<br>
+１ページの表示時間が短いので文字は一部しか読めないけど(苦笑)<br>
+<hr>今夜の金曜ロードはコナン異次元の狙撃手<br>
+<a href="https://akapy.github.io/rchalow/2014-05-20-1.html">[2014-05-20-1]</a>にMIVIX利府で観たはずだが。。<br>
+気仙沼から利府まで行くだけで疲れたのか？(苦笑)<br>
+<hr>３６８９日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2021-04-12-5.html">
  <title>ヤッセコーヒーに容器を持参する(笑)／今日の天気と万歩計</title>
@@ -37,31 +63,6 @@
 <table><tr><td>歩数<td> 12654 歩</tr><tr><td>活動カロリー<td> 627 kcal</tr><tr><td>歩行距離<td> 9.1 km</tr><tr><td>脂肪燃焼量<td> 32.4 g</tr><tr><td>エクササイズ量<td> 6.6 Ex</tr><tr><td>推定Ex歩行時間<td> 91 分</tr></table>ヨネキ散歩＋お惣菜屋でん吉＆駅前便局＆新鮮館さんぽ<br>
 <table><tr><td>活動カロリー<td> 866 kcal</tr><tr><td>総消費カロリー<td> 2885 kcal</tr><tr><td>脂肪燃焼量<td> 45.5 g</tr><tr><td>歩数<td> 12483 歩</tr><tr><td>歩行距離<td> 8.7 km</tr><tr><td>階段歩数<td> 870 歩</tr></table>面倒になったので容器(コーヒーキャニスター？)を持参することにした(笑) <a href="https://www.facebook.com/YasseCoffee/"><img src="https://akapy.github.io/sashin_105SH/210412_090651.jpg" alt="画像"></a><br>
 今までは袋を使い回してた。<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-04-09-1.html">
- <title>劇場版_奥様は取り扱い注意</title>
- <link>https://akapy.github.io/rchalow/2021-04-09-1.html</link>
- <description>
-  メンズday　[画像]　楽しめた。視力が落ちて？、一番うしろの席ではツライというか、ぼやけるというか。。メガネ屋で検査したら近視と言われた。。気仙沼から古川までの道中、桜はどの木もほぼ見頃でも風が強かったので午後は花びらの数が減ったところも。。水仙や菜の花も良かった。今週末はドライブがおすすめか。コロナ的にも。３６８２日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-04-09T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>メンズday　<a href="http://www.cinema-rione.jp/"><img src="https://akapy.github.io/sashin_105SH/210409_103610.jpg" alt="画像"></a><br>
-　<br>
-楽しめた。<br>
-視力が落ちて？、一番うしろの席ではツライというか、ぼやけるというか。。<br>
-<blockquote>メガネ屋で検査したら近視と言われた。。<br>
-</blockquote><hr>気仙沼から古川までの道中、<br>
-桜はどの木もほぼ見頃<br>
-でも風が強かったので午後は花びらの数が減ったところも。。<br>
-水仙や菜の花も良かった。<br>
-今週末はドライブがおすすめか。コロナ的にも。<br>
-<hr>３６８２日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
