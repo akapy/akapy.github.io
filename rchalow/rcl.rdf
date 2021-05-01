@@ -15,56 +15,37 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-20-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-16-1.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-30-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2021-04-20-1.html">
- <title>劇場版シグナル_長期未解決事件捜査班</title>
- <link>https://akapy.github.io/rchalow/2021-04-20-1.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2021-04-30-1.html">
+ <title>花束みたいな恋をした</title>
+ <link>https://akapy.github.io/rchalow/2021-04-30-1.html</link>
  <description>
-  イオンシネマ石巻お客さま感謝デー[画像]　無線つながる回数が多かったような。。パラレルワールド。タイムトラベルはしてないんだよな。おまけ畑に咲いたすいせん[画像]３６９３日後
+  メンズディ観客４人ジンジャーエールこぼしてごめんなさい。ロビーだったからちょっとだけセーフ？新しいのに交換してくれてありがとう！　恋って始まったら終わるものなのか。勉強になった(苦笑)思い返せば＜最高の５年間＞？[画像]　　「花束みたいな」＝ 最初が一番美しくて後は枯れていくだけ菅田将暉と有村架純の解釈綺麗な思い出のままで終われた唯一の恋＋その時はキラキラと輝いて美しいものでも、次第に枯れていくものでもあるというメタファー３７０３日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-04-20T23:59:59+09:00</dc:date>
+ <dc:date>2021-04-30T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p>イオンシネマ石巻お客さま感謝デー<br>
-<a href="https://www.aeoncinema.com/cinema/ishinomaki/"><img src="https://akapy.github.io/sashin_105SH/210420_090526.jpg" alt="画像"></a><br>
+  <![CDATA[<p>メンズディ<br>
+観客４人<br>
+ジンジャーエールこぼしてごめんなさい。ロビーだったからちょっとだけセーフ？<br>
+新しいのに交換してくれてありがとう！<br>
 　<br>
-無線つながる回数が多かったような。。<br>
-パラレルワールド。<br>
-タイムトラベルはしてないんだよな。<br>
-<hr>おまけ畑に咲いたすいせん<br>
-<a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210420_164903.jpg" alt="画像"></a><br>
-<hr>３６９３日後<br>
+恋って始まったら終わるものなのか。勉強になった(苦笑)<br>
+思い返せば＜最高の５年間＞？<br>
+<a href="http://www.cinema-rione.jp/"><img src="https://akapy.github.io/sashin_105SH/210430_152132.jpg" alt="画像"></a><br>
+　<br>
+　<br>
+「花束みたいな」＝ 最初が一番美しくて後は枯れていくだけ<br>
+<a href="https://natalie.mu/eiga/news/413855">菅田将暉と有村架純の解釈</a><br>
 </p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-04-16-1.html">
- <title>騙し絵の牙／金曜ロードはコナン異次元の狙撃手</title>
- <link>https://akapy.github.io/rchalow/2021-04-16-1.html</link>
- <description>
-  メンズday　[画像]　おもしろい。出版業界の闇、人間不信にならない程度の騙し合い。松岡茉優いい感じ　２５人くらいいたかな。。予想外。。上に流れないエンドロール、なんか目に楽。１ページの表示時間が短いので文字は一部しか読めないけど(苦笑)今夜の金曜ロードはコナン異次元の狙撃手[2014-05-20-1]にMOVIX利府で観たはずだが。。気仙沼から利府まで行くだけで疲れたのか？(苦笑)３６８９日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-04-16T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>メンズday　<a href="http://www.cinema-rione.jp/"><img src="https://akapy.github.io/sashin_105SH/210416_130417.jpg" alt="画像"></a><br>
-　<br>
-おもしろい。出版業界の闇、人間不信にならない程度の騙し合い。<br>
-松岡茉優いい感じ<br>
-　<br>
-２５人くらいいたかな。。予想外。。<br>
-上に流れないエンドロール、なんか目に楽。<br>
-１ページの表示時間が短いので文字は一部しか読めないけど(苦笑)<br>
-<hr>今夜の金曜ロードはコナン異次元の狙撃手<br>
-<a href="https://akapy.github.io/rchalow/2014-05-20-1.html">[2014-05-20-1]</a>にMOVIX利府で観たはずだが。。<br>
-気仙沼から利府まで行くだけで疲れたのか？(苦笑)<br>
-<hr>３６８９日後<br>
+<a href="https://ciatr.jp/topics/313204#:~:text=%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%80%8E%E8%8A%B1%E6%9D%9F%E3%81%BF%E3%81%9F%E3%81%84%E3%81%AA%E6%81%8B%E3%82%92%E3%81%97%E3%81%9F%E3%80%8F%E3%81%AE%E6%84%8F%E5%91%B3&amp;text=%E3%82%BF%E3%82%A4%E3%83%88%E3%83%AB%E3%81%AB%E3%81%AF%E3%80%81%E3%81%93%E3%81%AE%E6%81%8B%E6%84%9B,%E3%81%84%E3%82%8B%E3%81%A8%E8%80%83%E3%81%88%E3%82%89%E3%82%8C%E3%81%BE%E3%81%99%E3%80%82">綺麗な思い出のままで終われた唯一の恋＋その時はキラキラと輝いて美しいものでも、次第に枯れていくものでもあるというメタファー</a><br>
+</p><p>
+</p><p>
+<hr>３７０３日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
