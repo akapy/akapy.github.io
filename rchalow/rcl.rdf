@@ -15,11 +15,35 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-05-04-5.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-05-03-5.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-04-30-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-05-04-5.html">
+ <title>わらび／今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2021-05-04-5.html</link>
+ <description>
+  [画像]気仙沼の朝の最低気温 3.7 ℃ (04:52)気仙沼：ボヤはれ気味？からはれ五葉山大沢牧場：はれ三陸道：はれ強風気仙沼：昼ごろくもりのちボヤはれ大船渡の日中の最高気温 20.7 ℃ (12:54)気仙沼の日中の最高気温 20.8 ℃ (15:47)歩数 11000 歩活動カロリー 736 kcal歩行距離 7.9 km脂肪燃焼量 33.4 gエクササイズ量 7.6 Ex推定Ex歩行時間 60 分わらび採り＋ハヅ車庫お墓川沿い右回り散歩活動カロリー 1087 kcal総消費カロリー 3106 kcal脂肪燃焼量 54.4 g歩数 11101 歩歩行距離 7.7 km階段歩数 1460 歩
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-05-04T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210504_121737.jpg" alt="画像"></a><br>
+気仙沼の朝の最低気温 3.7 ℃ (04:52)<br>
+気仙沼：ボヤはれ気味？からはれ<br>
+五葉山大沢牧場：はれ<br>
+三陸道：はれ強風<br>
+気仙沼：昼ごろくもりのちボヤはれ<br>
+大船渡の日中の最高気温 20.7 ℃ (12:54)<br>
+気仙沼の日中の最高気温 20.8 ℃ (15:47)<br>
+<table><tr><td>歩数<td> 11000 歩</tr><tr><td>活動カロリー<td> 736 kcal</tr><tr><td>歩行距離<td> 7.9 km</tr><tr><td>脂肪燃焼量<td> 33.4 g</tr><tr><td>エクササイズ量<td> 7.6 Ex</tr><tr><td>推定Ex歩行時間<td> 60 分</tr></table>わらび採り＋ハヅ車庫お墓川沿い右回り散歩<br>
+<table><tr><td>活動カロリー<td> 1087 kcal</tr><tr><td>総消費カロリー<td> 3106 kcal</tr><tr><td>脂肪燃焼量<td> 54.4 g</tr><tr><td>歩数<td> 11101 歩</tr><tr><td>歩行距離<td> 7.7 km</tr><tr><td>階段歩数<td> 1460 歩</tr></table><br>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2021-05-03-5.html">
  <title>練り餌／今日の天気と万歩計</title>
