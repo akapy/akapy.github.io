@@ -15,17 +15,63 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-07-02-1.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-07-01-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-06-30-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-06-26-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-07-02-1.html">
+ <title>ファブル２</title>
+ <link>https://akapy.github.io/rchalow/2021-07-02-1.html</link>
+ <description>
+  [画像]メンズデー　原作マンガなんだ！３７６６日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-07-02T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210702_120618.jpg" alt="画像"></a><br>
+メンズデー<br>
+　<br>
+原作マンガなんだ！<br>
+<hr>３７６６日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-07-01-1.html">
+ <title>るろうに剣心_最終章 The Beginning／劇場版シグナル</title>
+ <link>https://akapy.github.io/rchalow/2021-07-01-1.html</link>
+ <description>
+  [画像]ファーストデー　有村架純は女優業に忙しくて幸せになれない感。心配。。劇場版シグナル、２回目だった。[2021-04-20-1]なんで内容が分かるんだろうと不思議に思いながらみてた(苦笑)すでに菅波先生にしか見えなくなってる。。３７６５日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-07-01T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210701_181018.jpg" alt="画像"></a><br>
+</p><p>
+ファーストデー<br>
+　<br>
+有村架純は女優業に忙しくて幸せになれない感。心配。。<br>
+</p><p>
+<hr>劇場版シグナル、２回目だった。<a href="https://akapy.github.io/rchalow/2021-04-20-1.html">[2021-04-20-1]</a><br>
+なんで内容が分かるんだろうと不思議に思いながらみてた(苦笑)<br>
+すでに菅波先生にしか見えなくなってる。。<br>
+</p><p>
+</p><p>
+<hr>３７６５日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2021-06-30-1.html">
  <title>コナン緋色の弾丸／ワクチン接種券</title>
  <link>https://akapy.github.io/rchalow/2021-06-30-1.html</link>
  <description>
-  お客様感謝デー1100円一関で歯科治療のあと、北上してイオンシネマ北上にチャレンジさくら野百貨店の５Ｆにあるのか。チケット購入も駐車料金も戸惑うこと多い。。　今年は爆発が少なめだった印象(笑)もう１回みたい。気仙沼市よりワクチン接種券が届いてた。[画像]３７６４日後
+  お客様感謝デー1100円一関で歯科治療のあと、北上してイオンシネマ北上にチャレンジさくら野百貨店の５Ｆにあるのか。チケット購入も駐車料金も戸惑うこと多い。。映画ともう１軒で買物すれば無料になりそう(480-240-240=0)　今年は爆発が少なめだった印象(笑)もう１回みたい。[画像]気仙沼市よりワクチン接種券が届いてた。[画像]３７６４日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
  <dc:date>2021-06-30T23:59:59+09:00</dc:date>
@@ -34,37 +80,18 @@
 一関で歯科治療のあと、北上してイオンシネマ北上にチャレンジ<br>
 さくら野百貨店の５Ｆにあるのか。<br>
 チケット購入も駐車料金も戸惑うこと多い。。<br>
-　<br>
+<blockquote>映画ともう１軒で買物すれば無料になりそう(480-240-240=0)<br>
+</blockquote>　<br>
 今年は爆発が少なめだった印象(笑)<br>
 もう１回みたい。<br>
+</p><p>
+<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210701_180251.jpg" alt="画像"></a><br>
 </p><p>
 <hr>気仙沼市よりワクチン接種券が届いてた。<br>
 <a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210701_054648.jpg" alt="画像"></a><br>
 </p><p>
 <hr>３７６４日後<br>
 </p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-06-26-5.html">
- <title>今日も草刈りと収穫／今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2021-06-26-5.html</link>
- <description>
-  [画像]　気仙沼の朝の最低気温 16.8 ℃ (03:43)気仙沼：くもり＋7時ごろから微薄日＋ぱらり天気雨など　　　　14時ごろ西は夏の空なはれ　　　　(ウエザーニュースでは)17時だけ一時くもりのちはれ＋夜中くもったりはれたり気仙沼の日中の最高気温 24.7 ℃ (14:09)歩数 13089 歩活動カロリー 657 kcal歩行距離 9.4 km脂肪燃焼量 33.0 gエクササイズ量 6.5 Ex推定Ex歩行時間 83 分館山ふれあい農園草刈り＋まっこ裏右回り散歩＋チャリで記帳回り＆ブロッコリー収穫活動カロリー 920 kcal総消費カロリー 2939 kcal脂肪燃焼量 48.6 g歩数 13043 歩歩行距離 9.1 km階段歩数 890 歩
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-06-26T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210626_160959.jpg" alt="画像"></a><br>
-　<br>
-気仙沼の朝の最低気温 16.8 ℃ (03:43)<br>
-気仙沼：くもり＋7時ごろから微薄日＋ぱらり天気雨など<br>
-　　　　14時ごろ西は夏の空なはれ<br>
-　　　　(ウエザーニュースでは)17時だけ一時くもりのちはれ＋夜中くもったりはれたり<br>
-気仙沼の日中の最高気温 24.7 ℃ (14:09)<br>
-<table><tr><td>歩数<td> 13089 歩</tr><tr><td>活動カロリー<td> 657 kcal</tr><tr><td>歩行距離<td> 9.4 km</tr><tr><td>脂肪燃焼量<td> 33.0 g</tr><tr><td>エクササイズ量<td> 6.5 Ex</tr><tr><td>推定Ex歩行時間<td> 83 分</tr></table>館山ふれあい農園草刈り＋まっこ裏右回り散歩＋チャリで記帳回り＆ブロッコリー収穫<br>
-<table><tr><td>活動カロリー<td> 920 kcal</tr><tr><td>総消費カロリー<td> 2939 kcal</tr><tr><td>脂肪燃焼量<td> 48.6 g</tr><tr><td>歩数<td> 13043 歩</tr><tr><td>歩行距離<td> 9.1 km</tr><tr><td>階段歩数<td> 890 歩</tr></table><br>
 </p><p>]]>
  </content:encoded>
 </item>
