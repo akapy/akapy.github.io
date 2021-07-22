@@ -15,30 +15,32 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-07-09-1.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-07-22-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2021-07-09-1.html">
- <title>コナン緋色の弾丸２回目</title>
- <link>https://akapy.github.io/rchalow/2021-07-09-1.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2021-07-22-5.html">
+ <title>とうがらし／今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2021-07-22-5.html</link>
  <description>
-  メンズデー[画像]　　１回目は北上で[2021-06-30-1]「いのちの停車場」はパスしておくか。３７７３日後
+  [画像]　気仙沼の朝の最低気温 22.7 ℃ (00:09)気仙沼の午前中の最低気温 22.6 ℃ (11:45)気仙沼：くもり湿度高い？　　　　8:10すぎポツポツ霧雨てきな　　　　昼ごろからくもり　　　　ウエザーニュースでは夕方と夜にも雨マーク気仙沼の日中の最高気温 24.7 ℃ (14:06)気仙沼の最低気温 22.0 ℃ (24:00)歩数 9659 歩活動カロリー 366 kcal歩行距離 6.9 km脂肪燃焼量 20.4 gエクササイズ量 4.7 Ex推定Ex歩行時間 72 分チャリ館山ふれあい農園＋まっこ裏左回り散歩活動カロリー 382 kcal総消費カロリー 1904 kcal脂肪燃焼量 22.5 g歩数 9746 歩歩行距離 6.8 km階段歩数 530 歩
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-07-09T23:59:59+09:00</dc:date>
+ <dc:date>2021-07-22T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p>メンズデー<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20210711_100853.jpg" alt="画像"></a><br>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e9a4a8e5b1b1e381b5e3828ce38182e38184e8beb2e59c92.html"><img src="https://akapy.github.io/sashin_105SH/210722_084646.jpg" alt="画像"></a><br>
 　<br>
-　<br>
-１回目は北上で<a href="https://akapy.github.io/rchalow/2021-06-30-1.html">[2021-06-30-1]</a><br>
-</p><p>
-<hr>「いのちの停車場」はパスしておくか。<br>
-<hr>３７７３日後<br>
-</p><p>
-</p><p>
+気仙沼の朝の最低気温 22.7 ℃ (00:09)<br>
+気仙沼の午前中の最低気温 22.6 ℃ (11:45)<br>
+気仙沼：くもり湿度高い？<br>
+　　　　8:10すぎポツポツ霧雨てきな<br>
+　　　　昼ごろからくもり<br>
+　　　　ウエザーニュースでは夕方と夜にも雨マーク<br>
+気仙沼の日中の最高気温 24.7 ℃ (14:06)<br>
+気仙沼の最低気温 22.0 ℃ (24:00)<br>
+<table><tr><td>歩数<td> 9659 歩</tr><tr><td>活動カロリー<td> 366 kcal</tr><tr><td>歩行距離<td> 6.9 km</tr><tr><td>脂肪燃焼量<td> 20.4 g</tr><tr><td>エクササイズ量<td> 4.7 Ex</tr><tr><td>推定Ex歩行時間<td> 72 分</tr></table>チャリ館山ふれあい農園＋まっこ裏左回り散歩<br>
+<table><tr><td>活動カロリー<td> 382 kcal</tr><tr><td>総消費カロリー<td> 1904 kcal</tr><tr><td>脂肪燃焼量<td> 22.5 g</tr><tr><td>歩数<td> 9746 歩</tr><tr><td>歩行距離<td> 6.8 km</tr><tr><td>階段歩数<td> 530 歩</tr></table><br>
 </p><p>]]>
  </content:encoded>
 </item>
