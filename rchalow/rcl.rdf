@@ -15,53 +15,26 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-09-10-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-09-09-1.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-10-05-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2021-09-10-1.html">
- <title>アーヤと魔女</title>
- <link>https://akapy.github.io/rchalow/2021-09-10-1.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2021-10-05-1.html">
+ <title>国保の人間ドック</title>
+ <link>https://akapy.github.io/rchalow/2021-10-05-1.html</link>
  <description>
-  [画像]NHK系なのか。宣伝少ないか？原作は小説なのか。　こんなエンディングか！　突然に終わってしまった感。３８３６日後
+  9/22(水)人間ドックを受けた。気仙沼市の国保に加入してる人は５５歳の時など１万円で受けることができるらしい。今日、結果を聞いてきた。総コレステロール、中性脂肪  日常生活に注意を要しますGOT、尿酸、L/H比、食塩摂取量(随時尿)  わずかに異常を認めますが日常生活に差し支えありません脂肪肝・脂質異常症・高尿酸血症：食事・運動療法おすすめ軽度肝機能障害：休肝日をつくりましょう３８６１日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-09-10T23:59:59+09:00</dc:date>
+ <dc:date>2021-10-05T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210910_104037.jpg" alt="画像"></a><br>
-</p><p>
-NHK系なのか。宣伝少ないか？<br>
-原作は小説なのか。<br>
-　<br>
-こんなエンディングか！　突然に終わってしまった感。<br>
-</p><p>
-<hr>３８３６日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2021-09-09-1.html">
- <title>モンタナの目撃者</title>
- <link>https://akapy.github.io/rchalow/2021-09-09-1.html</link>
- <description>
-  [画像]WEニュースで「 よしひろまさみち 」が紹介してた映画６本のうちの１本　敵が少なかったな。最大の敵は山火事？女は強しよしひろまさみち３８３５日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2021-09-09T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/210909_084344.jpg" alt="画像"></a><br>
-</p><p>
-WEニュースで「 <a href="https://www.instagram.com/hannysroom/?hl=ja">よしひろまさみち</a> 」が紹介してた映画６本のうちの１本<br>
-　<br>
-敵が少なかったな。<br>
-最大の敵は山火事？<br>
-女は強し<br>
-</p><p>
-<a href="https://www.instagram.com/hannysroom/?hl=ja">よしひろまさみち</a><br>
-<hr>３８３５日後<br>
+  <![CDATA[<p>9/22(水)人間ドックを受けた。<br>
+気仙沼市の国保に加入してる人は５５歳の時など１万円で受けることができるらしい。<br>
+今日、結果を聞いてきた。<br>
+<table><tr><td>総コレステロール、中性脂肪           <td> 日常生活に注意を要します</tr><tr><td>GOT、尿酸、L/H比、食塩摂取量(随時尿) <td> わずかに異常を認めますが日常生活に差し支えありません</tr></table>脂肪肝・脂質異常症・高尿酸血症：食事・運動療法おすすめ<br>
+軽度肝機能障害：休肝日をつくりましょう<br>
+<hr>３８６１日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
