@@ -15,10 +15,38 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-10-08-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2021-10-05-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2021-10-08-1.html">
+ <title>レミニセンス</title>
+ <link>https://akapy.github.io/rchalow/2021-10-08-1.html</link>
+ <description>
+  [画像]８の日。シアター４。客２人　 よしひろまさみち が紹介してた映画記憶の世界にタイムトラベル？「幸せな物語はない。いつも悲劇で終わる」「幸せな場面で終わらせればいい」オルフェウスの物語？　記憶を取り出す機械があったら嬉しいような、まずいような。。。やっぱアクセスしたいのは「年々薄れていく死んでしまった友達の姿」か。３８６４日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2021-10-08T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/211008_085043.jpg" alt="画像"></a><br>
+８の日。シアター４。客２人<br>
+　<br>
+&nbsp;<a href="https://www.instagram.com/hannysroom/?hl=ja">よしひろまさみち</a> が紹介してた映画<br>
+記憶の世界にタイムトラベル？<br>
+「幸せな物語はない。いつも悲劇で終わる」<br>
+「幸せな場面で終わらせればいい」<br>
+オルフェウスの物語？<br>
+　<br>
+記憶を取り出す機械があったら嬉しいような、まずいような。。。<br>
+やっぱアクセスしたいのは「年々薄れていく死んでしまった友達の姿」か。<br>
+</p><p>
+<hr>３８６４日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2021-10-05-1.html">
  <title>国保の人間ドック</title>
