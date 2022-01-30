@@ -15,26 +15,37 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-01-09-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-01-30-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2022-01-09-5.html">
- <title>相撲／今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2022-01-09-5.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2022-01-30-1.html">
+ <title>スパイダーマン／９９.９</title>
+ <link>https://akapy.github.io/rchalow/2022-01-30-1.html</link>
  <description>
-  [画像]気仙沼の朝の最低気温 -3.0 ℃ (00:47)気仙沼：ほぼはれ(NHKもウエザーニュースも雪やみぞれの予想もあったが)気仙沼の日中の最高気温 7.4 ℃ (12:39)歩数 8156 歩活動カロリー 536 kcal歩行距離 5.8 km脂肪燃焼量 24.6 gエクササイズ量 5.0 Ex推定Ex歩行時間 54 分新鮮館散歩＋軽くハヅ倉庫活動カロリー 543 kcal総消費カロリー 2065 kcal脂肪燃焼量 25.8 g歩数 8470 歩歩行距離 5.9 km階段歩数 960 歩
+  日曜日に映画館に行くのは珍しい。イオンシネマお客様感謝デー[画像]　[スパイダーマン]エモいマルチバース？パラレルワールド　　[９９.９]正月の特番を見てからね。　　３９７８日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2022-01-09T23:59:59+09:00</dc:date>
+ <dc:date>2022-01-30T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/sumo_20220113_054251.jpg" alt="画像"></a><br>
-気仙沼の朝の最低気温 -3.0 ℃ (00:47)<br>
-気仙沼：ほぼはれ(NHKもウエザーニュースも雪やみぞれの予想もあったが)<br>
-気仙沼の日中の最高気温 7.4 ℃ (12:39)<br>
-<table><tr><td>歩数<td> 8156 歩</tr><tr><td>活動カロリー<td> 536 kcal</tr><tr><td>歩行距離<td> 5.8 km</tr><tr><td>脂肪燃焼量<td> 24.6 g</tr><tr><td>エクササイズ量<td> 5.0 Ex</tr><tr><td>推定Ex歩行時間<td> 54 分</tr></table>新鮮館散歩＋軽くハヅ倉庫<br>
-<table><tr><td>活動カロリー<td> 543 kcal</tr><tr><td>総消費カロリー<td> 2065 kcal</tr><tr><td>脂肪燃焼量<td> 25.8 g</tr><tr><td>歩数<td> 8470 歩</tr><tr><td>歩行距離<td> 5.9 km</tr><tr><td>階段歩数<td> 960 歩</tr></table><br>
+  <![CDATA[<p>日曜日に映画館に行くのは珍しい。イオンシネマお客様感謝デー<br>
+<a href="https://www.instagram.com/yoshiyukiakahata/"><img src="https://akapy.github.io/sashin_105SH/220130_133610.jpg" alt="画像"></a><br>
+　<br>
+[スパイダーマン]<br>
+エモい<br>
+マルチバース？パラレルワールド<br>
+　<br>
+　<br>
+[９９.９]<br>
+正月の特番を見てからね。<br>
+　<br>
+　<br>
+</p><p>
+</p><p>
+<hr>３９７８日後<br>
+</p><p>
+</p><p>
 </p><p>]]>
  </content:encoded>
 </item>
