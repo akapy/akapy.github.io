@@ -15,27 +15,7 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-04-09-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
-
-<item rdf:about="https://akapy.github.io/rchalow/2022-04-09-5.html">
- <title>ひとりホルモン大会(笑)／今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2022-04-09-5.html</link>
- <description>
-  [画像]気仙沼の朝の最低気温 0.5 ℃ (04:26)気仙沼：はれ＋少し風気仙沼の日中の最高気温 22.2 ℃ (15:04)歩数 9490 歩活動カロリー 531 kcal歩行距離 6.8 km脂肪燃焼量 24.9 gエクササイズ量 5.5 Ex推定Ex歩行時間 58 分川沿い左回り散歩活動カロリー 543 kcal総消費カロリー 2062 kcal脂肪燃焼量 25.7 g歩数 9488 歩歩行距離 6.6 km階段歩数 620 歩
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2022-04-09T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/timeline_20220409_150544.jpg" alt="画像"></a><br>
-気仙沼の朝の最低気温 0.5 ℃ (04:26)<br>
-気仙沼：はれ＋少し風<br>
-気仙沼の日中の最高気温 22.2 ℃ (15:04)<br>
-<table><tr><td>歩数<td> 9490 歩</tr><tr><td>活動カロリー<td> 531 kcal</tr><tr><td>歩行距離<td> 6.8 km</tr><tr><td>脂肪燃焼量<td> 24.9 g</tr><tr><td>エクササイズ量<td> 5.5 Ex</tr><tr><td>推定Ex歩行時間<td> 58 分</tr></table>川沿い左回り散歩<br>
-<table><tr><td>活動カロリー<td> 543 kcal</tr><tr><td>総消費カロリー<td> 2062 kcal</tr><tr><td>脂肪燃焼量<td> 25.7 g</tr><tr><td>歩数<td> 9488 歩</tr><tr><td>歩行距離<td> 6.6 km</tr><tr><td>階段歩数<td> 620 歩</tr></table><br>
-</p><p>]]>
- </content:encoded>
-</item>
 </rdf:RDF>
