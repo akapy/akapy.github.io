@@ -15,7 +15,27 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-05-13-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2022-05-13-1.html">
+ <title>ラジエーションハウス</title>
+ <link>https://akapy.github.io/rchalow/2022-05-13-1.html</link>
+ <description>
+  [画像]　いろいろ同時に起こりすぎ。。(苦笑歯が折れそうなチュー！４０８１日後　
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2022-05-13T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/220513_095509.jpg" alt="画像"></a><br>
+　<br>
+いろいろ同時に起こりすぎ。。(苦笑<br>
+歯が折れそうなチュー！<br>
+<hr>４０８１日後<br>
+　<br>
+</p><p>]]>
+ </content:encoded>
+</item>
 </rdf:RDF>
