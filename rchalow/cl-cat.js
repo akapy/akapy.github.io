@@ -1,6 +1,6 @@
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_2609-73j.html">2609-73J</a> (9)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_cfe381a8ssd.html">CFとSSD</a> (4)<br>');
-document.writeln('- <a href="https://akapy.github.io/rchalow/cat_gentoo.html">Gentoo</a> (53)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_gentoo.html">Gentoo</a> (54)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_line.html">LINE</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_lw333d7.html">LW333D7</a> (6)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_linux.html">Linux</a> (11)<br>');
@@ -29,6 +29,7 @@ document.writeln('- <a href="https://akapy.github.io/rchalow/cat_android.html">a
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_chalow.html">chalow</a> (30)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_chalow-rb.html">chalow-rb</a> (4)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e-tax.html">e-Tax</a> (2)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_fdclone.html">fdclone</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_kiku2e58fb7.html">kiku2号</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_manmarue58fb7.html">manmaru号</a> (6)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_rchalow.html">rchalow</a> (5)<br>');

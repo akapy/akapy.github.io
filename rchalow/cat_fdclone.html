@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel=stylesheet href="diary.css" media=all>
+
+<link rel="alternate" type="application/rss+xml" title="RSS"
+ href="rcl.rdf">
+<title>fdclone / あかぴのChangeLog by rchalow</title>
+</head>
+<body>
+<div class="main">
+<a href="index.html">ChangeLog 最新ページ</a>
+
+<h1>fdclone - <a href="index.html">あかぴのChangeLog by rchalow</a></h1>
+<div class="body">
+
+<!-- start:2022-06-29-1 -->
+<div class="section hentry">
+  <div class="entry-title">
+    <h3 class="subtitle"><a id="2022-06-29-1" href="2022-06-29-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">オレオレfdclone-3.01j.ebuild</span> [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_fdclone.html">fdclone</a>]
+      <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2022-06-29-1.html">
+        <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2022-06-29-1.html" class="no_border" alt="はてぶ">
+      </a>
+      <span class="hatesta"><a href="2022-06-29-1.html"></a></span>
+    </h3>
+  </div>
+  
+  <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_fdclone.html">fdclone</a>]</div>
+  
+  <div class="entry-content">
+    <p><p>BIOS/MBRなマシンにgentooをインストールし直す機会があった。<br>
+fdclone-3.01j.ebuild　書いてみた。<br>
+無保証<br>
+</p><p>
+<blockquote># Copyright 1999-2022 Gentoo Authors<br>
+# Distributed under the terms of the GNU General Public License v2<br>
+</p><p>
+</p><p>
+EAPI=6<br>
+</p><p>
+DESCRIPTION="FDClone: Console Filer"<br>
+HOMEPAGE="http://hp.vector.co.jp/authors/VA012337/soft/fd/"<br>
+SRC_URI="http://hp.vector.co.jp/authors/VA012337/soft/fd/FD-${PV}.tar.gz \<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ftp://ftp.unixusers.net/src/fdclone/FD-$">ftp://ftp.unixusers.net/src/fdclone/FD-$</a>{PV}.tar.gz"<br>
+</p><p>
+LICENSE="FDCLONE"<br>
+SLOT="0"<br>
+KEYWORDS="~amd64 ~x86"<br>
+#IUSE=""<br>
+</p><p>
+RDEPEND="sys-libs/ncurses"<br>
+DEPEND="${RDEPEND}"<br>
+</p><p>
+S="${WORKDIR}/FD-${PV}"<br>
+</p><p>
+</p><p>
+src_compile(){<br>
+emake LDFLAGS=-ltinfo<br>
+}<br>
+</p><p>
+</p><p>
+src_install(){<br>
+dobin fd fd-dict.tbl fd-unicd.tbl fd-cat.ja fd-cat.C<br>
+dosym fd /usr/bin/fdsh<br>
+dodoc FAQ* HISTORY* Install* LICENSES* README* TECHKNOW* ToAdmin*<br>
+newman fd_e.man fd.1<br>
+dosym /usr/share/man/man1/fd.1 /usr/share/man/man1/fdsh.1<br>
+insinto /usr/share/man/ja/man1<br>
+doins fd.1;<br>
+dosym /usr/share/man/ja/man1/fd.1 /usr/share/man/ja/man1/fdsh.1<br>
+insinto /etc<br>
+newins _fdrc fd2rc<br>
+}<br>
+</blockquote><br>
+はじめる前に自分overlay作ったほうが楽<br>
+<a href="https://wiki.gentoo.org/wiki/Handbook:AMD64/Portage/CustomTree/ja#.E3.82.AB.E3.82.B9.E3.82.BF.E3.83.A0.E3.83.AA.E3.83.9D.E3.82.B8.E3.83.88.E3.83.AA.E3.82.92.E5.AE.9A.E7.BE.A9.E3.81.99.E3.82.8B">https://wiki.gentoo.org/wiki/Handbook:AMD64/Portage/CustomTree/ja#.E3.82.AB.E3.82.B9.E3.82.BF.E3.83.A0.E3.83.AA.E3.83.9D.E3.82.B8.E3.83.88.E3.83.AA.E3.82.92.E5.AE.9A.E7.BE.A9.E3.81.99.E3.82.8B</a><br>
+の通りにoverlay<br>
+　<br>
+mkdir -p /var/db/repos/localrepo/{metadata,profiles}<br>
+chown -R portage:portage /var/db/repos/localrepo<br>
+</p><p>
+echo 'localrepo' > /var/db/repos/localrepo/profiles/repo_name<br>
+</p><p>
+sudo emacs /var/db/repos/localrepo/metadata/layout.conf<br>
+<blockquote>masters = gentoo<br>
+auto-sync = false<br>
+</blockquote><br>
+sudo emacs /etc/portage/repos.conf/localrepo.conf<br>
+<blockquote>[localrepo]<br>
+location = /var/db/repos/localrepo<br>
+</blockquote><br>
+うちのfdcloneは<br>
+/var/db/repos/localrepo/app-misc/fdclone/fdclone-3.01j.ebuild<br>
+</p><p>
+<hr>４１２８日後<br>
+</p><p>
+</p><p>
+      
+    </p>
+    
+  </div>
+</div>
+<!-- end:<TMPL_VAR name=ymdi> -->
+<!-- 広告とか -->
+
+
+
+<!---->
+</div>
+<div>
+最終更新時間: 2022-06-29 17:18
+
+</div></div></body></html>
