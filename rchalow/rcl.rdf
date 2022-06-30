@@ -15,10 +15,37 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-06-30-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-06-29-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2022-06-30-1.html">
+ <title>gem install rabbit</title>
+ <link>https://akapy.github.io/rchalow/2022-06-30-1.html</link>
+ <description>
+  昨日のマシンに rabbit-shockers のおつとめsudo emerge --ask rabbitの時代は終わった。sudo emerge --ask ruby-dev/rubygemssudo gem install rabbitportageとぶつかってるものがあるのかもしれないが、一番手っ取り早い方法　/usr/local/lib64/ruby/gems/2.7.0/bin/rabbit /usr/local/lib64/ruby/gems/2.7.0/gems/rabbit-3.0.1/sample/rabbit &amp;amp;でサンプルが表示できるのだけ確認４１２９日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2022-06-30T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>昨日のマシンに rabbit-shockers のおつとめ<br>
+<blockquote>sudo emerge --ask rabbit<br>
+</blockquote>の時代は終わった。<br>
+<blockquote>sudo emerge --ask ruby-dev/rubygems<br>
+sudo gem install rabbit<br>
+</blockquote>portageとぶつかってるものがあるのかもしれないが、<br>
+一番手っ取り早い方法<br>
+　<br>
+<blockquote>/usr/local/lib64/ruby/gems/2.7.0/bin/rabbit /usr/local/lib64/ruby/gems/2.7.0/gems/rabbit-3.0.1/sample/rabbit &amp;<br>
+</blockquote>でサンプルが表示できるのだけ確認<br>
+</p><p>
+<hr>４１２９日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2022-06-29-1.html">
  <title>オレオレfdclone-3.01j.ebuild</title>

@@ -1,6 +1,6 @@
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_2609-73j.html">2609-73J</a> (9)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_cfe381a8ssd.html">CFとSSD</a> (4)<br>');
-document.writeln('- <a href="https://akapy.github.io/rchalow/cat_gentoo.html">Gentoo</a> (54)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_gentoo.html">Gentoo</a> (55)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_line.html">LINE</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_lw333d7.html">LW333D7</a> (6)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_linux.html">Linux</a> (11)<br>');
@@ -15,7 +15,7 @@ document.writeln('- <a href="https://akapy.github.io/rchalow/cat_r634.html">R634
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_r731.html">R731</a> (2)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_r732.html">R732</a> (2)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_rc-s330.html">RC-S330</a> (3)<br>');
-document.writeln('- <a href="https://akapy.github.io/rchalow/cat_rabbit.html">Rabbit</a> (6)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_rabbit.html">Rabbit</a> (7)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_sc420.html">SC420</a> (24)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_solo2300e58fb7.html">SOLO2300号</a> (36)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_ssd.html">SSD</a> (1)<br>');
