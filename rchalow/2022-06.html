@@ -423,7 +423,7 @@
   <div class="entry-tag">tag: [<a href="cat_gentoo.html">Gentoo</a>][<a href="cat_fdclone.html">fdclone</a>]</div>
   
   <div class="entry-content">
-    <p><p>BIOS/MBRなマシンにgentooをインストールし直す機会があった。<br>
+    <p><p>BIOS/MBR(CSM Boot)なマシンにgentooをインストールし直す機会があった。<br>
 fdclone-3.01j.ebuild　書いてみた。<br>
 無保証<br>
 </p><p>
@@ -484,6 +484,19 @@ sudo emacs /etc/portage/repos.conf/localrepo.conf<br>
 <blockquote>[localrepo]<br>
 location = /var/db/repos/localrepo<br>
 </blockquote><br>
+cat /etc/portage/repos.conf/gentoo.conf<br>
+<blockquote>[DEFAULT]<br>
+main-repo = gentoo<br>
+</p><p>
+[gentoo]<br>
+location = /var/db/repos/gentoo<br>
+sync-type = git<br>
+sync-uri = <a href="https://github.com/gentoo-mirror/gentoo">https://github.com/gentoo-mirror/gentoo</a><br>
+sync-git-verify-commit-signature = yes<br>
+sync-openpgp-key-path = /usr/share/openpgp-keys/gentoo-release.asc<br>
+auto-sync = yes<br>
+</blockquote><br>
+</p><p>
 うちのfdcloneは<br>
 /var/db/repos/localrepo/app-misc/fdclone/fdclone-3.01j.ebuild<br>
 </p><p>
@@ -602,7 +615,7 @@ sudo gem install rabbit<br>
       <div class="clear"></div>
       <div id="footer">
         <p>最終更新時間: <abbr class="updated" title="">
-            2022-06-30 19:03</abbr>
+            2022-07-06 20:38</abbr>
           By <span class="vcard author"><span class="fn">akapy</span></span></p>
         
       </div><!-- /footer -->
