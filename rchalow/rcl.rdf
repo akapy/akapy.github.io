@@ -15,11 +15,51 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-27-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-26-5.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-15-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-10-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2022-07-27-5.html">
+ <title>当選／今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2022-07-27-5.html</link>
+ <description>
+  [画像]気仙沼の朝の最低気温 22.0 ℃ (02:38)気仙沼：くもり＋12:30ごろ暗くなり冷たい風　　　　15:00ごろ弱めな日差し気仙沼の日中の最高気温 27.4 ℃ (11:02)歩数 5578 歩活動カロリー 177 kcal歩行距離 4.0 km脂肪燃焼量 10.2 gエクササイズ量 2.9 Ex推定Ex歩行時間 48 分セブン松川ヤマダ電機イオン銀行ヤマダ電機バイパス
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2022-07-27T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/onepeace_timeline_20220727_120714.jpg" alt="画像"></a><br>
+気仙沼の朝の最低気温 22.0 ℃ (02:38)<br>
+気仙沼：くもり＋12:30ごろ暗くなり冷たい風<br>
+　　　　15:00ごろ弱めな日差し<br>
+気仙沼の日中の最高気温 27.4 ℃ (11:02)<br>
+<table><tr><td>歩数<td> 5578 歩</tr><tr><td>活動カロリー<td> 177 kcal</tr><tr><td>歩行距離<td> 4.0 km</tr><tr><td>脂肪燃焼量<td> 10.2 g</tr><tr><td>エクササイズ量<td> 2.9 Ex</tr><tr><td>推定Ex歩行時間<td> 48 分</tr></table>セブン松川ヤマダ電機イオン銀行ヤマダ電機バイパス<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+
+<item rdf:about="https://akapy.github.io/rchalow/2022-07-26-5.html">
+ <title>痺れを切らして土用干し開始／今日の天気と万歩計</title>
+ <link>https://akapy.github.io/rchalow/2022-07-26-5.html</link>
+ <description>
+  [画像]気仙沼の朝の最低気温 20.7 ℃気仙沼：陽射し時々くもり気仙沼の日中の最高気温 28.5 ℃歩数 4942 歩活動カロリー 198 kcal歩行距離 3.5 km脂肪燃焼量 10.9 gエクササイズ量 2.8 Ex推定Ex歩行時間 37 分ハヅ倉庫に携帯届ける＆ローソン投函
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2022-07-26T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/ume_timeline_20220726_084706.jpg" alt="画像"></a><br>
+気仙沼の朝の最低気温 20.7 ℃<br>
+気仙沼：陽射し時々くもり<br>
+気仙沼の日中の最高気温 28.5 ℃<br>
+<table><tr><td>歩数<td> 4942 歩</tr><tr><td>活動カロリー<td> 198 kcal</tr><tr><td>歩行距離<td> 3.5 km</tr><tr><td>脂肪燃焼量<td> 10.9 g</tr><tr><td>エクササイズ量<td> 2.8 Ex</tr><tr><td>推定Ex歩行時間<td> 37 分</tr></table>ハヅ倉庫に携帯届ける＆ローソン投函<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2022-07-15-1.html">
  <title>トップガン</title>
@@ -37,25 +77,6 @@
 </blockquote>帰りの車の運転には注意が必要です(苦笑)<br>
 <hr>４１４４日後<br>
 </p><p>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2022-07-10-1.html">
- <title>梅干しに挑戦</title>
- <link>https://akapy.github.io/rchalow/2022-07-10-1.html</link>
- <description>
-  木の下の草刈りから始まり、梅の実を一つ一つ洗うのが面倒。。粗塩を５００ｇ買ったので２５００ｇの梅を洗った。梅酢が上がることを祈る。[画像]　　[画像]４１３９日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2022-07-10T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>木の下の草刈りから始まり、梅の実を一つ一つ洗うのが面倒。。<br>
-粗塩を５００ｇ買ったので２５００ｇの梅を洗った。<br>
-梅酢が上がることを祈る。<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/umeboshi16405090377111.jpg" alt="画像"></a>　　<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/umeboshi16404862296804.jpg" alt="画像"></a><br>
-<hr>４１３９日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
