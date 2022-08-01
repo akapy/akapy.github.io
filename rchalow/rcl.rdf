@@ -15,12 +15,74 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-29-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-27-5.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-26-5.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2022-07-15-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2022-07-29-1.html">
+ <title>梅しごと2022おぼえがき</title>
+ <link>https://akapy.github.io/rchalow/2022-07-29-1.html</link>
+ <description>
+  [画像]7/5(火)　下八瀬はたけに白菜を見回りに行ったら、梅の実が落ちてるのを発見！　まず梅の木の下の草刈りをする。　完熟して落ちた梅の実を拾う(数日すこしずつ)ダンボールの上で干しておく7/9(土)　新鮮館で粗塩５００gと赤紫蘇を購入7/10(日)　赤紫蘇をタッパに塩漬け　梅2.5kg選別(ハカリで数回に分けて)　母の大きな竹ざる発見　ひと粒づつ洗う(食器洗いスポンジで）＋ヘタ取り３個ぐらい＋個数を数える　さしんinsta用　水につける(虫出し45分以内推奨)　アルミ鍋にビニール袋(気仙沼ゴミ袋)装着＋アルコール消毒　梅にアルコールスプレー　塩と梅を交互に並べる--11:35ごろ　さしん11:40ごろ　昼飯　13:25ごろ梅の塩漬けにおもり7/14(木)・梅酢あがってる！・赤紫蘇に投入晴天が続きそうにないので、なかなか干せない7/26(火)　土用干し開始7/29(金)　ダイソーで梅酒用にビン容器を購入　土用干し終わった梅と赤紫蘇を入れる４１５８日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2022-07-29T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/umeboshi_152607.jpg" alt="画像"></a><br>
+</p><p>
+7/5(火)<br>
+　下八瀬はたけに白菜を見回りに行ったら、梅の実が落ちてるのを発見！<br>
+　まず梅の木の下の草刈りをする。<br>
+　<br>
+</p><p>
+完熟して落ちた梅の実を拾う(数日すこしずつ)<br>
+ダンボールの上で干しておく<br>
+</p><p>
+</p><p>
+7/9(土)<br>
+　新鮮館で粗塩５００gと赤紫蘇を購入<br>
+</p><p>
+</p><p>
+7/10(日)<br>
+　赤紫蘇をタッパに塩漬け<br>
+　梅2.5kg選別(ハカリで数回に分けて)<br>
+　母の大きな竹ざる発見<br>
+　ひと粒づつ洗う(食器洗いスポンジで）＋ヘタ取り３個ぐらい＋個数を数える<br>
+　さしんinsta用<br>
+　水につける(虫出し45分以内推奨)<br>
+　アルミ鍋にビニール袋(気仙沼ゴミ袋)装着＋アルコール消毒<br>
+　梅にアルコールスプレー<br>
+　塩と梅を交互に並べる--11:35ごろ<br>
+　さしん11:40ごろ<br>
+　昼飯<br>
+　13:25ごろ梅の塩漬けにおもり<br>
+</p><p>
+</p><p>
+7/14(木)<br>
+・梅酢あがってる！<br>
+・赤紫蘇に投入<br>
+</p><p>
+</p><p>
+<blockquote>晴天が続きそうにないので、なかなか干せない<br>
+</blockquote><br>
+</p><p>
+7/26(火)<br>
+　土用干し開始<br>
+</p><p>
+</p><p>
+</p><p>
+7/29(金)<br>
+　ダイソーで梅酒用にビン容器を購入<br>
+　土用干し終わった梅と赤紫蘇を入れる<br>
+</p><p>
+<hr>４１５８日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2022-07-27-5.html">
  <title>当選／今日の天気と万歩計</title>
@@ -56,27 +118,6 @@
 気仙沼：陽射し時々くもり<br>
 気仙沼の日中の最高気温 28.5 ℃<br>
 <table><tr><td>歩数<td> 4942 歩</tr><tr><td>活動カロリー<td> 198 kcal</tr><tr><td>歩行距離<td> 3.5 km</tr><tr><td>脂肪燃焼量<td> 10.9 g</tr><tr><td>エクササイズ量<td> 2.8 Ex</tr><tr><td>推定Ex歩行時間<td> 37 分</tr></table>ハヅ倉庫に携帯届ける＆ローソン投函<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2022-07-15-1.html">
- <title>トップガン</title>
- <link>https://akapy.github.io/rchalow/2022-07-15-1.html</link>
- <description>
-  [画像]　はじめてのシニア料金(ハッピー55)リオーネ潰れるかも帰りの車の運転には注意が必要です(苦笑)４１４４日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2022-07-15T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/220715_115715.jpg" alt="画像"></a><br>
-　<br>
-はじめてのシニア料金(ハッピー55)<br>
-<blockquote>リオーネ潰れるかも<br>
-</blockquote>帰りの車の運転には注意が必要です(苦笑)<br>
-<hr>４１４４日後<br>
-</p><p>
 </p><p>
 </p><p>]]>
  </content:encoded>
