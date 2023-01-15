@@ -15,24 +15,30 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-01-09-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-01-14-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2023-01-09-5.html">
- <title>今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2023-01-09-5.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2023-01-14-1.html">
+ <title>バイソン片山トリオ</title>
+ <link>https://akapy.github.io/rchalow/2023-01-14-1.html</link>
  <description>
-  気仙沼の朝の最低気温 -1.7 ℃ (06:25)気仙沼：8時ごろちょっと日差し＋くもり(15時前後に日差しあったみたい)気仙沼の日中の最高気温 6.3 ℃ (14:48)歩数 約4200(509sh)＋ 1034歩活動カロリー 245 kcal歩行距離 3.1＋0.7 km脂肪燃焼量 8.4 gエクササイズ量 1.9＋0.6 Ex推定Ex歩行時間 35 分川沿い左回り散歩(万歩計忘れたけど509shあり)
+  [画像]会場が小さかったのでPA不要だったのでは？　ボーカルは別として休憩まで聴いて移動チケットは某でん吉あたりから４３２７日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-01-09T23:59:59+09:00</dc:date>
+ <dc:date>2023-01-14T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 -1.7 ℃ (06:25)<br>
-気仙沼：8時ごろちょっと日差し＋くもり(15時前後に日差しあったみたい)<br>
-気仙沼の日中の最高気温 6.3 ℃ (14:48)<br>
-<table><tr><td>歩数<td> 約4200(509sh)＋ 1034歩</tr><tr><td>活動カロリー<td> 245 kcal</tr><tr><td>歩行距離<td> 3.1＋0.7 km</tr><tr><td>脂肪燃焼量<td> 8.4 g</tr><tr><td>エクササイズ量<td> 1.9＋0.6 Ex</tr><tr><td>推定Ex歩行時間<td> 35 分</tr></table>川沿い左回り散歩(万歩計忘れたけど509shあり)<br>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/221231_111849.jpg" alt="画像"></a><br>
+</p><p>
+会場が小さかったのでPA不要だったのでは？　ボーカルは別として<br>
+休憩まで聴いて移動<br>
+</p><p>
+</p><p>
+<blockquote>チケットは某でん吉あたりから<br>
+</blockquote><br>
+<hr>４３２７日後<br>
+</p><p>
 </p><p>
 </p><p>]]>
  </content:encoded>
