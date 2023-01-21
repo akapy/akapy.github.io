@@ -15,30 +15,29 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-01-14-1.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-01-21-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2023-01-14-1.html">
- <title>バイソン片山トリオ</title>
- <link>https://akapy.github.io/rchalow/2023-01-14-1.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2023-01-21-1.html">
+ <title>Dr.コトー</title>
+ <link>https://akapy.github.io/rchalow/2023-01-21-1.html</link>
  <description>
-  [画像]会場が小さかったのでPA不要だったのでは？　ボーカルは別として休憩まで聴いて移動チケットは某でん吉あたりから４３２７日後
+  [画像]　すでにポスターなしイオンシネマのシニア料金(ハッピー55)にて客５人以下　たけひろだな〜。与那国島、行ってみたい。吉田さんが勤めてた時がチャンスだったのにな。。４１４４日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-01-14T23:59:59+09:00</dc:date>
+ <dc:date>2023-01-21T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/230114_174045.jpg" alt="画像"></a><br>
-</p><p>
-会場が小さかったのでPA不要だったのでは？　ボーカルは別として<br>
-休憩まで聴いて移動<br>
-</p><p>
-</p><p>
-<blockquote>チケットは某でん吉あたりから<br>
-</blockquote><br>
-<hr>４３２７日後<br>
-</p><p>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/230121_115336.jpg" alt="画像"></a><br>
+　すでにポスターなし<br>
+イオンシネマのシニア料金(ハッピー55)にて<br>
+客５人以下<br>
+　<br>
+たけひろだな〜。<br>
+与那国島、行ってみたい。<br>
+吉田さんが勤めてた時がチャンスだったのにな。。<br>
+<hr>４１４４日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
