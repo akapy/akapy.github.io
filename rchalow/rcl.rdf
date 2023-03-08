@@ -15,11 +15,34 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-03-08-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-03-06-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-02-08-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2023-03-08-1.html">
+ <title>レジェンド＆バタフライ</title>
+ <link>https://akapy.github.io/rchalow/2023-03-08-1.html</link>
+ <description>
+  ８の日ポスターすでに無し。携帯を忘れたので撮れないけど(苦笑)[画像] まむし娘と信長がタイタニックしそうだ(苦笑)４３８０日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2023-03-08T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>８の日<br>
+ポスターすでに無し。携帯を忘れたので撮れないけど(苦笑)<br>
+<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/230308_184402.jpg" alt="画像"></a><br>
+&nbsp;<br>
+</p><p>
+まむし娘と信長がタイタニックしそうだ(苦笑)<br>
+</p><p>
+<hr>４３８０日後<br>
+</p><p>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2023-03-06-1.html">
  <title>50,700円</title>
@@ -36,27 +59,6 @@
 </p><p>
 また高い国保の切符くるな。。。(泣)<br>
 <hr>４３７８日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2023-02-08-1.html">
- <title>イチケイのカラス</title>
- <link>https://akapy.github.io/rchalow/2023-02-08-1.html</link>
- <description>
-  [画像]イオンシネマのシニア料金(ハッピー55)　国家権力とは戦ってなかった？４３５２日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-02-08T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/230208_133118.jpg" alt="画像"></a><br>
-</p><p>
-イオンシネマのシニア料金(ハッピー55)<br>
-　<br>
-国家権力とは戦ってなかった？<br>
-</p><p>
-<hr>４３５２日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
