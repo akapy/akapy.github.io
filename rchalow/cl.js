@@ -1,16 +1,14 @@
 window.onload = function() {var latest_items = '';
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-20.html">2023-03-20</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-19.html">2023-03-19</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-18.html">2023-03-18</a><br>');
+latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-18-1.html">新年ホヤほやクーポン3000円を無駄にした。。</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-17.html">2023-03-17</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-16.html">2023-03-16</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-15.html">2023-03-15</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-14.html">2023-03-14</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-13.html">2023-03-13</a><br>');
+latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-12.html">2023-03-12</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-11.html">2023-03-11</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-10.html">2023-03-10</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-10-1.html">すずめの戸締まり</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-02-28.html">2023-02-28</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-09.html">2023-03-09</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-08.html">2023-03-08</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-08-1.html">レジェンド＆バタフライ</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-07.html">2023-03-07</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-06.html">2023-03-06</a><br>');
-latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-06-1.html">50,700円</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-04.html">2023-03-04</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-03.html">2023-03-03</a><br>');
-latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-02-23.html">2023-02-23</a><br>');
 document.getElementById('latest_items').insertAdjacentHTML('afterbegin', latest_items);
 }
