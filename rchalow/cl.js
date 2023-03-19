@@ -1,6 +1,7 @@
 window.onload = function() {var latest_items = '';
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-20.html">2023-03-20</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-19.html">2023-03-19</a><br>');
+latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-19-5.html">今日の天気と万歩計</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-18.html">2023-03-18</a><br>');
 latest_items = latest_items.concat('- <a href="https://akapy.github.io/rchalow/2023-03-18-1.html">新年ホヤほやクーポン3000円を無駄にした。。</a><br>');
 latest_items = latest_items.concat('<a href="https://akapy.github.io/rchalow/2023-03-17.html">2023-03-17</a><br>');
