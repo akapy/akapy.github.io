@@ -15,68 +15,27 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-04-10-5.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-04-07-5.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-04-05-5.html"/>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-04-29-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
-<item rdf:about="https://akapy.github.io/rchalow/2023-04-10-5.html">
- <title>今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2023-04-10-5.html</link>
+<item rdf:about="https://akapy.github.io/rchalow/2023-04-29-1.html">
+ <title>メネシス</title>
+ <link>https://akapy.github.io/rchalow/2023-04-29-1.html</link>
  <description>
-  気仙沼の朝の最低気温 0.4 ℃ (05:17)気仙沼：8:30ごろからまとも日差し＋はれ気仙沼の日中の最高気温 19.8 ℃ (14:44)歩数 6132 歩活動カロリー 595 kcal歩行距離 4.4 km脂肪燃焼量 21.7 gエクササイズ量 4.6 Ex推定Ex歩行時間 17 分ふれあい農園に午前午後＋下八瀬はたけエンジン試しだけ[画像]
+  [画像]イオンシネマのシニア料金(ハッピー55)観客１５人ぐらい？　　わけわからない。という感想でいいか？(笑)４４３２日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-04-10T23:59:59+09:00</dc:date>
+ <dc:date>2023-04-29T23:59:59+09:00</dc:date>
 <content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 0.4 ℃ (05:17)<br>
-気仙沼：8:30ごろからまとも日差し＋はれ<br>
-気仙沼の日中の最高気温 19.8 ℃ (14:44)<br>
-<table><tr><td>歩数<td> 6132 歩</tr><tr><td>活動カロリー<td> 595 kcal</tr><tr><td>歩行距離<td> 4.4 km</tr><tr><td>脂肪燃焼量<td> 21.7 g</tr><tr><td>エクササイズ量<td> 4.6 Ex</tr><tr><td>推定Ex歩行時間<td> 17 分</tr></table>ふれあい農園に午前午後＋下八瀬はたけエンジン試しだけ<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20230410_141008.jpg" alt="画像"></a><br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2023-04-07-5.html">
- <title>今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2023-04-07-5.html</link>
- <description>
-  気仙沼の朝の最低気温 12.6 ℃ (05:50)気仙沼：雨が降った跡(2:10〜3:50に降水量あり)＋くもり　　　　11時ごろからポツリポツリ雨＋13時すぎから降水量気仙沼の日中の最高気温 18.1 ℃ (12:58)気仙沼の最低気温 12.2 ℃ (23:59)歩数 13441 歩活動カロリー 807 kcal歩行距離 9.6 km脂肪燃焼量 35.7 gエクササイズ量 9.8 Ex推定Ex歩行時間 101 分館山ふれあい農園草処理＋ヤマダ電機さんぽ＋夜の散歩アミーゴ[画像] [画像]
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-04-07T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 12.6 ℃ (05:50)<br>
-気仙沼：雨が降った跡(2:10〜3:50に降水量あり)＋くもり<br>
-　　　　11時ごろからポツリポツリ雨＋13時すぎから降水量<br>
-気仙沼の日中の最高気温 18.1 ℃ (12:58)<br>
-気仙沼の最低気温 12.2 ℃ (23:59)<br>
-<table><tr><td>歩数<td> 13441 歩</tr><tr><td>活動カロリー<td> 807 kcal</tr><tr><td>歩行距離<td> 9.6 km</tr><tr><td>脂肪燃焼量<td> 35.7 g</tr><tr><td>エクササイズ量<td> 9.8 Ex</tr><tr><td>推定Ex歩行時間<td> 101 分</tr></table>館山ふれあい農園草処理＋ヤマダ電機さんぽ＋夜の散歩アミーゴ<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20230407_110256.jpg" alt="画像"></a>  	<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20230407_114510.jpg" alt="画像"></a><br>
-</p><p>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2023-04-05-5.html">
- <title>今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2023-04-05-5.html</link>
- <description>
-  気仙沼の朝の最低気温 7.3 ℃ (04:01)気仙沼：ぼやはれ(昼前後日照1.0)のち14:30ごろからくもり気仙沼の日中の最高気温 21.9 ℃ (12:24)歩数 7110 歩活動カロリー 650 kcal歩行距離 5.1 km脂肪燃焼量 27.4 gエクササイズ量 5.3 Ex推定Ex歩行時間 26 分管理機テスト＋ふれあい農園を耕す[画像]
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-04-05T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>気仙沼の朝の最低気温 7.3 ℃ (04:01)<br>
-気仙沼：ぼやはれ(昼前後日照1.0)のち14:30ごろからくもり<br>
-気仙沼の日中の最高気温 21.9 ℃ (12:24)<br>
-<table><tr><td>歩数<td> 7110 歩</tr><tr><td>活動カロリー<td> 650 kcal</tr><tr><td>歩行距離<td> 5.1 km</tr><tr><td>脂肪燃焼量<td> 27.4 g</tr><tr><td>エクササイズ量<td> 5.3 Ex</tr><tr><td>推定Ex歩行時間<td> 26 分</tr></table>管理機テスト＋ふれあい農園を耕す<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20230405_143203.jpg" alt="画像"></a><br>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/DSC_0002.jpg" alt="画像"></a><br>
+イオンシネマのシニア料金(ハッピー55)<br>
+観客１５人ぐらい？<br>
+　<br>
+　<br>
+わけわからない。という感想でいいか？(笑)<br>
+<hr>４４３２日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
