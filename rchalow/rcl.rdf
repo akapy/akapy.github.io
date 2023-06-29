@@ -15,31 +15,7 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-05-20-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
-
-<item rdf:about="https://akapy.github.io/rchalow/2023-05-20-1.html">
- <title>献血バスのトミカ／コナン黒鉄の魚影</title>
- <link>https://akapy.github.io/rchalow/2023-05-20-1.html</link>
- <description>
-  ペトラス石巻でガソリン入れた後、献血車を発見暇なので血を提供。なんかトミカもらった。[画像]https://www.bs.jrc.or.jp/th/miyagi/2023/05/post-172.htmlイオンシネマのシニア料金(ハッピー55)[画像]ピンガは生きてるんだろうな。。正体を知られてるし。。。４４３２日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-05-20T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p>ペトラス石巻でガソリン入れた後、献血車を発見<br>
-暇なので血を提供。なんかトミカもらった。<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/DSC_0006.JPG" alt="画像"></a><br>
-<a href="https://www.bs.jrc.or.jp/th/miyagi/2023/05/post-172.html">https://www.bs.jrc.or.jp/th/miyagi/2023/05/post-172.html</a><br>
-</p><p>
-<hr>イオンシネマのシニア料金(ハッピー55)<br>
-<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/DSC_0007.JPG" alt="画像"></a><br>
-ピンガは生きてるんだろうな。。正体を知られてるし。。。<br>
-<hr>４４３２日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
 </rdf:RDF>
