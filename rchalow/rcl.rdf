@@ -15,7 +15,31 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-07-01-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2023-07-01-1.html">
+ <title>オレンジ・ランプ</title>
+ <link>https://akapy.github.io/rchalow/2023-07-01-1.html</link>
+ <description>
+  イオンシネマ石巻：一応ファーストday[画像] みるとちょっと優しい気持ちになれるかもしれない映画ネッツトヨタ仙台を称賛していいのか。４４９５日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2023-07-01T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p>イオンシネマ石巻：一応ファーストday<br>
+<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/DSC_0009.JPG" alt="画像"></a><br>
+&nbsp;&nbsp;<br>
+みるとちょっと優しい気持ちになれるかもしれない映画<br>
+ネッツトヨタ仙台を称賛していいのか。<br>
+</p><p>
+</p><p>
+<hr>４４９５日後<br>
+</p><p>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 </rdf:RDF>
