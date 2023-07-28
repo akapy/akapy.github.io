@@ -15,32 +15,7 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2023-07-20-5.html"/>
  </rdf:Seq>
  </items>
 </channel>
-
-<item rdf:about="https://akapy.github.io/rchalow/2023-07-20-5.html">
- <title>朝顔／今日の天気と万歩計</title>
- <link>https://akapy.github.io/rchalow/2023-07-20-5.html</link>
- <description>
-  [画像]気仙沼の朝の最低気温 20.5 ℃ (03:54)気仙沼：晴れてきた一関：はれ10時ごろまでのち(11:30前後に雨？道路ぬれてるとこあり)＋１５時前に降水量4.5帰り：弱雨か雨か強め雨＋霧雨気仙沼：(13時前に降水量6.5)帰宅時は霧雨あり？一関の日中の最高気温 28.6 ℃ (09:58)気仙沼の日中の最高気温 25.8 ℃ (10:32)気仙沼の最低気温 19.7 ℃ (24:00)歩数 5456 歩活動カロリー 742 kcal歩行距離 3.9 km脂肪燃焼量 27.3 gエクササイズ量 3.7 Ex推定Ex歩行時間 13 分仕事だけ
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2023-07-20T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20230720_052413.jpg" alt="画像"></a><br>
-気仙沼の朝の最低気温 20.5 ℃ (03:54)<br>
-気仙沼：晴れてきた<br>
-一関：はれ10時ごろまでのち(11:30前後に雨？道路ぬれてるとこあり)＋１５時前に降水量4.5<br>
-帰り：弱雨か雨か強め雨＋霧雨<br>
-気仙沼：(13時前に降水量6.5)帰宅時は霧雨あり？<br>
-一関の日中の最高気温 28.6 ℃ (09:58)<br>
-気仙沼の日中の最高気温 25.8 ℃ (10:32)<br>
-気仙沼の最低気温 19.7 ℃ (24:00)<br>
-<table><tr><td>歩数<td> 5456 歩</tr><tr><td>活動カロリー<td> 742 kcal</tr><tr><td>歩行距離<td> 3.9 km</tr><tr><td>脂肪燃焼量<td> 27.3 g</tr><tr><td>エクササイズ量<td> 3.7 Ex</tr><tr><td>推定Ex歩行時間<td> 13 分</tr></table>仕事だけ<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
 </rdf:RDF>
