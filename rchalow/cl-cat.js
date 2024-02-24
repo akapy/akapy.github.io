@@ -1,5 +1,6 @@
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_2609-73j.html">2609-73J</a> (9)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_cfe381a8ssd.html">CFとSSD</a> (4)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_diy.html">DIY</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_gentoo.html">Gentoo</a> (55)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_line.html">LINE</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_lw333d7.html">LW333D7</a> (6)<br>');
@@ -47,7 +48,7 @@ document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e381a4e381a4e38
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e381a4e381a4e381982013.html">つつじ2013</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e381a7e3818de38194e381a8.html">できごと</a> (118)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e381b2e381a8e3828ae38194e381a8.html">ひとりごと</a> (1674)<br>');
-document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e38281e38282.html">めも</a> (10)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e38281e38282.html">めも</a> (11)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e382ace38383e38386e383b3.html">ガッテン</a> (16)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e38397e383a9e383b3e382bfe383bce88f9ce59c92.html">プランター菜園</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e383a1e383a2.html">メモ</a> (60)<br>');
