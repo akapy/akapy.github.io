@@ -73,6 +73,7 @@ document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e6b097e6a5bde4b
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e6b68ce8b0b7e5b9b4e4b880e5b1b1e6a5bde4bc9a.html">涌谷年一山楽会</a> (44)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e6b8a9e6b389.html">温泉</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e794b0e6a48de38188.html">田植え</a> (38)<br>');
+document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e79bb8e692b2.html">相撲</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e79bb8e7b69a.html">相続</a> (1)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e7a2bae5ae9ae794b3e5918a.html">確定申告</a> (18)<br>');
 document.writeln('- <a href="https://akapy.github.io/rchalow/cat_e88081e4babae69699e98791.html">老人料金</a> (16)<br>');

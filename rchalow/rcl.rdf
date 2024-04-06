@@ -15,31 +15,7 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2024-03-05-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
-
-<item rdf:about="https://akapy.github.io/rchalow/2024-03-05-1.html">
- <title>PERFECT_DAYS</title>
- <link>https://akapy.github.io/rchalow/2024-03-05-1.html</link>
- <description>
-  [画像]　日常？講習便所のそうじはできないか　　木漏れ日 たしかに同じ瞬間はないだろうな。　なんか次の日まで余韻が残ってる映画かも４７４３日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2024-03-05T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20240305_114917.jpg" alt="画像"></a><br>
-　<br>
-日常？<br>
-<blockquote>講習便所のそうじはできないか<br>
-</blockquote>　<br>
-　<br>
-木漏れ日 たしかに同じ瞬間はないだろうな。<br>
-　<br>
-なんか次の日まで余韻が残ってる映画かも<br>
-<hr>４７４３日後<br>
-</p><p>]]>
- </content:encoded>
-</item>
 </rdf:RDF>
