@@ -15,18 +15,49 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-01-23-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-01-22-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-01-18-1.html"/>
- <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-01-16-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2025-01-23-1.html">
+ <title>はたらく細胞</title>
+ <link>https://akapy.github.io/rchalow/2025-01-23-1.html</link>
+ <description>
+  [画像]　血液の働きと、骨髄移植について勉強になる映画　るろうに剣心マルモのおきてもののけ姫のディダラゼブラーマンとゼブラクイーン　などを彷彿とさせる　きょうも松本若菜が出演してる映画だった(笑)全然予想してなかった　５０６７日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2025-01-23T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20250123_091254.jpg" alt="画像"></a><br>
+　<br>
+</p><p>
+血液の働きと、骨髄移植について勉強になる映画<br>
+　<br>
+るろうに剣心<br>
+マルモのおきて<br>
+もののけ姫のディダラ<br>
+ゼブラーマンとゼブラクイーン<br>
+　などを彷彿とさせる<br>
+　<br>
+</p><p>
+きょうも松本若菜が出演してる映画だった(笑)<br>
+全然予想してなかった<br>
+　<br>
+</p><p>
+<hr>５０６７日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2025-01-22-1.html">
  <title>室町無頼</title>
  <link>https://akapy.github.io/rchalow/2025-01-22-1.html</link>
  <description>
-  [画像][画像]　無頼＝アウトロー？ひょうえ＝兵衛才蔵が主人公なの？(笑)なにわ男子か！　５０６５日後
+  [画像][画像]　無頼＝アウトロー？ひょうえ＝兵衛才蔵が主人公なの？(笑)なにわ男子か！　５０６６日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
  <dc:date>2025-01-22T23:59:59+09:00</dc:date>
@@ -42,7 +73,7 @@
 なにわ男子か！<br>
 　<br>
 </p><p>
-<hr>５０６５日後<br>
+<hr>５０６６日後<br>
 </p><p>
 </p><p>]]>
  </content:encoded>
@@ -107,29 +138,6 @@ JA共済の連携は毎年申し込まないとダメみたい<br>
 所得金額の合計：768,268円<br>
 </p><p>
 <hr>５０６２日後<br>
-</p><p>
-</p><p>]]>
- </content:encoded>
-</item>
-
-<item rdf:about="https://akapy.github.io/rchalow/2025-01-16-1.html">
- <title>グランメゾンパリ</title>
- <link>https://akapy.github.io/rchalow/2025-01-16-1.html</link>
- <description>
-  [画像]　字幕が速くて読めないとこあり。。　５０６０日後
- </description>
- <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
- <dc:date>2025-01-16T23:59:59+09:00</dc:date>
-<content:encoded>
-  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20250116_102056.jpg" alt="画像"></a><br>
-</p><p>
-　<br>
-字幕が速くて読めないとこあり。。<br>
-</p><p>
-　<br>
-</p><p>
-<hr>５０６０日後<br>
-</p><p>
 </p><p>
 </p><p>]]>
  </content:encoded>
