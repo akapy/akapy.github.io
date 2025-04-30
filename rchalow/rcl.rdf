@@ -15,26 +15,53 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-04-26-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-03-22-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
 
+<item rdf:about="https://akapy.github.io/rchalow/2025-04-26-1.html">
+ <title>コナン隻眼の残像</title>
+ <link>https://akapy.github.io/rchalow/2025-04-26-1.html</link>
+ <description>
+  [画像]　　[画像]　好きな感じ　初日に映画館のスケジュールを覗いたらすげー上映回数なのにびっくり　　なぜか前夜は仙台駅の東口にいた(笑)　５１６０
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2025-04-26T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20250426_082310.jpg" alt="画像"></a>　　<a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20250426_082318.jpg" alt="画像"></a><br>
+　<br>
+好きな感じ<br>
+　<br>
+初日に映画館のスケジュールを覗いたらすげー上映回数なのにびっくり<br>
+</p><p>
+　<br>
+　<br>
+なぜか前夜は仙台駅の東口にいた(笑)<br>
+　<br>
+<hr>５１６０<br>
+</p><p>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
+
 <item rdf:about="https://akapy.github.io/rchalow/2025-03-22-1.html">
  <title>1ST KISS</title>
  <link>https://akapy.github.io/rchalow/2025-03-22-1.html</link>
  <description>
-  [画像]　タイムトラベルものだけど他の物語とはえらく違う。　プロポーズ大作戦のタイムスリップって何で起きたんだっけ？記憶をたどると三上博史がチャンスをくれたんだったな。　　すべてを告白したあとにも靴下に付箋がくっついていたのが気になる。。　５１２５日後
+  [画像]　タイムトラベルものだけど今までのものとはえらく違う。　プロポーズ大作戦のタイムスリップって何で起きたんだっけ？あー、三上博史がチャンスをくれたんだったな。　　すべてを告白したあとにも靴下に付箋がくっついていたのが気になる。。　５１２５日後
  </description>
  <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
  <dc:date>2025-03-22T23:59:59+09:00</dc:date>
 <content:encoded>
   <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20250322_133323.jpg" alt="画像"></a><br>
 　<br>
-タイムトラベルものだけど他の物語とはえらく違う。<br>
+タイムトラベルものだけど今までのものとはえらく違う。<br>
 　<br>
 プロポーズ大作戦のタイムスリップって何で起きたんだっけ？<br>
-記憶をたどると三上博史がチャンスをくれたんだったな。<br>
+あー、三上博史がチャンスをくれたんだったな。<br>
 　<br>
 　<br>
 すべてを告白したあとにも靴下に付箋がくっついていたのが気になる。。<br>
