@@ -15,10 +15,30 @@
  <admin:generatorAgent rdf:resource=""/>
  <items>
  <rdf:Seq>
+ <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-10-18-1.html"/>
  <rdf:li rdf:resource="https://akapy.github.io/rchalow/2025-10-15-1.html"/>
  </rdf:Seq>
  </items>
 </channel>
+
+<item rdf:about="https://akapy.github.io/rchalow/2025-10-18-1.html">
+ <title>雪風</title>
+ <link>https://akapy.github.io/rchalow/2025-10-18-1.html</link>
+ <description>
+  [画像] [画像] まさに幸運艦５３３５日後
+ </description>
+ <dc:creator>akapy  &lt;akapy@coz^gt;</dc:creator>
+ <dc:date>2025-10-18T23:59:59+09:00</dc:date>
+<content:encoded>
+  <![CDATA[<p><a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/sashin_105SH/IMG_20251018_104530.jpg" alt="画像"></a>   <a href="https://akapy.github.io/rchalow/cat_e38195e38197e38293.html"><img src="https://akapy.github.io/IMG_20251018_104753.jpg" alt="画像"></a><br>
+&nbsp;<br>
+まさに幸運艦<br>
+</p><p>
+<hr>５３３５日後<br>
+</p><p>
+</p><p>]]>
+ </content:encoded>
+</item>
 
 <item rdf:about="https://akapy.github.io/rchalow/2025-10-15-1.html">
  <title>秒速5センチメートル</title>
