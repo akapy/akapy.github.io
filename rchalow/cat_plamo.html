@@ -26,7 +26,7 @@
 <!-- start:2017-01-24-1 -->
 <div class="section hentry">
   <div class="entry-title">
-    <h3 class="subtitle"><a id="2017-01-24-1" href="2017-01-24-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">`NSS_3.23' not found　</span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]
+    <h3 class="subtitle"><a id="2017-01-24-1" href="2017-01-24-1.html"><span class="sanchor">■</span></a> <span class="clitemheader">`NSS_3.23' not found  </span> [<a href="cat_plamo.html">Plamo</a>][<a href="cat_linux.html">Linux</a>]
       <a href="https://b.hatena.ne.jp/entry/https://akapy.github.io/rchalow/2017-01-24-1.html">
         <img src="https://b.hatena.ne.jp/entry/image/https://akapy.github.io/rchalow/2017-01-24-1.html" class="no_border" alt="はてぶ">
       </a>
@@ -38,13 +38,13 @@
   
   <div class="entry-content">
     <p><p>Plamo-6.1 で新しいfirefox を起動しようとして<br>
-<blockquote>　　<br>
+<blockquote>   <br>
 version `NSS_3.23' not found<br>
-　　<br>
+&nbsp;&nbsp;&nbsp;<br>
 </blockquote>みたいなエラーが見えたら<br>
 <blockquote>sudo updatepkg 04_xapps/nss-3.27.1-i686-P1.txz<br>
 </blockquote>する<br>
-　<br>
+&nbsp;&nbsp;<br>
 <hr>はじめてfirefoxのビルドに挑戦してみたら、<br>
 autoconf213、nspr4、nss-3.27、sqlite-3.15とかも入れる必要があると勉強した。<br>
 </p><p>
@@ -75,12 +75,12 @@ autoconf213、nspr4、nss-3.27、sqlite-3.15とかも入れる必要があると
   
   <div class="entry-content">
     <p><p>結論を書いておくと get_pkginfo -a は依存関係を把握している人しか実行してはいけません。<br>
-　<br>
+&nbsp;&nbsp;<br>
 get_pkginfo -d して、必要なパッケージを updatepkg しましょう。<br>
 <hr><br>
-　<br>
+&nbsp;&nbsp;<br>
 Subject: [plamo:32041] 現状の Plamo-6.x ツリーに関する注意<br>
-　　<a href="http://www.linet.gr.jp/~kojima/PlamoWeb/ML/htdocs/201604/msg00000.html">http://www.linet.gr.jp/~kojima/PlamoWeb/ML/htdocs/201604/msg00000.html</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.linet.gr.jp/~kojima/PlamoWeb/ML/htdocs/201604/msg00000.html">http://www.linet.gr.jp/~kojima/PlamoWeb/ML/htdocs/201604/msg00000.html</a><br>
 によりますと、<br>
 <blockquote>Date: Tue, 05 Apr 2016 20:42:06 +0900 (JST)<br>
 </p><p>
@@ -89,14 +89,14 @@ Subject: [plamo:32041] 現状の Plamo-6.x ツリーに関する注意<br>
 ncurses より先に bash/tcsh をアップデートすると library not found でコマンドが動作しなくなります．<br>
 </p><p>
 # もしかしたら readline も先に置き換える必要があるかも．<br>
-</blockquote>　<br>
-　<br>
-　<br>
+</blockquote>  <br>
+&nbsp;&nbsp;<br>
+&nbsp;&nbsp;<br>
 ちなみに ncurses、readline、bash を updatepkg してから get_pkginfo -a してみると<br>
-<blockquote>　05_ext/c++_bindings.txz/glibmm-2.47.4-i686-P1.txz<br>
+<blockquote> 05_ext/c++_bindings.txz/glibmm-2.47.4-i686-P1.txz<br>
 </blockquote>あたりで止まりました。<br>
 Ｘは起動しなくなりました。<br>
-　<br>
+&nbsp;&nbsp;<br>
 2017/1/22に確認(Plamo-6.1_32bit)<br>
 </p><p>
       
@@ -126,9 +126,9 @@ ncurses より先に bash/tcsh をアップデートすると library not found 
 <blockquote><a href="http://www.plamolinux.org/blog/2014/12/31/plamo-5-dot-3-released/">http://www.plamolinux.org/blog/2014/12/31/plamo-5-dot-3-released/</a><br>
 </blockquote>かまだパソHDDちぇっくのついでにsc420にインストしてみた。<br>
 Plamo-5.2環境は残して、別パーティションに<br>
-　<br>
+&nbsp;&nbsp;<br>
 mewを使おうとしたらエラーが表示され使えない<br>
-.mew.el　の　bsfilterに関する１行をコメント化<br>
+.mew.el  の  bsfilterに関する１行をコメント化<br>
 あとは順調<br>
 <hr>１３９７日後<br>
 </p><p>
@@ -402,7 +402,7 @@ SSDの耐久テストを兼ねて昨日と同じ作業でchromium-26.0.1410.43-i
   <div class="entry-content">
     <p><p>＜まず以下を読む＞<br>
 <blockquote>玩式草子─ソフトウェアとたわむれる日々<br>
-第38回　Plamo Linuxのビルドスクリプトとパッケージ管理ツール［その1］<br>
+第38回  Plamo Linuxのビルドスクリプトとパッケージ管理ツール［その1］<br>
 <a href="http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038">http://gihyo.jp/lifestyle/serial/01/ganshiki-soushi/0038</a><br>
 </blockquote>  <br>
 <hr>＜dotconfのパッケージを作ってインストする＞<br>
@@ -782,6 +782,6 @@ xzcatが足りないらしいので、<br>
 <!---->
 </div>
 <div>
-最終更新時間: 2025-10-19 09:48
+最終更新時間: 2025-11-22 10:42
 
 </div></div></body></html>
